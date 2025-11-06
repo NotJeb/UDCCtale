@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"battle_enemy_skelly",
+  "%Name":"battle_bullet_gb_beam_skelly",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"battle_enemy_skelly",
+  "name":"battle_bullet_gb_beam_skelly",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemy",
-    "path":"folders/Objects/Battle/Enemy.yy",
+    "name":"Bullet",
+    "path":"folders/Objects/Battle/Bullet.yy",
   },
   "parentObjectId":{
-    "name":"battle_enemy",
-    "path":"objects/battle_enemy/battle_enemy.yy",
+    "name":"battle_bullet",
+    "path":"objects/battle_bullet/battle_bullet.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -32,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_bullet_gb_beam",
+    "path":"sprites/spr_bullet_gb_beam/spr_bullet_gb_beam.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

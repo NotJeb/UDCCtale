@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"battle_bullet_gb_skelly",
+  "%Name":"battle_bullet_gb_head_skelly",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -9,13 +9,16 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"battle_bullet_gb_skelly",
+  "name":"battle_bullet_gb_head_skelly",
   "overriddenProperties":[],
   "parent":{
     "name":"Bullet",
     "path":"folders/Objects/Battle/Bullet.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"battle_bullet",
+    "path":"objects/battle_bullet/battle_bullet.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"battle_enemy_skelly",
+  "%Name":"battle_turn_skelly_0",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":12,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"battle_enemy_skelly",
+  "name":"battle_turn_skelly_0",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemy",
-    "path":"folders/Objects/Battle/Enemy.yy",
+    "name":"Skelly",
+    "path":"folders/Objects/Battle/Turn/Skelly.yy",
   },
   "parentObjectId":{
-    "name":"battle_enemy",
-    "path":"objects/battle_enemy/battle_enemy.yy",
+    "name":"battle_turn",
+    "path":"objects/battle_turn/battle_turn.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
