@@ -15,6 +15,20 @@ function Macro_Enemy(){
 		ENZO = 12
 	};
 	
+#macro ENEMY_NAME_SKELLY "skelly"
+#macro ENEMY_NAME_TRIZER "trizer"
+#macro ENEMY_NAME_CANDLE_AND_MOSS "candle_and_moss"
+#macro ENEMY_NAME_NOOB_TIME_TRIO "noob_time_trio"
+#macro ENEMY_NAME_DFW "dfw"
+#macro ENEMY_NAME_KACPII "kacpii"
+#macro ENEMY_NAME_NATO "nato"
+#macro ENEMY_NAME_HUGOSIMPSON "hugosimpson"
+#macro ENEMY_NAME_CHEESY "cheesy"
+#macro ENEMY_NAME_PLAYERUT "playerut"
+#macro ENEMY_NAME_SHAUN_AND_MINUS "shaun_and_minus"
+#macro ENEMY_NAME_MAKER "maker"
+#macro ENEMY_NAME_ENZO "enzo"
+	
 #macro ENEMY_TITLE_SKELLY "Skelly"
 #macro ENEMY_TITLE_TRIZER "Trizer"
 #macro ENEMY_TITLE_CANDLE_AND_MOSS "Candle + Moss Duo"

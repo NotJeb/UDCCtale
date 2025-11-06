@@ -12,7 +12,7 @@ if (Input_IsHeld(INPUT.LEFT)) {
 else if (Input_IsHeld(INPUT.RIGHT)) {
 	hold_time++;
 	if (hold_time >= 30) {
-		hold_time = 20;
+		hold_time = 18;
 		selected_battle++;
 	}
 }
