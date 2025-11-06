@@ -28,7 +28,7 @@
   ],
   "name":"spr_bullet_gb_head_skelly",
   "nineSlice":null,
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"Bullets",
     "path":"folders/Sprites/Battle/Bullets.yy",
@@ -96,7 +96,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":32,
-    "yorigin":57,
+    "yorigin":40,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
