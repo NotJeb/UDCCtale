@@ -1,5 +1,5 @@
 function Encounter_Custom() {
-	Encounter_Set(ENEMY_INDEX.SKELLY,-1,battle_enemy_skelly,-1,"* Afterglory 1.5x Speed No Hit when",-1);
+	Encounter_Set(ENEMY_INDEX.SKELLY,-1,battle_enemy_skelly,-1,"* Afterglory 1.5x Speed No Hit&when",-1);
 	Encounter_Set(ENEMY_INDEX.TRIZER,-1,battle_enemy_trizer,-1,"* Edgetale again :/",-1);
 	Encounter_Set(ENEMY_INDEX.CANDLE_AND_MOSS,-1,battle_enemy_candle_and_moss,-1,"* You encountered peak!",-1);
 	Encounter_Set(ENEMY_INDEX.NOOB_TIME_TRIO,-1,battle_enemy_noob_time_trio,-1,"* You feel your skill issue coursing through your viens",-1);

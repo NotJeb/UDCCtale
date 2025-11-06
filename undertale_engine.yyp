@@ -529,6 +529,8 @@
     {"id":{"name":"snd_encounter_soul_move","path":"sounds/snd_encounter_soul_move/snd_encounter_soul_move.yy",},},
     {"id":{"name":"snd_exclamation","path":"sounds/snd_exclamation/snd_exclamation.yy",},},
     {"id":{"name":"snd_flee","path":"sounds/snd_flee/snd_flee.yy",},},
+    {"id":{"name":"snd_gb_charge","path":"sounds/snd_gb_charge/snd_gb_charge.yy",},},
+    {"id":{"name":"snd_gb_release","path":"sounds/snd_gb_release/snd_gb_release.yy",},},
     {"id":{"name":"snd_hurt","path":"sounds/snd_hurt/snd_hurt.yy",},},
     {"id":{"name":"snd_item_equip","path":"sounds/snd_item_equip/snd_item_equip.yy",},},
     {"id":{"name":"snd_item_heal","path":"sounds/snd_item_heal/snd_item_heal.yy",},},

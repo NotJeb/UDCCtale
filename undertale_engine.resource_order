@@ -418,6 +418,8 @@
     {"name":"snd_encounter_soul_move","order":47,"path":"sounds/snd_encounter_soul_move/snd_encounter_soul_move.yy",},
     {"name":"snd_exclamation","order":45,"path":"sounds/snd_exclamation/snd_exclamation.yy",},
     {"name":"snd_flee","order":13,"path":"sounds/snd_flee/snd_flee.yy",},
+    {"name":"snd_gb_charge","order":53,"path":"sounds/snd_gb_charge/snd_gb_charge.yy",},
+    {"name":"snd_gb_release","order":54,"path":"sounds/snd_gb_release/snd_gb_release.yy",},
     {"name":"snd_hurt","order":19,"path":"sounds/snd_hurt/snd_hurt.yy",},
     {"name":"snd_item_equip","order":33,"path":"sounds/snd_item_equip/snd_item_equip.yy",},
     {"name":"snd_item_heal","order":29,"path":"sounds/snd_item_heal/snd_item_heal.yy",},

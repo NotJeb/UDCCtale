@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_enemy_skelly_body, 3, x, y, 2, 2 + sin(siner / 120) * 0.1, 0, c_white, 1);
