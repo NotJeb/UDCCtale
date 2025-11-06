@@ -15,8 +15,8 @@ for (var i = -4; i < 5; i++) {
 		draw_set_color(c_white);
 	
 		// Wrap invalid values
-		var _battle_index = (_display_index + i) % (array_length(titles) - 1);
-		if (_battle_index < 0) _battle_index = (array_length(titles) - 1) + _battle_index;
+		var _battle_index = (_display_index + i) % array_length(titles);
+		if (_battle_index < 0) _battle_index = array_length(titles) + _battle_index;
 	
 		draw_set_halign(fa_middle);
 		draw_set_font(font_mars_needs_cunnilingus);
@@ -25,3 +25,11 @@ for (var i = -4; i < 5; i++) {
 		draw_set_alpha(1);
 	}
 }
+
+var _battle_index = selected_battle % array_length(titles);
+if (_battle_index < 0) _battle_index = array_length(titles) + _battle_index;
+	
+draw_set_halign(fa_middle);
+draw_set_font(font_mars_needs_cunnilingus);
+draw_text_ext_transformed(320, 340, descriptions[_battle_index], 20, 540 / 0.6, 0.6, 0.6, 0);
+draw_set_halign(fa_left);

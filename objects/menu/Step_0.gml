@@ -24,8 +24,8 @@ if (abs(selected_battle - selection_display) / 10 > 0.0001)
 	selection_display += (selected_battle - selection_display) / 10;
 
 if (Input_IsPressed(INPUT.CONFIRM)) {
-	var _battle_index = selected_battle % (array_length(titles) - 1);
-	if (_battle_index < 0) _battle_index = (array_length(titles) - 1) + _battle_index;
+	var _battle_index = selected_battle % array_length(titles);
+	if (_battle_index < 0) _battle_index = array_length(titles) + _battle_index;
 
 	Encounter_Start(battles[_battle_index]);
 }
