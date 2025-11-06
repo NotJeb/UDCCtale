@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Battle_BoardTransform",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_BoardTransform",
+  "parent":{
+    "name":"Board",
+    "path":"folders/Scripts/Battle/Board.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
