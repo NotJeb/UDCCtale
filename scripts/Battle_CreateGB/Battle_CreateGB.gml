@@ -18,7 +18,7 @@ function Battle_CreateGB(_start_x, _start_y, _start_angle, _end_x, _end_y, _end_
 	
 	_inst.alarm[1] = _move_time - 4; // Create GB beam, start GB head anim
 	
-	_inst.alarm[2] = _move_time + _shoot_time - 6; // Make beam go tranparent and shrink
+	_inst.alarm[2] = _move_time + _shoot_time - 8; // Make beam go tranparent and shrink
 	
 	_inst.alarm[3] = _move_time + _shoot_time; // Try to delete instance
 }

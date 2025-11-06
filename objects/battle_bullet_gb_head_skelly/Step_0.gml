@@ -7,8 +7,6 @@ if (mode == 2) {
 		gb_beam.x = x;
 		gb_beam.y = y;
 	}
-	gb_beam.image_xscale = beam_xscale;
-	gb_beam.image_alpha = image_alpha;
 	speed--;
 }
 
