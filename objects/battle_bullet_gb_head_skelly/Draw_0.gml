@@ -1,1 +1,1 @@
-draw_sprite_ext(spr_bullet_gb_head_skelly, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
+draw_self();

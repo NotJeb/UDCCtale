@@ -38,7 +38,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_bullet_gb_head_skelly",
+    "path":"sprites/spr_bullet_gb_head_skelly/spr_bullet_gb_head_skelly.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
