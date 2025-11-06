@@ -1,12 +1,12 @@
 for (var i = -4; i < 5; i++) {
-	var _display_index = (selection_display >= selected_battle) ? floor(selection_display) : ceil(selection_display) - 1;
+	var _display_index = (selection_display >= global.selected_battle) ? floor(selection_display) : ceil(selection_display) - 1;
 	
 	if (_display_index + i >= 1) {
 		var _display_offset = selection_display % 1;
 		var _x_center = 320 + (i - _display_offset) * 120;
 		var _y_center = 240 - power(abs(i - _display_offset), 2.5);
 	
-		if (_display_index + i == selected_battle) draw_set_color(c_yellow);
+		if (_display_index + i == global.selected_battle) draw_set_color(c_yellow);
 		
 		// Wrap invalid values
 		var _battle_index = (_display_index + i) % array_length(titles);
@@ -31,7 +31,7 @@ for (var i = -4; i < 5; i++) {
 	}
 }
 
-var _battle_index = selected_battle % array_length(titles);
+var _battle_index = global.selected_battle % array_length(titles);
 if (_battle_index < 0) _battle_index = array_length(titles) + _battle_index;
 	
 draw_set_halign(fa_middle);

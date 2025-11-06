@@ -38,6 +38,8 @@ instance_create_depth(0,0,0,debug);
 
 application_surface_draw_enable(false);
 
+Game_Load();
+
 //Border_SetEnabled(true);
 
 show_debug_message("UNDERTALE by Toby Fox");

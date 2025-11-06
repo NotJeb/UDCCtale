@@ -1,5 +1,4 @@
 function Player_CustomInitialData(){
-	Player_SetName("PLAYER");
 	Player_SetLv(1);
 	Player_SetHpMax(20);
 	Player_SetHp(20);

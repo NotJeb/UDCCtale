@@ -1,3 +1,5 @@
+Game_Save();
+
 Anim_Uninit();
 Dialog_Uninit();
 Item_Uninit();

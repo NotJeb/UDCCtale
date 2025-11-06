@@ -5,5 +5,6 @@ y1 = 0;
 x2 = 0;
 y2 = 0;
 color = c_red;
+sound = -1;
 
-audio_play_sound(snd_bonewarn, 0, 0);
+audio_play_sound(snd_warn, 0, 0);
