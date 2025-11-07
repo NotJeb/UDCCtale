@@ -12,4 +12,5 @@ function Encounter_Custom() {
 	Encounter_Set(ENEMY_INDEX.SHAUN_AND_MINUS,-1,battle_enemy_shaun_and_minus,-1,"* Important",-1);
 	Encounter_Set(ENEMY_INDEX.MAKER,-1,battle_enemy_maker,-1,"* Robot thing",-1);
 	Encounter_Set(ENEMY_INDEX.ENZO,-1,battle_enemy_enzo,-1,"* Omega peak",-1);
+	Encounter_Set(ENEMY_INDEX.DLECKON,-1,battle_enemy_dleckon,-1,"* DLLLLLLLLLLLLLLECKON",-1);
 }

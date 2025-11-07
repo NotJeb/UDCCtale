@@ -12,8 +12,6 @@ function Item_Custom(){
 	
 		// It's good practice to define a macro to make an alias for item type id.
 		// This helps you reference the item type id more quickly and eliminate potential typos.
-		#macro ITEM_DICE "dice"
-		itemTypes.Register(ITEM_DICE, new CustomItem_Dice());
 	
 		// See CustomItem_Stick for help of ItemTypeSimple, a helper item base code.
 		#macro ITEM_STICK "stick"
@@ -34,6 +32,21 @@ function Item_Custom(){
 		// See CustomItem_PhoneTML for phone item example.
 		#macro ITEM_PHONE_TML "phone_tml"
 		itemTypes.Register(ITEM_PHONE_TML, new CustomItem_Phone_TML());
+		
+		#macro ITEM_DLECKON_FISH_AND_CHIPS "dleckon_fish_and_chips"
+		itemTypes.Register(ITEM_DLECKON_FISH_AND_CHIPS, new CustomItem_Dleckon_FishAndChips());
+		
+		#macro ITEM_DLECKON_NOODLES "dleckon_noodles"
+		itemTypes.Register(ITEM_DLECKON_NOODLES, new CustomItem_Dleckon_Noodles());
+		
+		#macro ITEM_DLECKON_CHOCOLATE "dleckon_chocolate"
+		itemTypes.Register(ITEM_DLECKON_CHOCOLATE, new CustomItem_Dleckon_Chocolate());
+		
+		#macro ITEM_DLECKON_GHOST_ROBOTIC_SANDWICH "dleckon_ghost_robotic_sandwich"
+		itemTypes.Register(ITEM_DLECKON_GHOST_ROBOTIC_SANDWICH, new CustomItem_Dleckon_GhostRoboticSandwich());
+		
+		#macro ITEM_DLECKON_SPACE_CEREALS "dleckon_space_cereals"
+		itemTypes.Register(ITEM_DLECKON_SPACE_CEREALS, new CustomItem_Dleckon_SpaceCereals());
 	
 	}
 	

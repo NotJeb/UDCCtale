@@ -23,7 +23,7 @@ if (enabled) {
 					Battle_SetTurnNumber(Battle_GetTurnNumber() - 1);
 					audio_play_sound(snd_ding, 0, 0);
 				}
-				if (keyboard_check_pressed(vk_right) && Battle_GetTurnNumber() < 8) {
+				if (keyboard_check_pressed(vk_right) && Battle_GetTurnNumber() < battle_enemy.turn_count) {
 					Battle_SetTurnNumber(Battle_GetTurnNumber() + 1);
 					audio_play_sound(snd_ding, 0, 0);
 				}

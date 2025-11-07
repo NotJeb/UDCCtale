@@ -2,7 +2,7 @@
 ///@arg new_line*
 function Item_GetTextHeal() {
 	var HEAL=argument[0];
-	var LINE=true;
+	var LINE=false;
 	if(argument_count>=2){
 		LINE=argument[1];
 	}
