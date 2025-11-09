@@ -1,4 +1,6 @@
+///@desc Turn Start
+
 // Inherit the parent event
 event_inherited();
 
-siner++;
+Battle_SetTurnTime(1200);
