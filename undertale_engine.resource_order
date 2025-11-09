@@ -87,6 +87,7 @@
     {"name":"battle_soul_blue","order":4,"path":"objects/battle_soul_blue/battle_soul_blue.yy",},
     {"name":"battle_soul_red","order":3,"path":"objects/battle_soul_red/battle_soul_red.yy",},
     {"name":"battle_soul","order":1,"path":"objects/battle_soul/battle_soul.yy",},
+    {"name":"battle_turn_kacpii_1","order":1,"path":"objects/battle_turn_kacpii_1/battle_turn_kacpii_1.yy",},
     {"name":"battle_turn","order":1,"path":"objects/battle_turn/battle_turn.yy",},
     {"name":"battle_ui","order":5,"path":"objects/battle_ui/battle_ui.yy",},
     {"name":"battle_warning","order":5,"path":"objects/battle_warning/battle_warning.yy",},

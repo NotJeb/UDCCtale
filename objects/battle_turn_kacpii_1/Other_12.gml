@@ -1,5 +1,6 @@
+///@desc Turn Start
+
 // Inherit the parent event
 event_inherited();
 
-_enemy_name = ENEMY_NAME_KACPII;
-turn_count = 2;
+Battle_SetTurnTime(1200);

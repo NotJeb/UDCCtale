@@ -1,9 +1,9 @@
-function Battle_CreateGB(_start_x, _start_y, _start_angle, _end_x, _end_y, _end_angle, _move_time, _shoot_time, _xscale = 1, _yscale = 2) {
+function Battle_CreateGB(_start_x, _start_y, _start_angle, _end_x, _end_y, _end_angle, _move_time, _shoot_time, _xscale = 1, _yscale = 2, _gb_type = battle_enemy._enemy_name) {
 	if (_move_time < 13) return show_debug_message($"GB at {_start_x}, {_start_y} with _move_time {_move_time} not created, please use a _move_time of at least 13.");
 	if (_shoot_time < 4) return show_debug_message($"GB at {_start_x}, {_start_y} with _shoot_time {_shoot_time} not created, please use a _move_time of at least 4.");
 	
 	// Change GB depending on who's fight it is
-	var _obj = asset_get_index("battle_bullet_gb_head_" + battle_enemy._enemy_name);
+	var _obj = asset_get_index("battle_bullet_gb_head_" + _gb_type);
 	
 	// Create initial GB instance
 	var _inst = instance_create_depth(_start_x, _start_y, DEPTH_BATTLE.BULLET_OUTSIDE_HIGH, _obj);
