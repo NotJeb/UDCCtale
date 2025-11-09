@@ -3,3 +3,4 @@ _enemy_slot=-1;
 _enemy_name="";
 follow_board = true;
 turn_count = 0;
+time_sources = [];

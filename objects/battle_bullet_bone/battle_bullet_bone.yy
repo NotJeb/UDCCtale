@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bullet_bone1",
-    "path":"sprites/spr_bullet_bone1/spr_bullet_bone1.yy",
+    "name":"spr_bullet_bone",
+    "path":"sprites/spr_bullet_bone/spr_bullet_bone.yy",
   },
   "spriteMaskId":null,
   "visible":true,

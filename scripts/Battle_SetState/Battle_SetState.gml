@@ -60,6 +60,10 @@ function Battle_SetState() {
 	
 		Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.BOARD_RESETTING_START);
 	}
+	
+	if (STATE == BATTLE_STATE.CUTSCENE) {
+		
+	}
 
 	return true;
 

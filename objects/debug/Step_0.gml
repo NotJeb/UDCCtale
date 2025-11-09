@@ -23,7 +23,7 @@ if (enabled) {
 					Battle_SetTurnNumber(Battle_GetTurnNumber() - 1);
 					audio_play_sound(snd_ding, 0, 0);
 				}
-				if (keyboard_check_pressed(vk_right) && Battle_GetTurnNumber() < battle_enemy.turn_count) {
+				if (keyboard_check_pressed(vk_right) && Battle_GetTurnNumber() < battle_enemy.turn_count - 1) {
 					Battle_SetTurnNumber(Battle_GetTurnNumber() + 1);
 					audio_play_sound(snd_ding, 0, 0);
 				}
@@ -35,7 +35,9 @@ if (enabled) {
 			Debug_EndTurn();
 			
 			Battle_SetTurnNumber(Battle_GetTurnNumber() - 1);
+			
 			Battle_SetState(BATTLE_STATE.TURN_PREPARATION);
+			Battle_SetMenu(-1, false);
 			
 			Battle_SetSoul(battle_soul_red);
 			Player_Heal(99999);

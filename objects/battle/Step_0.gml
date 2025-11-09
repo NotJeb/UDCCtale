@@ -295,3 +295,7 @@ if(_state!=BATTLE_STATE.RESULT && Battle_GetEnemyNumber()==0){
 	text+="{pause}{end}";
 	Battle_SetDialog(text);
 }
+
+if (_state == BATTLE_STATE.CUTSCENE) {
+	
+}
