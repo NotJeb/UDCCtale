@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"battle_enemy_playerut",
+  "%Name":"battle_turn_playerut_0",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":12,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"battle_enemy_playerut",
+  "name":"battle_turn_playerut_0",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemy",
-    "path":"folders/Objects/Battle/Enemy.yy",
+    "name":"PlayerUT19",
+    "path":"folders/Objects/Battle/Turn/PlayerUT19.yy",
   },
   "parentObjectId":{
-    "name":"battle_enemy",
-    "path":"objects/battle_enemy/battle_enemy.yy",
+    "name":"battle_turn",
+    "path":"objects/battle_turn/battle_turn.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

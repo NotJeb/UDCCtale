@@ -3,6 +3,9 @@ function Battle_SetSoul() {
 	var SOUL=argument[0];
 
 	if(Battle_IsSoulValid(SOUL)&&object_exists(SOUL)){
+		if (instance_exists(SOUL))
+			return true;
+			
 		var X=0;
 		var Y=0;
 		if(instance_exists(battle_soul)){

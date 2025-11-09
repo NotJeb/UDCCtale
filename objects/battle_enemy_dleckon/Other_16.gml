@@ -7,7 +7,7 @@ switch (Battle_GetMenuChoiceButton()) {
 	case BATTLE_MENU_CHOICE_BUTTON.ACT:
 		switch (Battle_GetMenuChoiceAction()) {
 			case 0:
-				Dialog_Add("* Dleckon - 270 ATK 340 DEF{sleep 10}&  The strongest monster that has&  ever been in the underground.{pause}{clear}* Holds an imaginable amount of&  power.");
+				Dialog_Add("* Dleckon - 270 ATK 340 DEF{sleep 10}&  The strongest monster that has&  ever been in the underground.{pause}{clear}* Holds an unimaginable amount of&  power.");
 				break;
 		}
 		break;

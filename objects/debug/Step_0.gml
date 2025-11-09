@@ -34,7 +34,8 @@ if (enabled) {
 		if (keyboard_check_pressed(ord("R"))) {
 			Debug_EndTurn();
 			
-			Battle_SetTurnNumber(Battle_GetTurnNumber() - 1);
+			if (Battle_GetTurnNumber() < battle_enemy.turn_count - 1)
+				Battle_SetTurnNumber(Battle_GetTurnNumber() - 1);
 			
 			Battle_SetState(BATTLE_STATE.TURN_PREPARATION);
 			Battle_SetMenu(-1, false);
