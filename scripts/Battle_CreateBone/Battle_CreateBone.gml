@@ -3,6 +3,7 @@ function Battle_CreateBone(_x, _y, _length, _angle, _color = 0, _time = 0, _orig
 	_inst.length = _length;
 	_inst.angle = _angle;
 	_inst.color = _color;
+	_inst.image_blend = (_color == 0) ? c_white : ((_color == 1) ? make_color_rgb(20, 196, 255) : make_color_rgb(248, 148, 29));
 	_inst.alarm[0] = _time;
 	_inst.origin = _origin;
 	
