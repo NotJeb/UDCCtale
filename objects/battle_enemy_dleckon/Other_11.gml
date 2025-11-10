@@ -12,6 +12,10 @@ battle_soul.visible = false;
 battle_button.visible = false;
 battle_ui.visible = false;
 
+draw_set_font(font_mars_needs_cunnilingus);
+var _text = instance_create_depth(320 - string_width("Bottom Text ") / 2, 320, 0, text_typer);
+_text.text = "{scale 2}{voice 1}{speed 2}{shadow true}{gui false}{depth "+string(DEPTH_BATTLE.UI_HIGH)+"}{speed 50}Bottom Text";
+
 var _event_cutscene_0 = function() {
 	Anim_Create(id, "effect_intensity", 0, 0, 0, 1, 240);
 	alarm[0] = 60;
@@ -29,6 +33,7 @@ var _event_cutscene_2 = function() {
 	battle_button.visible = true;
 	battle_ui.visible = true;
 	fader.alpha = 0;
+	instance_destroy(text_typer);
 	
 	Battle_SetState(BATTLE_STATE.MENU);
 }

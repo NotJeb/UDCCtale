@@ -11,6 +11,8 @@ if (Battle_GetState() == BATTLE_STATE.CUTSCENE && Input_IsPressed(INPUT.MENU)) {
 	fader.alpha = 0;
 	alarm[0] = 1;
 	effect_intensity = 1;
+	instance_destroy(text_typer);
+	
 	Battle_SetState(BATTLE_STATE.MENU);
 	audio_sound_set_track_position(bgm, 1100 / 60);
 	

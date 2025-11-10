@@ -9,6 +9,7 @@ Battle_SetEnemyActionNumber(_enemy_slot, 1);
 Battle_SetEnemyActionName(_enemy_slot, 0, "* Check");
 
 Battle_SetMenuMercyFleeEnabled(false);
+Battle_SetEnemyCenterPos(_enemy_slot, x, y - 130);
 
 Player_SetHpMax(44);
 Player_SetHp(44);
