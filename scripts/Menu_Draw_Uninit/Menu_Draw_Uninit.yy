@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Menu_Draw_Uninit",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Menu_Draw_Uninit",
+  "parent":{
+    "name":"Menu",
+    "path":"folders/Scripts/Menu.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

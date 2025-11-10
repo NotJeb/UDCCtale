@@ -3,8 +3,8 @@ for (var i = -4; i < 5; i++) {
 	
 	if (_display_index + i >= 1) {
 		var _display_offset = selection_display % 1;
-		var _x_center = 320 + (i - _display_offset) * 120;
-		var _y_center = 240 - power(abs(i - _display_offset), 2.5);
+		var _x_center = x + (i - _display_offset) * 120;
+		var _y_center = y - power(abs(i - _display_offset), 2.5);
 	
 		if (_display_index + i == global.selected_battle) draw_set_color(c_yellow);
 		
@@ -36,5 +36,5 @@ if (_battle_index < 0) _battle_index = array_length(titles) + _battle_index;
 	
 draw_set_halign(fa_middle);
 draw_set_font(font_mars_needs_cunnilingus);
-draw_text_ext_transformed(320, 340, descriptions[_battle_index], 20, 540 / 0.6, 0.6, 0.6, 0);
+draw_text_ext_transformed(x, y + 100, descriptions[_battle_index], 20, 540 / 0.6, 0.6, 0.6, 0);
 draw_set_halign(fa_left);

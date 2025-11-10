@@ -1,0 +1,1 @@
+_menu = (Player_GetName() == "" ? menu_name : menu_battle_selector);

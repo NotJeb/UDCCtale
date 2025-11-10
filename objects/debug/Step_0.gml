@@ -1,4 +1,4 @@
-if (enabled) {
+if (world.settings.debug) {
 	
 	// Shift + arrows to change speed
 	if (keyboard_check(vk_shift)) {

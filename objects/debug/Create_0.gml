@@ -1,5 +1,3 @@
-developer_mode = true; // Hi turn this on if you wanna mod the game :3
-enabled = developer_mode;
 effects = true;
 fps_drop_alpha = 0;
 refresh_screen_timer = 0;

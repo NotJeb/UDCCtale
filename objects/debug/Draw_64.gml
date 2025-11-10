@@ -1,4 +1,4 @@
-if (enabled) {
+if (world.settings.debug) {
 	Debug_TextY(0);
 	Debug_TextY(1, true);
 	Debug_TextY(2, false, battle, "_turn_number");

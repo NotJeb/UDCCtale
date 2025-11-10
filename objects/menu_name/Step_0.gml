@@ -18,7 +18,6 @@ else if (selected_option == 1) {
 	if (Input_IsPressed(INPUT.CONFIRM) && string_length(name) > 0) {
 		audio_play_sound(snd_menu_confirm, 0, 0);
 		Player_SetName(name);
-		instance_create_depth(0, 0, 0, menu_battle_selector);
 		instance_destroy();
 	}
 }
