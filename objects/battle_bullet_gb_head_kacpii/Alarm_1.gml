@@ -1,10 +1,10 @@
 mode = 2;
 direction = angle;
-image_index = 1;
+image_index = 4;
 gb_beam = instance_create_depth(x, y, depth, battle_bullet_gb_beam);
-gb_beam.image_yscale = image_yscale;
-gb_beam.image_angle = image_angle;
-gb_beam.parent_size = image_xscale * (65 / 16);
+gb_beam.image_yscale = image_xscale;
+gb_beam.image_angle = angle + 90;
+gb_beam.parent_size = image_yscale * (92 / 16);
 gb_beam.alarm[0] = 8;
 gb_beam.alarm[1] = 8 + floor(shoot_time / 2);
 audio_play_sound(snd_gb_release, 0, 0);

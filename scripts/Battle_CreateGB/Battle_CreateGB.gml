@@ -7,7 +7,7 @@ function Battle_CreateGB(_start_x, _start_y, _start_angle, _end_x, _end_y, _end_
 	
 	// Create initial GB instance
 	var _inst = instance_create_depth(_start_x, _start_y, DEPTH_BATTLE.BULLET_OUTSIDE_HIGH, _obj);
-	_inst.image_angle = _start_angle + 90;
+	_inst.angle = _start_angle;
 	_inst.image_xscale = _xscale;
 	_inst.image_yscale = _yscale;
 	_inst.shoot_time = _shoot_time;
@@ -15,7 +15,7 @@ function Battle_CreateGB(_start_x, _start_y, _start_angle, _end_x, _end_y, _end_
 	// Move GB to end position
 	Anim_Create(_inst, "x", ANIM_TWEEN.SINE, ANIM_EASE.OUT, _start_x, _end_x - _start_x, _move_time - 10);
 	Anim_Create(_inst, "y", ANIM_TWEEN.SINE, ANIM_EASE.OUT, _start_y, _end_y - _start_y, _move_time - 10);
-	Anim_Create(_inst, "image_angle", ANIM_TWEEN.SINE, ANIM_EASE.OUT, _start_angle + 90, _end_angle - _start_angle, _move_time - 10);
+	Anim_Create(_inst, "angle", ANIM_TWEEN.SINE, ANIM_EASE.OUT, _start_angle, _end_angle - _start_angle, _move_time - 10);
 	
 	_inst.alarm[0] = _move_time - 12; // Open GB head
 	

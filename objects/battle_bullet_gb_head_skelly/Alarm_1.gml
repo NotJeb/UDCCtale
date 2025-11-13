@@ -1,5 +1,5 @@
 mode = 2;
-direction = image_angle - 90;
+direction = angle;
 gb_beam = instance_create_depth(x, y, depth, battle_bullet_gb_beam);
 gb_beam.image_yscale = image_yscale;
 gb_beam.image_angle = image_angle;

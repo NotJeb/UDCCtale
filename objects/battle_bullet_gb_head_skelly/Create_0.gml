@@ -5,6 +5,7 @@ angle_target = 0;
 beam_xscale = 0;
 gb_beam = noone;
 shoot_time = 0;
+angle = 0;
 
 image_speed = 0;
 

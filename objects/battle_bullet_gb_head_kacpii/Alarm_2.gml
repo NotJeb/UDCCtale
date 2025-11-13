@@ -1,0 +1,1 @@
+gb_beam.mode = 3;

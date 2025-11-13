@@ -2,10 +2,10 @@ if (world.settings.debug) {
 	
 	// Shift + arrows to change speed
 	if (keyboard_check(vk_shift)) {
-		if (keyboard_check_pressed(vk_left) && game_get_speed(gamespeed_fps) > 15)
-			game_set_speed(game_get_speed(gamespeed_fps) - 15, gamespeed_fps);
+		if (keyboard_check_pressed(vk_left) && game_get_speed(gamespeed_fps) > 5)
+			game_set_speed(game_get_speed(gamespeed_fps) - 5, gamespeed_fps);
 		if (keyboard_check_pressed(vk_right))
-			game_set_speed(game_get_speed(gamespeed_fps) + 15, gamespeed_fps);
+			game_set_speed(game_get_speed(gamespeed_fps) + 5, gamespeed_fps);
 	}
 
 	if (room == room_battle) {
