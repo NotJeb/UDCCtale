@@ -1,19 +1,20 @@
 function Macro_Enemy(){
 	enum ENEMY_INDEX {
-		SKELLY = 0,
-		TRIZER = 1,
-		CANDLE_AND_MOSS = 2,
-		NOOB_TIME_TRIO = 3,
-		DFW = 4,
-		KACPII = 5,
-		NATO = 6,
-		HUGOSIMPSON = 7,
-		CHEESY = 8,
-		PLAYERUT = 9,
-		SHAUN_AND_MINUS = 10,
-		MAKER = 11,
-		ENZO = 12,
-		DLECKON = 13
+		SKELLY,
+		TRIZER,
+		CANDLE_AND_MOSS,
+		NOOB_TIME_TRIO,
+		DFW,
+		KACPII,
+		NATO,
+		HUGOSIMPSON,
+		CHEESY,
+		PLAYERUT,
+		SHAUN_AND_MINUS,
+		MAKER,
+		ENZO,
+		DLECKON,
+		CLONETAILS
 	};
 	
 #macro ENEMY_NAME_SKELLY "skelly"
@@ -30,6 +31,7 @@ function Macro_Enemy(){
 #macro ENEMY_NAME_MAKER "maker"
 #macro ENEMY_NAME_ENZO "enzo"
 #macro ENEMY_NAME_DLECKON "dleckon"
+#macro ENEMY_NAME_CLONETAILS "clonetails"
 	
 #macro ENEMY_TITLE_SKELLY "Skelly"
 #macro ENEMY_TITLE_TRIZER "Trizer"
@@ -45,6 +47,7 @@ function Macro_Enemy(){
 #macro ENEMY_TITLE_MAKER "Maker19"
 #macro ENEMY_TITLE_ENZO "Omega Enzo"
 #macro ENEMY_TITLE_DLECKON "Dleckon"
+#macro ENEMY_TITLE_CLONETAILS "Clonetails"
 
 #macro ENEMY_DESCRIPTION_SKELLY "This is a super long description about Skelly's fight as a placeholder to demostrate what the descriptions look like. Also Edgetale is peak and you can't tell me otherwise plus Shanghaivania No Hit is actually expert and Edgetale 3rd Run No Hit is actually Beginner because I said so and I'm great at writing run on sentences as you can see, also I'm not sure if this is long enough yet but I'll just delete whatever's unnecessary or too long to actually fit whatever I make the size of the description area be, anyways hopefully this is long enough bye."
 #macro ENEMY_DESCRIPTION_TRIZER "This is a super long description about Trizer's fight as a placeholder to demostrate what the descriptions look like. Also Edgetale is peak and you can't tell me otherwise plus Shanghaivania No Hit is actually expert and Edgetale 3rd Run No Hit is actually Beginner because I said so and I'm great at writing run on sentences as you can see, also I'm not sure if this is long enough yet but I'll just delete whatever's unnecessary or too long to actually fit whatever I make the size of the description area be, anyways hopefully this is long enough bye."
@@ -60,4 +63,5 @@ function Macro_Enemy(){
 #macro ENEMY_DESCRIPTION_MAKER "Maker19 words that are longer than previous words don't exist"
 #macro ENEMY_DESCRIPTION_ENZO "Omega Enzo is also peak"
 #macro ENEMY_DESCRIPTION_DLECKON "Dleckontrust dleckon's your trust until you're genocides"
+#macro ENEMY_DESCRIPTION_CLONETAILS "I still dunno what this fight is"
 }
