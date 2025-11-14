@@ -41,6 +41,14 @@ switch (_menu) {
 				else if (Input_IsPressed(INPUT.RIGHT))
 					world.settings.no_heal = true;
 				break;
+			case 4:
+				if (Input_IsPressed(INPUT.CONFIRM))
+					world.settings.fast_reset = !world.settings.fast_reset;
+				else if (Input_IsPressed(INPUT.LEFT))
+					world.settings.fast_reset = false;
+				else if (Input_IsPressed(INPUT.RIGHT))
+					world.settings.fast_reset = true;
+				break;
 		}
 		break;
 }

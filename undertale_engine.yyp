@@ -281,6 +281,7 @@
     {"id":{"name":"Battle_EndTurnPreparation","path":"scripts/Battle_EndTurnPreparation/Battle_EndTurnPreparation.yy",},},
     {"id":{"name":"Battle_FadeFader","path":"scripts/Battle_FadeFader/Battle_FadeFader.yy",},},
     {"id":{"name":"Battle_Flash","path":"scripts/Battle_Flash/Battle_Flash.yy",},},
+    {"id":{"name":"Battle_Gameover","path":"scripts/Battle_Gameover/Battle_Gameover.yy",},},
     {"id":{"name":"Battle_GetBoardSurface","path":"scripts/Battle_GetBoardSurface/Battle_GetBoardSurface.yy",},},
     {"id":{"name":"Battle_GetEnemy","path":"scripts/Battle_GetEnemy/Battle_GetEnemy.yy",},},
     {"id":{"name":"Battle_GetEnemyActionName","path":"scripts/Battle_GetEnemyActionName/Battle_GetEnemyActionName.yy",},},

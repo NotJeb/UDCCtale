@@ -6,6 +6,7 @@ settings = {
 	debug : false,
 	no_hit : false,
 	no_heal : false,
+	fast_reset : false,
 	effects : 2,
 	bgm_volume : 100,
 	sfx_volume : 100,

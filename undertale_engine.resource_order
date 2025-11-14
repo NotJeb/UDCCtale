@@ -174,6 +174,7 @@
     {"name":"Battle_EndTurnPreparation","order":21,"path":"scripts/Battle_EndTurnPreparation/Battle_EndTurnPreparation.yy",},
     {"name":"Battle_FadeFader","order":3,"path":"scripts/Battle_FadeFader/Battle_FadeFader.yy",},
     {"name":"Battle_Flash","order":4,"path":"scripts/Battle_Flash/Battle_Flash.yy",},
+    {"name":"Battle_Gameover","order":10,"path":"scripts/Battle_Gameover/Battle_Gameover.yy",},
     {"name":"Battle_GetBoardSurface","order":1,"path":"scripts/Battle_GetBoardSurface/Battle_GetBoardSurface.yy",},
     {"name":"Battle_GetEnemy","order":5,"path":"scripts/Battle_GetEnemy/Battle_GetEnemy.yy",},
     {"name":"Battle_GetEnemyActionName","order":1,"path":"scripts/Battle_GetEnemyActionName/Battle_GetEnemyActionName.yy",},

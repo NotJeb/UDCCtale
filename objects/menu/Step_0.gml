@@ -4,22 +4,21 @@ if (!instance_exists(_menu))
 if (_menu == menu_battle_selector) {
 	visible = true;
 	sprite_index = spr_menu_settings;
+	
+	if ((mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, id)) || Input_IsPressed(INPUT.MENU)) {
+		instance_destroy(_menu);
+		_menu = menu_settings;
+	}
 }
 else if (_menu == menu_settings) {
 	visible = true;
 	sprite_index = spr_menu_back;
-}
-else {
-	visible = false;
-}
-
-if (mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, id)) {
-	if (_menu == menu_battle_selector) {
-		instance_destroy(_menu);
-		_menu = menu_settings;
-	}
-	else if (_menu == menu_settings) {
+	
+	if ((mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, id)) || Input_IsPressed(INPUT.CANCEL)) {
 		instance_destroy(_menu);
 		_menu = menu_battle_selector;
 	}
+}
+else {
+	visible = false;
 }
