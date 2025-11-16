@@ -16,18 +16,18 @@ if (time == 390) {
 	Battle_SetSoul(battle_soul_red);
 	audio_play_sound(snd_ding, 0, 0);
 }
-if (Battle_Repeat(400, 520, 30)) {
-	var _bone0 = Battle_CreateBone(bb.x - 70, bb.y - 70, 70, 90, 0, 40);
+if (Battle_Repeat(405, 525, 30)) {
+	var _bone0 = Battle_CreateBone(bb.x - 75, bb.y - 70, 75, 90, 0, 40);
 	Anim_Create(_bone0, "y", 0, 0, bb.y - 70, 140, 40);
 	
-	var _bone1 = Battle_CreateBone(bb.x + 70, bb.y + 70, 70, 270, 0, 40);
+	var _bone1 = Battle_CreateBone(bb.x + 75, bb.y + 70, 75, 270, 0, 40);
 	Anim_Create(_bone1, "y", 0, 0, bb.y + 70, -140, 40);
 }
-if (time == 550) {
-	var _bone0 = Battle_CreateBone(bb.x + 70, bb.y - 70, 70, 270, 0, 40);
+if (time == 555) {
+	var _bone0 = Battle_CreateBone(bb.x + 75, bb.y - 70, 75, 270, 0, 40);
 	Anim_Create(_bone0, "y", 0, 0, bb.y - 70, 140, 40);
 	
-	var _bone1 = Battle_CreateBone(bb.x - 70, bb.y + 70, 70, 90, 0, 40);
+	var _bone1 = Battle_CreateBone(bb.x - 75, bb.y + 70, 75, 90, 0, 40);
 	Anim_Create(_bone1, "y", 0, 0, bb.y + 70, -140, 40);
 }
 if (time == 580) {
@@ -79,14 +79,14 @@ if (Battle_Repeat(633, 783, 6)) {
 	_bone1.out = true;
 }
 if (time == 900) {
-	bs.move = abs((bb.x + 65 - bs.x) / 10);
+	bs.move = abs((bb.x + 65 - bs.x) / 20);
 	
-	Battle_BoardTransform(50, 50, 335, 65, bb.x, bb.y, 10, {tween : 0, ease : 0});
+	Battle_BoardTransform(50, 50, 335, 65, bb.x, bb.y, 20, {tween : 0, ease : 0});
 }
-if (time == 920) {
+if (time == 930) {
 	Battle_Flash();
 }
-if (time == 939) {
+if (time == 949) {
 	Battle_BoardTransform(65, 65, 65, 65, bb.x, bb.y, 0);
 	
 	Battle_SetSoul(battle_soul_red);
@@ -94,8 +94,8 @@ if (time == 939) {
 	bs.x = bb.x;
 	bs.y = bb.y;
 }
-if (Battle_Repeat(940, 1390, 4)) {
-	var _siner = ((time - 940) / 4) * (pi / 8);
+if (Battle_Repeat(950, 1400, 4)) {
+	var _siner = ((time - 950) / 4) * (pi / 8);
 	var _x_start = bb.x + cos(_siner) * 450;
 	var _y_start = bb.y + sin(_siner) * 450;
 	var _x_end = bb.x + cos(_siner) * 100;
@@ -103,9 +103,9 @@ if (Battle_Repeat(940, 1390, 4)) {
 	var _angle = point_direction(_x_end, _y_end, bb.x, bb.y);
 	Battle_CreateGB(_x_start, _y_start, -_angle, _x_end, _y_end, _angle, 40, 20, 1, 2, ENEMY_NAME_SKELLY);
 }
-if (Battle_Repeat(1390, 1840, 4)) {
+if (Battle_Repeat(1400, 1850, 4)) {
 	for (var i = 0; i < 2; i++) { 
-		var _siner = ((time - 940) / 4) * (-pi / 16) + (i == 0 ? pi / 2 : 0);
+		var _siner = ((time - 950) / 4) * (-pi / 16) + (i == 0 ? pi / 2 : 0);
 		var _x_start = bb.x + cos(_siner) * 450;
 		var _y_start = bb.y + sin(_siner) * 450;
 		var _x_end = bb.x + cos(_siner) * 100;
@@ -114,7 +114,7 @@ if (Battle_Repeat(1390, 1840, 4)) {
 		Battle_CreateGB(_x_start, _y_start, -_angle, _x_end, _y_end, _angle, 40, 20, 1, 2, ENEMY_NAME_SKELLY);
 	}
 }
-if (time == 1895) {
+if (time == 1905) {
 	Battle_SetSoul(battle_soul_blue);
 	alarm[0] = 1;
 }

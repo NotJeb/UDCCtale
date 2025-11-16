@@ -1,4 +1,4 @@
-var _time = 11 + ((time - 1895) / 600) * 50;
+var _time = 11 + ((time - 1905) / 600) * 50;
 
 if (time + _time < 2495) {
 	var _dir = [DIR.UP, DIR.DOWN, DIR.LEFT, DIR.RIGHT];
