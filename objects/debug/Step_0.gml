@@ -31,7 +31,7 @@ if (world.settings.debug) {
 		}
 	
 		// R to restart turn
-		if (keyboard_check_pressed(ord("R"))) {
+		if (keyboard_check_pressed(ord("R")) && Battle_GetState() != BATTLE_STATE.TURN_PREPARATION) {
 			Debug_EndTurn();
 			
 			if (Battle_GetTurnNumber() < battle_enemy.turn_count - 1)
