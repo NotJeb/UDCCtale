@@ -30,3 +30,5 @@ for (var i = 0; i < array_length(enemy.name); i++) {
 		no_hit : false
 	}
 }
+
+notifications = [];
