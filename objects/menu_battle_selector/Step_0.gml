@@ -27,7 +27,5 @@ if (Input_IsPressed(INPUT.CONFIRM)) {
 	var _battle_index = global.selected_battle % array_length(world.enemy.title);
 	if (_battle_index < 0) _battle_index = array_length(world.enemy.title) + _battle_index;
 	
-	Game_Save();
-	
 	Encounter_Start(world.enemy.encounter[_battle_index]);
 }

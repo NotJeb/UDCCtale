@@ -21,12 +21,13 @@ for (var i = -4; i < 5; i++) {
 		draw_set_color(c_white);
 		
 		var _badges = world.badges[_battle_index];
+		var _color = make_color_hsv(0, 0, 255 * _alpha);
 		if (_badges.no_hit)
-			draw_sprite_ext(spr_badge, 2, _x_center - 48, _y_center - 48, 1, 1, 0, c_white, _alpha);
+			draw_sprite_ext(spr_badge, 2, _x_center - 49, _y_center - 49, 1, 1, 0, _color, 1);
 		else if (_badges.no_heal)
-			draw_sprite_ext(spr_badge, 1, _x_center - 48, _y_center - 48, 1, 1, 0, c_white, _alpha);
+			draw_sprite_ext(spr_badge, 1, _x_center - 49, _y_center - 49, 1, 1, 0, _color, 1);
 		else if (_badges.completion)
-			draw_sprite_ext(spr_badge, 0, _x_center - 48, _y_center - 48, 1, 1, 0, c_white, _alpha);
+			draw_sprite_ext(spr_badge, 0, _x_center - 49, _y_center - 49, 1, 1, 0, _color, 1);
 		
 		var _sprite = asset_get_index($"spr_menu_{world.enemy.name[_battle_index]}");
 		if (!sprite_exists(_sprite)) _sprite = spr_menu_empty;
