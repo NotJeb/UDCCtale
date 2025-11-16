@@ -1,6 +1,6 @@
 function Battle_EndTurn() {
 	if(Battle_GetState()==BATTLE_STATE.IN_TURN){
-		if (Battle_GetTurnNumber() < battle_enemy.turn_count - 1)
+		if (Battle_GetTurnNumber() < battle_enemy.turn_count)
 			Battle_SetTurnNumber(Battle_GetTurnNumber()+1);
 	
 		/*var LAST=Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy());

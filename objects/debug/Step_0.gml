@@ -23,7 +23,7 @@ if (world.settings.debug) {
 					Battle_SetTurnNumber(Battle_GetTurnNumber() - 1);
 					audio_play_sound(snd_ding, 0, 0);
 				}
-				if (keyboard_check_pressed(vk_right) && Battle_GetTurnNumber() < battle_enemy.turn_count - 1) {
+				if (keyboard_check_pressed(vk_right) && Battle_GetTurnNumber() < battle_enemy.turn_count) {
 					Battle_SetTurnNumber(Battle_GetTurnNumber() + 1);
 					audio_play_sound(snd_ding, 0, 0);
 				}
@@ -34,8 +34,7 @@ if (world.settings.debug) {
 		if (keyboard_check_pressed(ord("R")) && Battle_GetState() != BATTLE_STATE.TURN_PREPARATION) {
 			Debug_EndTurn();
 			
-			if (Battle_GetTurnNumber() < battle_enemy.turn_count - 1)
-				Battle_SetTurnNumber(Battle_GetTurnNumber() - 1);
+			Battle_SetTurnNumber(Battle_GetTurnNumber() - 1);
 			
 			Battle_SetState(BATTLE_STATE.TURN_PREPARATION);
 			Battle_SetMenu(-1, false);
