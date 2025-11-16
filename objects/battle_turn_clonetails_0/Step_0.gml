@@ -25,35 +25,35 @@ if (time == 60) {
 	Battle_SetSoul(battle_soul_red);
 	audio_play_sound(snd_ding, 0, 0);
 }
-if (Battle_Repeat(60, 180, 4)) {
-	var _length = sin((time - 60) * (pi / 20)) * 25;
+if (Battle_Repeat(60, 180, 5)) {
+	var _length = sin((time - 60) * (pi / 25)) * 20;
 	
-	var _bone0 = Battle_CreateBone(bb.x + 70, bb.y - 75, 59 + _length, 180, 0, 20);
-	Anim_Create(_bone0, "x", 0, 0, bb.x + 70, -140, 20);
+	var _bone0 = Battle_CreateBone(bb.x + 70, bb.y - 75, 59 + _length, 180, 0, 30);
+	Anim_Create(_bone0, "x", 0, 0, bb.x + 70, -140, 30);
 	
-	var _bone1 = Battle_CreateBone(bb.x + 70, bb.y + 75, 59 - _length, 0, 0, 20);
-	Anim_Create(_bone1, "x", 0, 0, bb.x + 70, -140, 20);
+	var _bone1 = Battle_CreateBone(bb.x + 70, bb.y + 75, 59 - _length, 0, 0, 30);
+	Anim_Create(_bone1, "x", 0, 0, bb.x + 70, -140, 30);
 }
-if (Battle_Repeat(195, 315, 4)) {
-	var _length = sin((time - 60) * (pi / 20)) * 25;
+if (Battle_Repeat(195, 315, 5)) {
+	var _length = sin((time - 60) * (pi / 25)) * 20;
 	
-	var _bone0 = Battle_CreateBone(bb.x - 70, bb.y - 75, 59 + _length, 180, 0, 20);
-	Anim_Create(_bone0, "x", 0, 0, bb.x - 70, 140, 20);
+	var _bone0 = Battle_CreateBone(bb.x - 70, bb.y - 75, 59 + _length, 180, 0, 30);
+	Anim_Create(_bone0, "x", 0, 0, bb.x - 70, 140, 30);
 
-	var _bone1 = Battle_CreateBone(bb.x - 70, bb.y + 75, 59 - _length, 0, 0, 20);
-	Anim_Create(_bone1, "x", 0, 0, bb.x - 70, 140, 20);
+	var _bone1 = Battle_CreateBone(bb.x - 70, bb.y + 75, 59 - _length, 0, 0, 30);
+	Anim_Create(_bone1, "x", 0, 0, bb.x - 70, 140, 30);
 }
-if (Battle_Repeat(187, 287, 20)) {
+if (Battle_Repeat(197, 297, 25)) {
 	for (var i = 0; i < 2; i++) {
-		var _bone0 = Battle_CreateBone(bb.x - 70 - i * 12, bb.y + 65, 130, 0, 1, 25);
-		Anim_Create(_bone0, "x", 0, 0, bb.x - 70 - i * 12, 152, 25);
+		var _bone0 = Battle_CreateBone(bb.x - 70 - i * 12, bb.y + 65, 130, 0, 1, 30);
+		Anim_Create(_bone0, "x", 0, 0, bb.x - 70 - i * 12, 152, 30);
 	}
 }
 if (time == 310) {
-	var _gb0 = Battle_CreateGB(bb.x - 370, bb.y + 370, 45 + 180, bb.x - 100, bb.y + 100, 45, 30, 10, 40, 2, 2, ENEMY_NAME_SKELLY);
-	var _gb1 = Battle_CreateGB(bb.x + 370, bb.y + 370, 135 + 180, bb.x + 100, bb.y + 100, 135, 30, 10, 40, 2, 2, ENEMY_NAME_SKELLY);
-	var _gb2 = Battle_CreateGB(bb.x + 370, bb.y - 370, 225 + 180, bb.x + 100, bb.y - 100, 225, 30, 10, 40, 2, 2, ENEMY_NAME_SKELLY);
-	var _gb3 = Battle_CreateGB(bb.x - 370, bb.y - 370, 315 + 180, bb.x - 100, bb.y - 100, 315, 30, 10, 40, 2, 2, ENEMY_NAME_SKELLY);
+	var _gb0 = Battle_CreateGB(bb.x - 370, bb.y + 370, 45 + 180, bb.x - 100, bb.y + 100, 45, 30, 10, 30, 2, 2, ENEMY_NAME_SKELLY);
+	var _gb1 = Battle_CreateGB(bb.x + 370, bb.y + 370, 135 + 180, bb.x + 100, bb.y + 100, 135, 30, 10, 30, 2, 2, ENEMY_NAME_SKELLY);
+	var _gb2 = Battle_CreateGB(bb.x + 370, bb.y - 370, 225 + 180, bb.x + 100, bb.y - 100, 225, 30, 10, 30, 2, 2, ENEMY_NAME_SKELLY);
+	var _gb3 = Battle_CreateGB(bb.x - 370, bb.y - 370, 315 + 180, bb.x - 100, bb.y - 100, 315, 30, 10, 30, 2, 2, ENEMY_NAME_SKELLY);
 	
 	var _event_0 = function(_gb0, _gb1, _gb2, _gb3) {
 		Anim_Create(_gb0, "y", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, _gb0.y, bb.y - _gb0.y, 5);
@@ -70,28 +70,36 @@ if (time == 310) {
 	}
 	Delay_Event(_event_0, 30, [_gb0, _gb1, _gb2, _gb3]);
 }
-if (time == 345) {
-	var _gb0 = Battle_CreateGB(bb.x - 370, bb.y + 50, 0 + 180, bb.x - 100, bb.y + 50, 0, 30, 10, 40, 2, 2, ENEMY_NAME_SKELLY);
-	var _gb1 = Battle_CreateGB(bb.x + 50, bb.y + 370, 90 + 180, bb.x + 50, bb.y + 100, 90, 30, 10, 40, 2, 2, ENEMY_NAME_SKELLY);
-	var _gb2 = Battle_CreateGB(bb.x + 370, bb.y - 50, 180 + 180, bb.x + 100, bb.y - 50, 180, 30, 10, 40, 2, 2, ENEMY_NAME_SKELLY);
-	var _gb3 = Battle_CreateGB(bb.x - 50, bb.y - 370, 270 + 180, bb.x - 50, bb.y - 100, 270, 30, 10, 40, 2, 2, ENEMY_NAME_SKELLY);
+if (time == 341) {
+	var _gb0 = Battle_CreateGB(bb.x - 370, bb.y, 0 + 180, bb.x - 100, bb.y, 0, 30, 10, 30, 2, 2, ENEMY_NAME_SKELLY);
+	var _gb1 = Battle_CreateGB(bb.x, bb.y + 370, 90 + 180, bb.x, bb.y + 100, 90, 30, 10, 30, 2, 2, ENEMY_NAME_SKELLY);
+	var _gb2 = Battle_CreateGB(bb.x + 370, bb.y, 180 + 180, bb.x + 100, bb.y, 180, 30, 10, 30, 2, 2, ENEMY_NAME_SKELLY);
+	var _gb3 = Battle_CreateGB(bb.x, bb.y - 370, 270 + 180, bb.x, bb.y - 100, 270, 30, 10, 30, 2, 2, ENEMY_NAME_SKELLY);
 	
 	var _event_0 = function(_gb0, _gb1, _gb2, _gb3) {
-		Anim_Create(_gb0, "x", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, _gb0.x, bb.x - 100 - _gb0.x, 5);
 		Anim_Create(_gb0, "y", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, _gb0.y, bb.y + 100 - _gb0.y, 5);
 		Anim_Create(_gb0, "angle", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, _gb0.angle, 45 - _gb0.angle, 5);
 		
 		Anim_Create(_gb1, "x", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, _gb1.x, bb.x + 100 - _gb1.x, 5);
-		Anim_Create(_gb1, "y", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, _gb1.y, bb.y + 100 - _gb1.y, 5);
 		Anim_Create(_gb1, "angle", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, _gb1.angle, 135 - _gb1.angle, 5);
 		
-		Anim_Create(_gb2, "x", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, _gb2.x, bb.x + 100 - _gb2.x, 5);
 		Anim_Create(_gb2, "y", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, _gb2.y, bb.y - 100 - _gb2.y, 5);
 		Anim_Create(_gb2, "angle", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, _gb2.angle, 225 - _gb2.angle, 5);
 		
 		Anim_Create(_gb3, "x", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, _gb3.x, bb.x - 100 - _gb3.x, 5);
-		Anim_Create(_gb3, "y", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, _gb3.y, bb.y - 100 - _gb3.y, 5);
 		Anim_Create(_gb3, "angle", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, _gb3.angle, 315 - _gb3.angle, 5);
 	}
 	Delay_Event(_event_0, 30, [_gb0, _gb1, _gb2, _gb3]);
+}
+if (time == 372) {
+	Battle_CreateGB(bb.x - 370, bb.y + 50, 0 + 180, bb.x - 100, bb.y + 50, 0, 30, 10, 30, 2, 2, ENEMY_NAME_SKELLY);
+	Battle_CreateGB(bb.x + 50, bb.y + 370, 90 + 180, bb.x + 50, bb.y + 100, 90, 30, 10, 30, 2, 2, ENEMY_NAME_SKELLY);
+	Battle_CreateGB(bb.x + 370, bb.y - 50, 180 + 180, bb.x + 100, bb.y - 50, 180, 30, 10, 30, 2, 2, ENEMY_NAME_SKELLY);
+	Battle_CreateGB(bb.x - 50, bb.y - 370, 270 + 180, bb.x - 50, bb.y - 100, 270, 30, 10, 30, 2, 2, ENEMY_NAME_SKELLY);
+}
+if (time == 403) {
+	Battle_CreateGB(bb.x - 370, bb.y, 0 + 180, bb.x - 100, bb.y, 0, 30, 10, 30, 2, 2, ENEMY_NAME_SKELLY);
+	Battle_CreateGB(bb.x, bb.y + 370, 90 + 180, bb.x, bb.y + 100, 90, 30, 10, 30, 2, 2, ENEMY_NAME_SKELLY);
+	Battle_CreateGB(bb.x + 370, bb.y, 180 + 180, bb.x + 100, bb.y, 180, 30, 10, 30, 2, 2, ENEMY_NAME_SKELLY);
+	Battle_CreateGB(bb.x, bb.y - 370, 270 + 180, bb.x, bb.y - 100, 270, 30, 10, 30, 2, 2, ENEMY_NAME_SKELLY);
 }
