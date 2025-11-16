@@ -258,12 +258,16 @@ if(_state==BATTLE_STATE.TURN_PREPARATION){
 
 //回合内
 if(_state==BATTLE_STATE.IN_TURN){
+	battle_board.thickness_frame_collision=1000;
+	
 	if(_turn_time>0){
 		_turn_time-=1;
 	}else if(_turn_time==0){
 		Battle_EndTurn();
 	}
 }
+else
+	battle_board.thickness_frame_collision=5;
 
 //面板重置
 if(_state==BATTLE_STATE.BOARD_RESETTING){

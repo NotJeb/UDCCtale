@@ -18,17 +18,28 @@ color=c_white;
 color_bg=c_black;
 color_frame=c_white;
 thickness_frame=5;
-thickness_frame_collision=5;
+thickness_frame_collision=1000;
 enable_frame=true;
 
 _inst_frame_up=instance_create_depth(0,0,0,block);
-_inst_frame_left=instance_create_depth(0,0,0,block);
-_inst_frame_down=instance_create_depth(0,0,0,block);
-_inst_frame_right=instance_create_depth(0,0,0,block);
 _inst_frame_up.sprite_index=spr_pixel;
+_inst_frame_up.pushSoulEnabled=true;
+_inst_frame_up.pushSoulDirection=DIR.DOWN;
+
+_inst_frame_left=instance_create_depth(0,0,0,block);
 _inst_frame_left.sprite_index=spr_pixel;
+_inst_frame_left.pushSoulEnabled=true;
+_inst_frame_left.pushSoulDirection=DIR.RIGHT;
+
+_inst_frame_down=instance_create_depth(0,0,0,block);
 _inst_frame_down.sprite_index=spr_pixel;
+_inst_frame_down.pushSoulEnabled=true;
+_inst_frame_down.pushSoulDirection=DIR.UP;
+
+_inst_frame_right=instance_create_depth(0,0,0,block);
 _inst_frame_right.sprite_index=spr_pixel;
+_inst_frame_right.pushSoulEnabled=true;
+_inst_frame_right.pushSoulDirection=DIR.LEFT;
 
 _point_x=0;
 _point_y=0;
