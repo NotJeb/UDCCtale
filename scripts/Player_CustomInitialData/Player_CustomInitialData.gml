@@ -5,7 +5,7 @@ function Player_CustomInitialData(){
 	Player_SetAtk(10);
 	Player_SetDef(10);
 	Player_SetSpd(2);
-	Player_SetInv(1);
+	Player_SetInv(40);
 	Player_SetBattleFightMenuObj(battle_menu_fight_knife);
 	
 	Player_SetItemWeapon(ITEM_STICK);

@@ -8,3 +8,5 @@ else // Input based attacks
 if (Player_GetHp() <= 0) {
 	Battle_Gameover();
 }
+
+damage=1;

@@ -1,3 +1,3 @@
 if(place_meeting(x,y,battle_soul)){
-	Battle_CallSoulEventBulletCollision();
+	event_user(0);
 }

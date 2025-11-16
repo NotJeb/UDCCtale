@@ -43,7 +43,16 @@ if (Battle_Repeat(600, 1340)) {
 	bs.x += ((bb.x - 100) - bs.x) / 20;
 	bs.move = 0;
 }
-if (Battle_Repeat(630, 1230, 40)) {
+if (Battle_Repeat(630, 960, 3)) {
+	var _length = sin((time - 630) * (pi / 24)) * 25;
+	
+	var _bone0 = Battle_CreateBone(bb.x + 340, bb.y - 60, 47 + _length, 180, 0, 60);
+	Anim_Create(_bone0, "x", 0, 0, bb.x + 340, -660, 60);
+	
+	var _bone1 = Battle_CreateBone(bb.x + 340, bb.y + 60, 47 - _length, 0, 0, 60);
+	Anim_Create(_bone1, "x", 0, 0, bb.x + 340, -660, 60);
+}
+if (Battle_Repeat(990, 1230, 40)) {
 	for (var i = 0; i < 4; i++) {
 		var _bone0 = Battle_CreateBone(bb.x + 340 + i * 12, bb.y + 60, 87, 0, 0, 80);
 		Anim_Create(_bone0, "x", 0, 0, bb.x + 340 + i * 12, -718, 80);
@@ -51,7 +60,7 @@ if (Battle_Repeat(630, 1230, 40)) {
 		_bone0.mode = 1;
 	}
 }
-if (Battle_Repeat(650, 1250, 40)) {
+if (Battle_Repeat(1010, 1250, 40)) {
 	for (var i = 0; i < 4; i++) {
 		var _bone0 = Battle_CreateBone(bb.x + 340 + i * 12, bb.y - 60, 87, 180, 0, 80);
 		Anim_Create(_bone0, "x", 0, 0, bb.x + 340 + i * 12, -718, 80);

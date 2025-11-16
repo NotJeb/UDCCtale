@@ -4,6 +4,7 @@ image_speed=0;
 follow_board=false;
 _inv=0;
 alpha=0;
+damage=1;
 
 movement_fights = [ENEMY_NAME_KACPII]
 

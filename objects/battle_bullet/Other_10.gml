@@ -1,2 +1,2 @@
 ///@desc Soul Collision
-Battle_CallSoulEventHurt();
+Battle_SoulHurt(1, 1);

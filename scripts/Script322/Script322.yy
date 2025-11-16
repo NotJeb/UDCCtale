@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Create_Notification",
+  "%Name":"Script322",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Create_Notification",
+  "name":"Script322",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
