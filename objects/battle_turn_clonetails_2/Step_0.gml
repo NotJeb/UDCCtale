@@ -46,7 +46,7 @@ if (Battle_Repeat(600, 900)) {
 if (Battle_Repeat(630, 780, 20)) {
 	var _x = random_range(100, 540);
 	var _y = random_range(100, 380);
-	Battle_CreateGB(random(640), 0, 0, _x, _y, point_direction(_x, _y, bs.x, bs.y), 40, 20, 1, 2, ENEMY_NAME_SKELLY);
+	Battle_CreateGB(random(640), 0, 0, _x, _y, point_direction(_x, _y, bs.x, bs.y), 40, 20, 20, 1, 2, ENEMY_NAME_SKELLY);
 }
 if (Battle_Repeat(630, 780, 15)) {
 	var _bone0;
@@ -104,7 +104,7 @@ if (Battle_Repeat(950, 1400, 4)) {
 	var _x_end = bb.x + cos(_siner) * 100;
 	var _y_end = bb.y + sin(_siner) * 100;
 	var _angle = point_direction(_x_end, _y_end, bb.x, bb.y);
-	Battle_CreateGB(_x_start, _y_start, -_angle, _x_end, _y_end, _angle, 40, 20, 1, 2, ENEMY_NAME_SKELLY);
+	Battle_CreateGB(_x_start, _y_start, -_angle, _x_end, _y_end, _angle, 40, 20, 20, 1, 2, ENEMY_NAME_SKELLY);
 }
 if (Battle_Repeat(1400, 1850, 4)) {
 	for (var i = 0; i < 2; i++) { 
@@ -114,7 +114,7 @@ if (Battle_Repeat(1400, 1850, 4)) {
 		var _x_end = bb.x + cos(_siner) * 100;
 		var _y_end = bb.y + sin(_siner) * 100;
 		var _angle = point_direction(_x_end, _y_end, bb.x, bb.y);
-		Battle_CreateGB(_x_start, _y_start, -_angle, _x_end, _y_end, _angle, 40, 20, 1, 2, ENEMY_NAME_SKELLY);
+		Battle_CreateGB(_x_start, _y_start, -_angle, _x_end, _y_end, _angle, 40, 20, 20, 1, 2, ENEMY_NAME_SKELLY);
 	}
 }
 if (time == 1905) {

@@ -570,6 +570,7 @@
     {"id":{"name":"Storage_Custom","path":"scripts/Storage_Custom/Storage_Custom.yy",},},
     {"id":{"name":"Storage_InitUninit","path":"scripts/Storage_InitUninit/Storage_InitUninit.yy",},},
     {"id":{"name":"Storage","path":"scripts/Storage/Storage.yy",},},
+    {"id":{"name":"bgm_clonetails","path":"sounds/bgm_clonetails/bgm_clonetails.yy",},},
     {"id":{"name":"bgm_dleckon","path":"sounds/bgm_dleckon/bgm_dleckon.yy",},},
     {"id":{"name":"snd_bonestab","path":"sounds/snd_bonestab/snd_bonestab.yy",},},
     {"id":{"name":"snd_break_0","path":"sounds/snd_break_0/snd_break_0.yy",},},

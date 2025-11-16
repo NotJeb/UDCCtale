@@ -454,6 +454,7 @@
     {"name":"Storage_Custom_Temp","order":4,"path":"scripts/Storage_Custom_Temp/Storage_Custom_Temp.yy",},
     {"name":"Storage_InitUninit","order":3,"path":"scripts/Storage_InitUninit/Storage_InitUninit.yy",},
     {"name":"Storage","order":2,"path":"scripts/Storage/Storage.yy",},
+    {"name":"bgm_clonetails","order":1,"path":"sounds/bgm_clonetails/bgm_clonetails.yy",},
     {"name":"snd_bonestab","order":57,"path":"sounds/snd_bonestab/snd_bonestab.yy",},
     {"name":"snd_break_0","order":21,"path":"sounds/snd_break_0/snd_break_0.yy",},
     {"name":"snd_break_1","order":23,"path":"sounds/snd_break_1/snd_break_1.yy",},
