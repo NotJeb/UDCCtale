@@ -28,7 +28,7 @@ if (time == 80) {
 	bs.impact = 1;
 	bs.dir = DIR.RIGHT;
 	
-	Battle_BoardTransform(50, 50, 325, 325, bb.x, bb.y, 20, {tween : 0, ease : 0});
+	Battle_BoardTransform(50, 50, 335, 335, bb.x, bb.y, 20, {tween : 0, ease : 0});
 }
 if (Battle_Repeat(80, 660)) {
 	bs.x += ((bb.x - 100) - bs.x) / 20;
@@ -63,13 +63,13 @@ if (Battle_Repeat(620, 647, 3)) {
 if (time == 660) {
 	bs.move = abs((bb.x + 65 - bs.x) / 10);
 	
-	Battle_BoardTransform(50, 50, 325, 65, bb.x, bb.y, 10, {tween : 0, ease : 0});
+	Battle_BoardTransform(50, 50, 335, 65, bb.x, bb.y, 10, {tween : 0, ease : 0});
 }
 if (time == 700) {
 	bs.impact = 1;
 	bs.dir = DIR.LEFT;
 	
-	Battle_BoardTransform(50, 50, 325, 325, bb.x, bb.y, 20, {tween : 0, ease : 0});
+	Battle_BoardTransform(50, 50, 335, 325, bb.x, bb.y, 20, {tween : 0, ease : 0});
 }
 if (Battle_Repeat(700, 1280)) {
 	bs.x += ((bb.x + 100) - bs.x) / 20;
@@ -122,7 +122,7 @@ if (time == 1275) {
 if (time == 1280) {
 	bs.move = abs((bb.x - 65 - bs.x) / 10);
 	
-	Battle_BoardTransform(50, 50, 65, 325, bb.x, bb.y, 10, {tween : 0, ease : 0});
+	Battle_BoardTransform(50, 50, 65, 335, bb.x, bb.y, 10, {tween : 0, ease : 0});
 }
 if (time == 1290) {
 	var _gb0 = Battle_CreateGB(bb.x - 370, bb.y + 370, 45 + 180, bb.x - 100, bb.y + 100, 45, 40, 30, 2, 2, ENEMY_NAME_SKELLY);

@@ -76,6 +76,8 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && moveable)
             move = 0;
 			
             if (impact) {
+				if (impact == 2 && Player_GetHp() > 1)
+					Player_Hurt(1);
                 impact = 0;
                 audio_play_sound(snd_dong, 0, false);
 				Camera_Shake(8, 8, 1, 1, 1, 1);
