@@ -49,6 +49,19 @@ switch (_menu) {
 				else if (Input_IsPressed(INPUT.RIGHT))
 					world.settings.fast_reset = true;
 				break;
+			case 5:
+				if (world.settings.debug) {
+					if (Input_IsPressed(INPUT.CONFIRM))
+						world.settings.hitboxes = !world.settings.hitboxes;
+					else if (Input_IsPressed(INPUT.LEFT))
+						world.settings.hitboxes = false;
+					else if (Input_IsPressed(INPUT.RIGHT))
+						world.settings.hitboxes = true;
+				}
+				else if (Input_IsPressed(INPUT.CONFIRM) || Input_IsPressed(INPUT.LEFT) || Input_IsPressed(INPUT.RIGHT)) {
+					audio_play_sound(snd_hurt, 0, 0);
+				}
+				break;
 		}
 		break;
 }

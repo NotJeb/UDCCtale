@@ -60,8 +60,8 @@ if (Battle_Repeat(87, 407, 90)) {
 if (time == 390) {
 	Battle_Slam(DIR.UP);
 	
-	Battle_CreateGB(bb.x - 370, bb.y - 370, 315 + 180, bb.x - 100, bb.y - 100, 315, 40, 20, 2, 2);
-	Battle_CreateGB(bb.x + 370, bb.y - 370, 225 + 180, bb.x + 100, bb.y - 100, 225, 40, 20, 2, 2);
+	Battle_CreateGB(bb.x - 370, bb.y - 370, 315 + 180, bb.x - 100, bb.y - 100, 315, 40, 0, 20, 2, 2);
+	Battle_CreateGB(bb.x + 370, bb.y - 370, 225 + 180, bb.x + 100, bb.y - 100, 225, 40, 0, 20, 2, 2);
 }
 if (time == 410) {
 	Battle_CreateFireballWall(DIR.UP, 2, 10, 30);
@@ -69,8 +69,8 @@ if (time == 410) {
 if (time == 440) {
 	Battle_Slam(DIR.DOWN);
 	
-	Battle_CreateGB(bb.x - 370, bb.y - 370, 315 + 180, bb.x - 100, bb.y - 100, 315, 40, 20, 2, 2);
-	Battle_CreateGB(bb.x + 370, bb.y - 370, 225 + 180, bb.x + 100, bb.y - 100, 225, 40, 20, 2, 2);
+	Battle_CreateGB(bb.x - 370, bb.y - 370, 315 + 180, bb.x - 100, bb.y - 100, 315, 40, 0, 20, 2, 2);
+	Battle_CreateGB(bb.x + 370, bb.y - 370, 225 + 180, bb.x + 100, bb.y - 100, 225, 40, 0, 20, 2, 2);
 }
 if (time == 460) {
 	Battle_CreateFireballWall(DIR.DOWN, 2, 10, 30);

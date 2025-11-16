@@ -8,6 +8,7 @@ function Game_Save(){
 	ini_write_real("SETTINGS", "effects", world.settings.effects);
 	ini_write_real("SETTINGS", "bgm_volume", world.settings.bgm_volume);
 	ini_write_real("SETTINGS", "sfx_volume", world.settings.sfx_volume);
+	ini_write_real("SETTINGS", "hitboxes", world.settings.hitboxes);
 	ini_write_real("MISC", "selected_battle", global.selected_battle);
 	ini_close();
 }

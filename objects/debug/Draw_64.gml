@@ -7,6 +7,7 @@ if (world.settings.debug) {
 	Debug_TextY(5, true, battle, "_state");
 	Debug_TextY(6, true, battle_soul, "x");
 	Debug_TextY(7, true, battle_soul, "y");
+	Debug_TextY(8, false, world, "settings");
 	
 	Draw_TextShadow(5, 5, "DEBUG", 2, font_mars_needs_cunnilingus);
 	if (text_y[0]) Draw_TextShadow(5, text_y[0], "FPS " + string(game_get_speed(gamespeed_fps)), 2, font_mars_needs_cunnilingus);
@@ -15,8 +16,9 @@ if (world.settings.debug) {
 	if (text_y[3]) Draw_TextShadow(5, text_y[3], "TURN TIME " + string(battle_turn.time), 2, font_mars_needs_cunnilingus);
 	if (text_y[4]) Draw_TextShadow(5, text_y[4], "INSTANCES " + string(instance_count), 2, font_mars_needs_cunnilingus);
 	if (text_y[5]) Draw_TextShadow(5, text_y[5], "BATTLE STATE " + string(Battle_GetState()), 2, font_mars_needs_cunnilingus);
-	if (text_y[5]) Draw_TextShadow(5, text_y[6], "BATTLE SOUL X " + string(battle_soul.x), 2, font_mars_needs_cunnilingus);
-	if (text_y[5]) Draw_TextShadow(5, text_y[7], "BATTLE SOUL Y " + string(battle_soul.y), 2, font_mars_needs_cunnilingus);
+	if (text_y[6]) Draw_TextShadow(5, text_y[6], "BATTLE SOUL X " + string(battle_soul.x), 2, font_mars_needs_cunnilingus);
+	if (text_y[7]) Draw_TextShadow(5, text_y[7], "BATTLE SOUL Y " + string(battle_soul.y), 2, font_mars_needs_cunnilingus);
+	if (text_y[8] && world.settings.hitboxes) Draw_TextShadow(5, text_y[8], "HITBOXES ON", 2, font_mars_needs_cunnilingus);
 }
 fps_drop_alpha = clamp(fps_drop_alpha + (fps_real < game_get_speed(gamespeed_fps) && fps_real >= 0) ? 1 / 20 : -1 / 20, 0, 1);
 

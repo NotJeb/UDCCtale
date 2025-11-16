@@ -10,7 +10,7 @@ if (Battle_Repeat(0, 300, 5)) {
 	var _x_end = bb.x + cos(time * (pi / 44)) * 100;
 	var _y_end = bb.y + sin(time * (pi / 44)) * 100;
 	var _angle = point_direction(_x_end, _y_end, bb.x, bb.y);
-	Battle_CreateGB(_x_start, _y_start, -_angle, _x_end, _y_end, _angle, 30, 20, 2, 2);
+	Battle_CreateGB(_x_start, _y_start, -_angle, _x_end, _y_end, _angle, 30, 10, 20, 2, 2);
 }
 if (time == 300) {
 	Battle_BoardTransform(145, 65, 130, 130, bb.x, bb.y, 30);
@@ -18,7 +18,7 @@ if (time == 300) {
 if (Battle_Repeat(300, 540, 20)) {
 	var _x = random_range(bb.x - 110, bb.x + 110);
 	var _y = random_range(bb.y - 125, bb.y + 45);
-	Battle_CreateGB(random(640), 0, 0, _x, _y, point_direction(_x, _y, bs.x, bs.y), 40, 30);
+	Battle_CreateGB(random(640), 0, 0, _x, _y, point_direction(_x, _y, bs.x, bs.y), 40, 10, 30);
 }
 if (Battle_Repeat(340, 520, 60)) {
 	for (var i = 0; i < 4; i++) {

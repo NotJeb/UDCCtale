@@ -6,7 +6,8 @@ _menu_screen = [
 		function(){return $"EFFECTS : {(world.settings.effects == 2 ? "MAX" : (world.settings.effects == 1 ? "OPTIMIZED" : "OFF"))}"}, 
 		function(){return $"NO HIT : {(world.settings.no_hit ? "ON" : "OFF")}"}, 
 		function(){return $"NO HEAL : {(world.settings.no_heal ? "ON" : "OFF")}"},
-		function(){return $"FAST RESET : {(world.settings.fast_reset ? "ON" : "OFF")}"}
+		function(){return $"FAST RESET : {(world.settings.fast_reset ? "ON" : "OFF")}"},
+		function(){return $"HITBOXES : {(world.settings.hitboxes ? "ON" : "OFF")}"}
 		]}
 ];
 

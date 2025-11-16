@@ -10,5 +10,6 @@ settings = {
 	effects : 2,
 	bgm_volume : 100,
 	sfx_volume : 100,
+	hitboxes : false,
 };
 settings.debug = settings.developer_mode;
