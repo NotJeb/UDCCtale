@@ -605,6 +605,7 @@
     {"id":{"name":"snd_text_voice_typer","path":"sounds/snd_text_voice_typer/snd_text_voice_typer.yy",},},
     {"id":{"name":"snd_vaporize","path":"sounds/snd_vaporize/snd_vaporize.yy",},},
     {"id":{"name":"snd_warn","path":"sounds/snd_warn/snd_warn.yy",},},
+    {"id":{"name":"spr_badge","path":"sprites/spr_badge/spr_badge.yy",},},
     {"id":{"name":"spr_battle_bullet_edge","path":"sprites/spr_battle_bullet_edge/spr_battle_bullet_edge.yy",},},
     {"id":{"name":"spr_battle_bullet_fireball","path":"sprites/spr_battle_bullet_fireball/spr_battle_bullet_fireball.yy",},},
     {"id":{"name":"spr_battle_damage_miss","path":"sprites/spr_battle_damage_miss/spr_battle_damage_miss.yy",},},

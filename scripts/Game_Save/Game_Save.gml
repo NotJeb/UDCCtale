@@ -1,5 +1,6 @@
 function Game_Save(){
 	ini_open("save.ini");
+	
 	ini_write_string("SETTINGS", "player_name", Player_GetName());
 	ini_write_real("SETTINGS", "debug", world.settings.debug);
 	ini_write_real("SETTINGS", "no_hit", world.settings.no_hit);
@@ -9,6 +10,14 @@ function Game_Save(){
 	ini_write_real("SETTINGS", "bgm_volume", world.settings.bgm_volume);
 	ini_write_real("SETTINGS", "sfx_volume", world.settings.sfx_volume);
 	ini_write_real("SETTINGS", "hitboxes", world.settings.hitboxes);
+	
+	for (var i = 0; i < array_length(world.enemy.name); i++) {
+		ini_write_real("BADGES_COMPLETION", world.enemy.name[i], world.badges[i].completion);
+		ini_write_real("BADGES_NOHEAL", world.enemy.name[i], world.badges[i].no_heal);
+		ini_write_real("BADGES_NOHIT", world.enemy.name[i], world.badges[i].no_hit);
+	}
+	
 	ini_write_real("MISC", "selected_battle", global.selected_battle);
+	
 	ini_close();
 }
