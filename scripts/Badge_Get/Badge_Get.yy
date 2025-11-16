@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Badge_Get",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Badge_Get",
+  "parent":{
+    "name":"Battle",
+    "path":"folders/Scripts/Battle.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

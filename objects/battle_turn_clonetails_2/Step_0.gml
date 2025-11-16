@@ -119,4 +119,12 @@ if (Battle_Repeat(1890, 2340, 4)) {
 if (time == 2395) {
 	Battle_SetSoul(battle_soul_blue);
 	alarm[0] = 1;
+	
+	if (!world.settings.debug) {
+		Badge_Award(BADGE.COMPLETION);
+		Badge_Award(BADGE.NO_HEAL);
+	
+		if (Player_GetHp() == Player_GetHpMax())
+			Badge_Award(BADGE.NO_HIT);
+	}
 }

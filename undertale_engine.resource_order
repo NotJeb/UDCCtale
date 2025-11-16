@@ -159,6 +159,7 @@
     {"name":"Anim_Step","order":11,"path":"scripts/Anim_Step/Anim_Step.yy",},
     {"name":"Anim_Uninit","order":13,"path":"scripts/Anim_Uninit/Anim_Uninit.yy",},
     {"name":"Badge_Award","order":5,"path":"scripts/Badge_Award/Badge_Award.yy",},
+    {"name":"Badge_Get","order":7,"path":"scripts/Badge_Get/Badge_Get.yy",},
     {"name":"Badge_Revoke","order":6,"path":"scripts/Badge_Revoke/Badge_Revoke.yy",},
     {"name":"Battle_BoardTransform","order":2,"path":"scripts/Battle_BoardTransform/Battle_BoardTransform.yy",},
     {"name":"Battle_CallBulletEventSoulCollision","order":3,"path":"scripts/Battle_CallBulletEventSoulCollision/Battle_CallBulletEventSoulCollision.yy",},

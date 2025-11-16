@@ -261,6 +261,7 @@
     {"id":{"name":"Anim_Step","path":"scripts/Anim_Step/Anim_Step.yy",},},
     {"id":{"name":"Anim_Uninit","path":"scripts/Anim_Uninit/Anim_Uninit.yy",},},
     {"id":{"name":"Badge_Award","path":"scripts/Badge_Award/Badge_Award.yy",},},
+    {"id":{"name":"Badge_Get","path":"scripts/Badge_Get/Badge_Get.yy",},},
     {"id":{"name":"Badge_Revoke","path":"scripts/Badge_Revoke/Badge_Revoke.yy",},},
     {"id":{"name":"Battle_BoardTransform","path":"scripts/Battle_BoardTransform/Battle_BoardTransform.yy",},},
     {"id":{"name":"Battle_CallBulletEventSoulCollision","path":"scripts/Battle_CallBulletEventSoulCollision/Battle_CallBulletEventSoulCollision.yy",},},
