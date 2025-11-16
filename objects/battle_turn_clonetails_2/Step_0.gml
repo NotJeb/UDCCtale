@@ -43,40 +43,43 @@ if (Battle_Repeat(600, 900)) {
 	bs.x += ((bb.x - 100) - bs.x) / 20;
 	bs.move = 0;
 }
-if (Battle_Repeat(630, 780, 2)) {
+if (Battle_Repeat(630, 780, 20)) {
 	var _x = random_range(100, 540);
 	var _y = random_range(100, 380);
 	Battle_CreateGB(random(640), 0, 0, _x, _y, point_direction(_x, _y, bs.x, bs.y), 40, 20, 1, 2, ENEMY_NAME_SKELLY);
 }
-if (Battle_Repeat(630, 780, 6)) {
-	var _x = random(640);
-	var _bone0 = Battle_CreateBone(_x, -50, 100, 0, choose(1, 2), 120);
-	_bone0.direction = point_direction(_x, -50, bs.x, bs.y);
-	_bone0.speed = 10;
-	_bone0.rotation = 5;
-	_bone0.out = true;
+if (Battle_Repeat(630, 780, 15)) {
+	var _bone0;
+	var _x;
+	var _y;
+	switch (irandom(3)) {
+		case 0:
+			_x = random(640);
+			_bone0 = Battle_CreateBone(_x, -50, 100, 0, choose(1, 2), 120);
+			_bone0.direction = point_direction(_x, -50, bs.x, bs.y);
+			break;
 	
-	var _y = random(480);
-	var _bone1 = Battle_CreateBone(690, _y, 100, 0, choose(1, 2), 120);
-	_bone1.direction = point_direction(690, _y, bs.x, bs.y);
-	_bone1.speed = 10;
-	_bone1.rotation = -5;
-	_bone1.out = true;
-}
-if (Battle_Repeat(633, 783, 6)) {
-	var _x = random(640);
-	var _bone0 = Battle_CreateBone(_x, 530, 100, 0, choose(1, 2), 120);
-	_bone0.direction = point_direction(_x, 530, bs.x, bs.y);
-	_bone0.speed = 10;
-	_bone0.rotation = -5;
-	_bone0.out = true;
+		case 1:
+			_y = random(480);
+			_bone0 = Battle_CreateBone(690, _y, 100, 0, choose(1, 2), 120);
+			_bone0.direction = point_direction(690, _y, bs.x, bs.y);
+			break;
 	
-	var _y = random(480);
-	var _bone1 = Battle_CreateBone(-50, _y, 100, 0, choose(1, 2), 120);
-	_bone1.direction = point_direction(-50, _y, bs.x, bs.y);
-	_bone1.speed = 10;
-	_bone1.rotation = 5;
-	_bone1.out = true;
+		case 2:
+			_x = random(640);
+			_bone0 = Battle_CreateBone(_x, 530, 100, 0, choose(1, 2), 120);
+			_bone0.direction = point_direction(_x, 530, bs.x, bs.y);
+			break;
+	
+		case 3:
+			_y = random(480);
+			_bone0 = Battle_CreateBone(-50, _y, 100, 0, choose(1, 2), 120);
+			_bone0.direction = point_direction(-50, _y, bs.x, bs.y);
+			break;
+	}
+	_bone0.speed = 10;
+	_bone0.rotation = choose(-5, 5);
+	_bone0.out = true;
 }
 if (time == 900) {
 	bs.move = abs((bb.x + 65 - bs.x) / 20);
