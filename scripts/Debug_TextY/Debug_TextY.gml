@@ -4,7 +4,7 @@ function Debug_TextY(_text_place, _developer = false, _object = undefined, _vari
 		return false;
 	}
 	
-	var _debug_text_y = 25;
+	var _debug_text_y = 5;
 	for (var i = 0; i < clamp(_text_place, 0, array_length(debug.text_y)); i++)
 		if (debug.text_y[i]) _debug_text_y += 20;
 	
