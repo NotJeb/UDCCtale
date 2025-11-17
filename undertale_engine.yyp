@@ -376,6 +376,7 @@
     {"id":{"name":"Battle_SetTurnPreparationAutoEnd","path":"scripts/Battle_SetTurnPreparationAutoEnd/Battle_SetTurnPreparationAutoEnd.yy",},},
     {"id":{"name":"Battle_SetTurnTime","path":"scripts/Battle_SetTurnTime/Battle_SetTurnTime.yy",},},
     {"id":{"name":"Battle_Slam","path":"scripts/Battle_Slam/Battle_Slam.yy",},},
+    {"id":{"name":"Battle_SoulHurt","path":"scripts/Battle_SoulHurt/Battle_SoulHurt.yy",},},
     {"id":{"name":"BGM_GetAudio","path":"scripts/BGM_GetAudio/BGM_GetAudio.yy",},},
     {"id":{"name":"BGM_Pause","path":"scripts/BGM_Pause/BGM_Pause.yy",},},
     {"id":{"name":"BGM_Resume","path":"scripts/BGM_Resume/BGM_Resume.yy",},},

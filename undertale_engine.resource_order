@@ -272,6 +272,7 @@
     {"name":"Battle_SetTurnPreparationAutoEnd","order":17,"path":"scripts/Battle_SetTurnPreparationAutoEnd/Battle_SetTurnPreparationAutoEnd.yy",},
     {"name":"Battle_SetTurnTime","order":9,"path":"scripts/Battle_SetTurnTime/Battle_SetTurnTime.yy",},
     {"name":"Battle_Slam","order":9,"path":"scripts/Battle_Slam/Battle_Slam.yy",},
+    {"name":"Battle_SoulHurt","order":11,"path":"scripts/Battle_SoulHurt/Battle_SoulHurt.yy",},
     {"name":"BGM_Pause","order":1,"path":"scripts/BGM_Pause/BGM_Pause.yy",},
     {"name":"BGM_Resume","order":2,"path":"scripts/BGM_Resume/BGM_Resume.yy",},
     {"name":"BGM_SetAudio","order":3,"path":"scripts/BGM_SetAudio/BGM_SetAudio.yy",},
