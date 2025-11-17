@@ -2,6 +2,8 @@ _time=0;
 _frame_skip=0;
 _frame_skipped=0;
 
+global.selected_battle = power(2, 24);
+
 settings = {
 	developer_mode : true, // Hi turn this on if you wanna mod the game :3
 	debug : false,

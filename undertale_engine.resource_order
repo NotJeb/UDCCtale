@@ -489,7 +489,7 @@
     {"name":"snd_text_voice_typer","order":9,"path":"sounds/snd_text_voice_typer/snd_text_voice_typer.yy",},
     {"name":"snd_vaporize","order":27,"path":"sounds/snd_vaporize/snd_vaporize.yy",},
     {"name":"snd_warn","order":56,"path":"sounds/snd_warn/snd_warn.yy",},
-    {"name":"spr_badge","order":6,"path":"sprites/spr_badge/spr_badge.yy",},
+    {"name":"spr_badge","order":8,"path":"sprites/spr_badge/spr_badge.yy",},
     {"name":"spr_battle_bullet_edge","order":10,"path":"sprites/spr_battle_bullet_edge/spr_battle_bullet_edge.yy",},
     {"name":"spr_battle_bullet_fireball","order":11,"path":"sprites/spr_battle_bullet_fireball/spr_battle_bullet_fireball.yy",},
     {"name":"spr_battle_damage_miss","order":11,"path":"sprites/spr_battle_damage_miss/spr_battle_damage_miss.yy",},
