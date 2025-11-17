@@ -7,9 +7,6 @@ if(room_exists(target_room)){
 	if(instance_exists(char_player)){
 		char_player._moveable_warp=false;
 	}
-	if(bgm_fade){
-		BGM_SetVolume(0,0,bgm_fade_time);
-	}
 	alarm[0]=fade_in_time+warp_wait+1;
 }else{
 	show_debug_message("Attempt to warp to non-existing room "+string(target_room)+"!");

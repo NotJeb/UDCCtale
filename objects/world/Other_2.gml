@@ -24,8 +24,6 @@ Storage_Init();
 
 Encounter_Init();
 
-BGM_Init();
-
 Dialog_Init();
 
 Demo_Init();
@@ -35,6 +33,7 @@ instance_create_depth(0,0,0,fader);
 instance_create_depth(0,0,0,border);
 instance_create_depth(0,0,0,closed_captions);
 instance_create_depth(0,0,0,debug);
+instance_create_depth(0,0,0,audio_manager);
 
 application_surface_draw_enable(false);
 

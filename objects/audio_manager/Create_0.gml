@@ -1,0 +1,40 @@
+sfx_array = [
+snd_bonestab,
+snd_break_0,
+snd_break_1,
+snd_damage,
+snd_ding,
+snd_dong,
+snd_encounter_soul_move,
+snd_exclamation,
+snd_flee,
+snd_gb_charge,
+snd_gb_release,
+snd_hurt,
+snd_item_equip,
+snd_item_heal,
+snd_item_swallow,
+snd_level_up,
+snd_logo,
+snd_menu_cancel,
+snd_menu_confirm,
+snd_menu_switch,
+snd_noise,
+snd_phone_box,
+snd_phone_call,
+snd_phone_status,
+snd_save,
+snd_slash,
+snd_slice,
+snd_spike_disable,
+snd_text_voice_default,
+snd_text_voice_toriel,
+snd_text_voice_typer,
+snd_vaporize,
+snd_warn];
+		
+bgm_array = [
+bgm_clonetails,
+bgm_dleckon];
+
+bgm = -1;

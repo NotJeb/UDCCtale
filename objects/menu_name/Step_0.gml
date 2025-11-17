@@ -1,3 +1,5 @@
+if (!instance_exists(menu)) instance_destroy();
+
 if (Input_IsPressed(INPUT.DOWN) && selected_option == 0) {
 	selected_option = 1;
 	audio_play_sound(snd_menu_switch, 0, 0);

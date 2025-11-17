@@ -9,8 +9,8 @@ settings = {
 	no_heal : false,
 	fast_reset : false,
 	effects : 2,
-	bgm_volume : 100,
-	sfx_volume : 100,
+	bgm_volume : 1,
+	sfx_volume : 1,
 	hitboxes : false,
 };
 settings.debug = settings.developer_mode;

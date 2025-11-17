@@ -1,5 +1,4 @@
 Anim_Step();
-BGM_Step();
 
 if(_time>=60){
 	var z=Storage_GetStaticGeneral();

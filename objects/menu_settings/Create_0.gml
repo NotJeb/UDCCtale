@@ -7,7 +7,9 @@ _menu_screen = [
 		function(){return $"NO HIT : {(world.settings.no_hit ? "ON" : "OFF")}"}, 
 		function(){return $"NO HEAL : {(world.settings.no_heal ? "ON" : "OFF")}"},
 		function(){return $"FAST RESET : {(world.settings.fast_reset ? "ON" : "OFF")}"},
-		function(){return $"HITBOXES : {(world.settings.hitboxes ? "ON" : "OFF")}"}
+		function(){return $"HITBOXES : {(world.settings.hitboxes ? "ON" : "OFF")}"},
+		function(){return $"SFX VOLUME : {int64(world.settings.sfx_volume * 100)}"},
+		function(){return $"BGM VOLUME : {int64(world.settings.bgm_volume * 100)}"}
 		]}
 ];
 

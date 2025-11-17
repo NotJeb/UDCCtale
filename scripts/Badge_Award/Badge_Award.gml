@@ -12,5 +12,7 @@ function Badge_Award(_badge_type, _enemy = battle_enemy._enemy_name) {
 			world.badges[array_get_index(world.enemy.name, _enemy)].no_hit = true;
 			Create_Notification($"A No Hit? Consider me impressed.", spr_badge, 2);
 		}
+		
+		Game_Save();
 	}
 }

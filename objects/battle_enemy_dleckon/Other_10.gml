@@ -3,6 +3,8 @@
 // Inherit the parent event
 event_inherited();
 
+BGM_SetAudio(bgm_dleckon);
+
 Battle_SetEnemyName(_enemy_slot, "Dleckon");
 
 Battle_SetEnemyActionNumber(_enemy_slot, 1);

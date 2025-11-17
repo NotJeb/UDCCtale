@@ -4,9 +4,6 @@ function Encounter_Start(encounter,anim=true,exclam=true) {
 			anim=false;
 		}
 		if(!anim){
-			if(Encounter_IsPauseBGM(encounter)){
-				BGM_Pause(0);
-			}
 			Storage_GetTempGeneral().Set(FLAG_TEMP_ENCOUNTER,encounter);
 			if(!Player_IsInBattle()){
 				Storage_GetTempGeneral().Set(FLAG_TEMP_BATTLE_ROOM_RETURN,room);

@@ -3,8 +3,6 @@
 // Inherit the parent event
 event_inherited();
 
-bgm = audio_play_sound(bgm_dleckon, 1, 1);
-
 Battle_SetNextState(BATTLE_STATE.CUTSCENE);
 
 battle_board.visible = false;

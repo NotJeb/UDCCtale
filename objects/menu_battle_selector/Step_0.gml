@@ -1,18 +1,16 @@
+if (!instance_exists(menu)) instance_destroy();
+
 if (Input_IsPressed(INPUT.LEFT))
 	global.selected_battle--;
 if (Input_IsPressed(INPUT.RIGHT))
 	global.selected_battle++;
 if (Input_IsHeld(INPUT.LEFT)) {
-	hold_time++;
-	if (hold_time >= 30) {
-		hold_time = 20;
+	if (menu.input_time[INPUT.LEFT] >= 30 && menu.input_time[INPUT.LEFT] % 10 == 0) {
 		global.selected_battle--;
 	}
 }
 else if (Input_IsHeld(INPUT.RIGHT)) {
-	hold_time++;
-	if (hold_time >= 30) {
-		hold_time = 18;
+	if (menu.input_time[INPUT.RIGHT] >= 30 && menu.input_time[INPUT.RIGHT] % 10 == 0) {
 		global.selected_battle++;
 	}
 }
@@ -26,6 +24,8 @@ if (abs(global.selected_battle - selection_display) / 10 > 0.0001)
 if (Input_IsPressed(INPUT.CONFIRM)) {
 	var _battle_index = global.selected_battle % array_length(world.enemy.title);
 	if (_battle_index < 0) _battle_index = array_length(world.enemy.title) + _battle_index;
+	
+	Game_Save();
 	
 	Encounter_Start(world.enemy.encounter[_battle_index]);
 }

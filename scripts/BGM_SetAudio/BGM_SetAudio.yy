@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"BGM_Init",
+  "%Name":"BGM_SetAudio",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"BGM_Init",
+  "name":"BGM_SetAudio",
   "parent":{
     "name":"BGM",
     "path":"folders/Scripts/BGM.yy",

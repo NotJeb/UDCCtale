@@ -14,7 +14,7 @@ if (Battle_GetState() == BATTLE_STATE.CUTSCENE && Input_IsPressed(INPUT.MENU)) {
 	instance_destroy(text_typer);
 	
 	Battle_SetState(BATTLE_STATE.MENU);
-	audio_sound_set_track_position(bgm, 1100 / 60);
+	audio_sound_set_track_position(BGM_GetAudio(), 1100 / 60);
 	
 	for (var i = 0; i < array_length(time_sources); i++)
 		time_source_destroy(time_sources[i]);
