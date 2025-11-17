@@ -12,6 +12,7 @@ function Game_Load() {
 		world.settings.bgm_volume = ini_read_real("SETTINGS", "bgm_volume", world.settings.bgm_volume);
 		world.settings.sfx_volume = ini_read_real("SETTINGS", "sfx_volume", world.settings.sfx_volume);
 		world.settings.hitboxes = ini_read_real("SETTINGS", "hitboxes", world.settings.hitboxes);
+		world.settings.game_speed = ini_read_real("SETTINGS", "game_speed", world.settings.game_speed);
 		
 		for (var i = 0; i < array_length(world.enemy.name); i++) {
 			world.badges[i].completion = ini_read_real("BADGES_COMPLETION", world.enemy.name[i], world.badges[i].completion);

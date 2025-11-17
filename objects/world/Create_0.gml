@@ -14,6 +14,7 @@ settings = {
 	bgm_volume : 1,
 	sfx_volume : 1,
 	hitboxes : false,
+	game_speed : 60,
 };
 settings.debug = settings.developer_mode;
 

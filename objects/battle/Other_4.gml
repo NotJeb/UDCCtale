@@ -24,3 +24,6 @@ Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.BATTLE_START);
 Battle_GotoNextState();
 
 show_debug_message($"Battle initialized. Encounter ID {_encounter}");
+
+if (!world.settings.debug)
+	game_set_speed(world.settings.game_speed, gamespeed_fps);

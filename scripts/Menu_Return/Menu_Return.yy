@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Script322",
+  "%Name":"Menu_Return",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Script322",
+  "name":"Menu_Return",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Menu",
+    "path":"folders/Scripts/Menu.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

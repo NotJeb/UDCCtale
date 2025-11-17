@@ -10,6 +10,7 @@ function Game_Save(){
 	ini_write_real("SETTINGS", "bgm_volume", world.settings.bgm_volume);
 	ini_write_real("SETTINGS", "sfx_volume", world.settings.sfx_volume);
 	ini_write_real("SETTINGS", "hitboxes", world.settings.hitboxes);
+	ini_write_real("SETTINGS", "game_speed", world.settings.game_speed);
 	
 	for (var i = 0; i < array_length(world.enemy.name); i++) {
 		ini_write_real("BADGES_COMPLETION", world.enemy.name[i], world.badges[i].completion);

@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Battle_SoulHurt",
+  "%Name":"Create_Notification",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Battle_SoulHurt",
+  "name":"Create_Notification",
   "parent":{
-    "name":"Soul",
-    "path":"folders/Scripts/Battle/Soul.yy",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,5 +1,8 @@
 function Macro_Menu() {
 	enum MENU_SCREEN {
-		SETTINGS
+		RETURN,
+		MAIN,
+		SETTINGS,
+		MODIFIERS,
 	};
 }
