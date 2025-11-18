@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_pixel,0,_bg_x,_bg_y,_bg_width,_bg_height,_angle,c_black,1);

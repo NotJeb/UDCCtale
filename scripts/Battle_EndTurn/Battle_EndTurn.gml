@@ -12,7 +12,7 @@ function Battle_EndTurn() {
 			proc+=1;
 		}*/
 		Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.TURN_END);
-	
+		
 		if(instance_exists(battle_turn)){
 			with(battle_turn){
 				event_user(BATTLE_TURN_EVENT.TURN_END);
