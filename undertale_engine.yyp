@@ -231,6 +231,7 @@
     {"id":{"name":"hint_landmark","path":"objects/hint_landmark/hint_landmark.yy",},},
     {"id":{"name":"logo","path":"objects/logo/logo.yy",},},
     {"id":{"name":"menu_battle_selector","path":"objects/menu_battle_selector/menu_battle_selector.yy",},},
+    {"id":{"name":"menu_credits","path":"objects/menu_credits/menu_credits.yy",},},
     {"id":{"name":"menu_name","path":"objects/menu_name/menu_name.yy",},},
     {"id":{"name":"menu_settings","path":"objects/menu_settings/menu_settings.yy",},},
     {"id":{"name":"menu","path":"objects/menu/menu.yy",},},

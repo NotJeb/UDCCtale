@@ -128,6 +128,7 @@
     {"name":"hint_landmark","order":3,"path":"objects/hint_landmark/hint_landmark.yy",},
     {"name":"logo","order":20,"path":"objects/logo/logo.yy",},
     {"name":"menu_battle_selector","order":21,"path":"objects/menu_battle_selector/menu_battle_selector.yy",},
+    {"name":"menu_credits","order":28,"path":"objects/menu_credits/menu_credits.yy",},
     {"name":"menu_name","order":23,"path":"objects/menu_name/menu_name.yy",},
     {"name":"menu_settings","order":24,"path":"objects/menu_settings/menu_settings.yy",},
     {"name":"menu","order":25,"path":"objects/menu/menu.yy",},

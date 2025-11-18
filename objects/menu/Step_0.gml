@@ -1,7 +1,7 @@
 if ((mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, id))) {
-	if (_menu == menu_name) Menu_Set(menu_battle_selector);
-	if (_menu == menu_battle_selector) Menu_Set(menu_settings);
-	if (_menu == menu_settings) Menu_Set(menu_battle_selector);
+	if (_menu == menu_name) Menu_Set();
+	else if (_menu == menu_battle_selector) Menu_Set(menu_settings, menu_battle_selector);
+	else if (_menu == menu_settings) Menu_Set();
 }
 
 if (!instance_exists(_menu))

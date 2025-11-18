@@ -12,7 +12,7 @@ if (_menu_button[_menu] != _menu_button_prev)
 
 switch (_menu) {
 	case (MENU_SCREEN.RETURN):
-		Menu_Set(menu_battle_selector);
+		Menu_Set();
 		break;
 		
 	case (MENU_SCREEN.MAIN):
@@ -25,6 +25,11 @@ switch (_menu) {
 			case 1:
 				if (Input_IsPressed(INPUT.CONFIRM))
 					_menu = MENU_SCREEN.MODIFIERS;
+				break;
+				
+			case 2:
+				if (Input_IsPressed(INPUT.CONFIRM))
+					Menu_Set(menu_credits, menu_settings);
 				break;
 		}
 		break;
@@ -73,7 +78,7 @@ switch (_menu) {
 				
 			case 4:
 				if (Input_IsPressed(INPUT.CONFIRM))
-					Menu_Set(menu_name);
+					Menu_Set(menu_name, menu_settings);
 				break;
 		}
 		break;

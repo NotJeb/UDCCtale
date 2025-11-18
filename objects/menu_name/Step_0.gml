@@ -21,7 +21,7 @@ else if (selected_option == 1) {
 		audio_play_sound(snd_menu_confirm, 0, 0);
 		Player_SetName(name);
 		Game_Save();
-		Menu_Set(menu_battle_selector);
+		Menu_Set();
 	}
 }
 
