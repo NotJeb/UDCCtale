@@ -29,3 +29,6 @@ if (Input_IsPressed(INPUT.CONFIRM)) {
 	
 	Encounter_Start(world.enemy.encounter[_battle_index]);
 }
+
+if (Input_IsPressed(INPUT.MENU))
+	Menu_Set(menu_settings);

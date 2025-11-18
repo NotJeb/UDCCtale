@@ -393,7 +393,7 @@
     {"name":"Macro_Menu","order":21,"path":"scripts/Macro_Menu/Macro_Menu.yy",},
     {"name":"Macro_Plot","order":19,"path":"scripts/Macro_Plot/Macro_Plot.yy",},
     {"name":"Menu_Draw_Uninit","order":1,"path":"scripts/Menu_Draw_Uninit/Menu_Draw_Uninit.yy",},
-    {"name":"Menu_Return","order":2,"path":"scripts/Menu_Return/Menu_Return.yy",},
+    {"name":"Menu_Set","order":2,"path":"scripts/Menu_Set/Menu_Set.yy",},
     {"name":"Player_CalculateDamage","order":5,"path":"scripts/Player_CalculateDamage/Player_CalculateDamage.yy",},
     {"name":"Player_GetAtk","order":21,"path":"scripts/Player_GetAtk/Player_GetAtk.yy",},
     {"name":"Player_GetAtkItem","order":37,"path":"scripts/Player_GetAtkItem/Player_GetAtkItem.yy",},

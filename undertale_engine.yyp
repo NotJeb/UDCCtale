@@ -502,7 +502,7 @@
     {"id":{"name":"Macro_Plot","path":"scripts/Macro_Plot/Macro_Plot.yy",},},
     {"id":{"name":"Menu_Draw_Uninit","path":"scripts/Menu_Draw_Uninit/Menu_Draw_Uninit.yy",},},
     {"id":{"name":"Menu_DrawInit","path":"scripts/Menu_DrawInit/Menu_DrawInit.yy",},},
-    {"id":{"name":"Menu_Return","path":"scripts/Menu_Return/Menu_Return.yy",},},
+    {"id":{"name":"Menu_Set","path":"scripts/Menu_Set/Menu_Set.yy",},},
     {"id":{"name":"Player_CalculateDamage","path":"scripts/Player_CalculateDamage/Player_CalculateDamage.yy",},},
     {"id":{"name":"Player_CustomInitialData","path":"scripts/Player_CustomInitialData/Player_CustomInitialData.yy",},},
     {"id":{"name":"Player_GetAtk","path":"scripts/Player_GetAtk/Player_GetAtk.yy",},},

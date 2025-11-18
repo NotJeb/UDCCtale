@@ -20,7 +20,8 @@ else if (selected_option == 1) {
 	if (Input_IsPressed(INPUT.CONFIRM) && string_length(name) > 0) {
 		audio_play_sound(snd_menu_confirm, 0, 0);
 		Player_SetName(name);
-		instance_destroy();
+		Game_Save();
+		Menu_Set(menu_battle_selector);
 	}
 }
 

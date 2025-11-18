@@ -12,6 +12,7 @@ _menu_screen = [
 		function(){return $"FAST RESET : {(world.settings.fast_reset ? "ON" : "OFF")}"},
 		function(){return $"SFX VOLUME : {int64(world.settings.sfx_volume * 100)}"},
 		function(){return $"BGM VOLUME : {int64(world.settings.bgm_volume * 100)}"},
+		function(){return $"CHANGE NAME"},
 		]},
 	{parent : MENU_SCREEN.MAIN, button : [
 		function(){return $"DEBUG : {(world.settings.debug ? "ON" : "OFF")}"},
@@ -23,3 +24,6 @@ _menu_screen = [
 ];
 
 _menu_button = array_create(array_length(_menu_screen), 0);
+
+menu.visible = true;
+menu.sprite_index = spr_menu_back;

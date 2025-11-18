@@ -12,7 +12,7 @@ if (_menu_button[_menu] != _menu_button_prev)
 
 switch (_menu) {
 	case (MENU_SCREEN.RETURN):
-		Menu_Return();
+		Menu_Set(menu_battle_selector);
 		break;
 		
 	case (MENU_SCREEN.MAIN):
@@ -69,6 +69,11 @@ switch (_menu) {
 					world.settings.bgm_volume += 1 / 100;
 				if (menu.input_time[INPUT.RIGHT] > 30 && world.settings.bgm_volume < 1)
 					world.settings.bgm_volume += 1 / 100;
+				break;
+				
+			case 4:
+				if (Input_IsPressed(INPUT.CONFIRM))
+					Menu_Set(menu_name);
 				break;
 		}
 		break;
