@@ -1,10 +1,18 @@
-function Player_Hurt(damage) {
-	if(damage<0){
-		return Player_Heal(-damage);
-	}
-	if(damage>0){
-		var hp=max(0,Player_GetHp()-damage);
-		Player_SetHp(hp);
-	}
-	return true;
+function Player_Hurt(_damage, _karma = battle.kr_enabled ? 1 : 0)
+{    
+    if (_damage >= 0)
+    {
+        var _hp = Player_GetHp(),
+            _final_hp = max(_hp - _damage, 0);
+        Player_SetHp(_final_hp)
+        
+        if (battle.kr_enabled && _karma > 0)
+        {
+            var _kr = battle.kr,
+                _final_kr = _karma + _kr;
+			battle.kr = _final_kr;
+        }
+    }
+    else
+        Player_Heal(-_damage);
 }

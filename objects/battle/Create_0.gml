@@ -89,3 +89,8 @@ _player_temp_atk=0;
 _player_temp_def=0;
 _player_temp_spd=0;
 _player_temp_inv=0;
+
+
+kr = 0;
+kr_timer = 0;
+kr_enabled = false;

@@ -302,3 +302,33 @@ if(_state!=BATTLE_STATE.RESULT && Battle_GetEnemyNumber()==0){
 if (_state == BATTLE_STATE.CUTSCENE) {
 	
 }
+
+if (kr_enabled) {
+	var _kr_threshold = kr_timer >= 60 ||
+			            kr_timer >= 30 && kr >= 10 ||
+			            kr_timer >= 10 && kr >= 20 ||
+			            kr_timer >= 4  && kr >= 30 ||
+			            kr_timer >= 2  && kr >= 40;
+							
+	kr = clamp(kr, 0, 40);
+    
+	// Karma will at max always leave 1 Hp left
+	if (kr > Player_GetHp() - 1)
+		kr = Player_GetHp() - 1;
+    
+	// Drain processing
+	if (kr > 0)
+	{
+		kr_timer++;
+            
+		// If threshold is met (via kr amount and timer), proceed Kr drain and takes Hp along
+		if (_kr_threshold)
+		{
+			kr_timer = 0;
+			kr--;
+			Player_SetHp(Player_GetHp() - 1);
+		}
+	}
+	else
+		kr_timer = 0;
+}

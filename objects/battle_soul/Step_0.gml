@@ -19,3 +19,8 @@ if(_inv>0){
 		image_index=0;
 	}
 }
+
+if (x < 0 - sprite_width / 2 || x > 640 + sprite_width / 2 || y < 0 - sprite_height / 2 || y > 480 + sprite_height / 2) {
+	x = battle_board.x;
+	y = battle_board.y;
+}
