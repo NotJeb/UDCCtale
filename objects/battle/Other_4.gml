@@ -25,5 +25,8 @@ Battle_GotoNextState();
 
 show_debug_message($"Battle initialized. Encounter ID {_encounter}");
 
-if (!world.settings.debug)
+if (!world.settings.debug) {
 	game_set_speed(world.settings.game_speed, gamespeed_fps);
+	show_debug_message(world.settings.game_speed);
+	show_debug_message(game_get_speed(gamespeed_fps));
+}

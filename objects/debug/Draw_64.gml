@@ -1,6 +1,6 @@
 text_y = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-if (world.settings.debug) {
+if (!world.settings.debug) {
 	Debug_TextY(0);
 	Debug_TextY(1);
 	Debug_TextY(2, true);
@@ -23,6 +23,7 @@ if (world.settings.debug) {
 	if (text_y[7]) Draw_TextShadow(5, text_y[7], $"BATTLE SOUL X {battle_soul.x}", 2, font_mars_needs_cunnilingus);
 	if (text_y[8]) Draw_TextShadow(5, text_y[8], $"BATTLE SOUL Y {battle_soul.y}", 2, font_mars_needs_cunnilingus);
 	if (text_y[9]) Draw_TextShadow(5, text_y[9], "HITBOXES ON", 2, font_mars_needs_cunnilingus);
+	Draw_TextShadow(5, 185, $"DELTATIME {1000000/delta_time}", 2, font_mars_needs_cunnilingus);
 }
 
 fps_drop_alpha += (fps_real < game_get_speed(gamespeed_fps) && fps_real >= 0) ? 1 / 20 : -1 / 20;
