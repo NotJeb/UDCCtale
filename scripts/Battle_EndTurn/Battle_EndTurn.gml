@@ -13,6 +13,9 @@ function Battle_EndTurn() {
 		}*/
 		Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.TURN_END);
 		
+		instance_destroy(battle_soul_dasher);
+		instance_destroy(battle_warning);
+		
 		if(instance_exists(battle_turn)){
 			with(battle_turn){
 				event_user(BATTLE_TURN_EVENT.TURN_END);

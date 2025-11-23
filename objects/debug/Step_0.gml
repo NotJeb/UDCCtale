@@ -11,8 +11,8 @@ if (world.settings.debug) {
 	if (room == room_battle) {
 		if (Battle_GetState() == BATTLE_STATE.IN_TURN) {
 
-			// C to end turn
-			if (keyboard_check_pressed(ord("C")))
+			// Space to end turn
+			if (keyboard_check_pressed(vk_space))
 				Debug_EndTurn();
 		}
 		else {

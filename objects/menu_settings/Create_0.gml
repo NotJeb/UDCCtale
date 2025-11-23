@@ -12,6 +12,7 @@ _menu_screen = [
 		function(){return $"SFX VOLUME : {int64(world.settings.sfx_volume * 100)}"},
 		function(){return $"BGM VOLUME : {int64(world.settings.bgm_volume * 100)}"},
 		function(){return $"CHANGE NAME"},
+		function(){return $"WIPE SAVE"},
 		]},
 	{parent : MENU_SCREEN.MAIN, button : [
 		function(){return $"DEBUG : {(world.settings.debug ? "ON" : "OFF")}"},

@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"battle_turn_clonetails_2",
+  "%Name":"battle_soul_blue_orange",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":12,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"battle_turn_clonetails_2",
+  "name":"battle_soul_blue_orange",
   "overriddenProperties":[],
   "parent":{
-    "name":"Clonetails",
-    "path":"folders/Objects/Battle/Turn/Clonetails.yy",
+    "name":"Soul",
+    "path":"folders/Objects/Battle/Soul.yy",
   },
   "parentObjectId":{
-    "name":"battle_turn",
-    "path":"objects/battle_turn/battle_turn.yy",
+    "name":"battle_soul",
+    "path":"objects/battle_soul/battle_soul.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_battle_soul_blue_orange",
+    "path":"sprites/spr_battle_soul_blue_orange/spr_battle_soul_blue_orange.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

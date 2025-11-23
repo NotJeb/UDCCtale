@@ -80,6 +80,11 @@ switch (_menu) {
 				if (Input_IsPressed(INPUT.CONFIRM))
 					Menu_Set(menu_name, menu_settings);
 				break;
+				
+			case 5:
+				if (Input_IsPressed(INPUT.CONFIRM))
+					
+				break;
 		}
 		break;
 		
