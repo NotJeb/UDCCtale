@@ -12,7 +12,7 @@ if (world.settings.debug) {
 		if (Battle_GetState() == BATTLE_STATE.IN_TURN) {
 
 			// Space to end turn
-			if (keyboard_check_pressed(vk_space))
+			if (keyboard_check_pressed(ord("E")))
 				Debug_EndTurn();
 		}
 		else {

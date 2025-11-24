@@ -17,11 +17,11 @@ if (Battle_Repeat(40, 640, 60)) {
 	
 	var _event0 = function(_x) {
 		repeat (4) {
-			var _bone0 = Battle_CreateBone(_x, bb.y - 90, 20, random(360), choose(0, 1, 2), 60);
+			var _bone0 = Battle_CreateBone(_x, bb.y - 90, 20, random(360), choose(0, 1, 2), 60, 10);
 			_bone0.rotation = random_range(-2, 2);
 			
-			Anim_Create(_bone0, "x", 0, 0, _x, random_range(-25, 25), 60);
-			Anim_Create(_bone0, "y", ANIM_TWEEN.SINE, ANIM_EASE.IN, bb.y - 90, 180, 60);
+			Anim_Create(_bone0, "x", 0, 0, _x, random_range(-30, 30), 60);
+			Anim_Create(_bone0, "y", ANIM_TWEEN.SINE, ANIM_EASE.IN, bb.y - 90 - random(20), 200, 60);
 			
 			audio_play_sound(snd_dong, 0, 0);
 		}
