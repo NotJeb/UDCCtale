@@ -18,12 +18,12 @@ if (time == 70) {
 	Anim_Create(_bone0, "origin", ANIM_TWEEN.SINE, ANIM_EASE.OUT, 0, _length / 2, 60);
 	Anim_Create(_bone0, "length", ANIM_TWEEN.SINE, ANIM_EASE.IN, 450, -_length, 60, 720);
 	Anim_Create(_bone0, "origin", ANIM_TWEEN.SINE, ANIM_EASE.IN, 225, -_length / 2, 60, 720);
-	_bone0.rotation = 1;
+	_bone0.rotation = 0.75;
 	
 	var _bone1 = Battle_CreateBone(bb.x, bb.y - 60, 0, 0, 1, 780);
 	Anim_Create(_bone1, "length", ANIM_TWEEN.SINE, ANIM_EASE.OUT, 0, _length, 60);
 	Anim_Create(_bone1, "origin", ANIM_TWEEN.SINE, ANIM_EASE.OUT, 0, _length / 2, 60);
 	Anim_Create(_bone1, "length", ANIM_TWEEN.SINE, ANIM_EASE.IN, 450, -_length, 60, 720);
 	Anim_Create(_bone1, "origin", ANIM_TWEEN.SINE, ANIM_EASE.IN, 225, -_length / 2, 60, 720);
-	_bone1.rotation = -1;
+	_bone1.rotation = -0.75;
 }
