@@ -2,4 +2,4 @@
 event_inherited();
 
 _enemy_name = ENEMY_NAME_PLAYERUT;
-turn_count = 1;
+turn_count = 2;

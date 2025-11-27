@@ -106,6 +106,7 @@
     {"name":"battle_turn_clonetails_2","order":3,"path":"objects/battle_turn_clonetails_2/battle_turn_clonetails_2.yy",},
     {"name":"battle_turn_clonetails_3","order":1,"path":"objects/battle_turn_clonetails_3/battle_turn_clonetails_3.yy",},
     {"name":"battle_turn_kacpii_1","order":1,"path":"objects/battle_turn_kacpii_1/battle_turn_kacpii_1.yy",},
+    {"name":"battle_turn_playerut_1","order":1,"path":"objects/battle_turn_playerut_1/battle_turn_playerut_1.yy",},
     {"name":"battle_ui","order":5,"path":"objects/battle_ui/battle_ui.yy",},
     {"name":"battle_warning","order":3,"path":"objects/battle_warning/battle_warning.yy",},
     {"name":"battle","order":1,"path":"objects/battle/battle.yy",},

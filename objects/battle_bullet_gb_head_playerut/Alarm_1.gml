@@ -4,6 +4,7 @@ image_index = 1;
 gb_beam = instance_create_depth(x, y, depth, battle_bullet_gb_beam);
 gb_beam.image_yscale = image_yscale;
 gb_beam.image_angle = image_angle;
+gb_beam.color = color;
 gb_beam.parent_size = image_xscale * (65 / 16);
 gb_beam.alarm[0] = 8;
 gb_beam.alarm[1] = 8 + floor(shoot_time / 2);

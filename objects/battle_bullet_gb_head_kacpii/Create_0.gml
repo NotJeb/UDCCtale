@@ -6,6 +6,7 @@ beam_xscale = 0;
 gb_beam = noone;
 shoot_time = 0;
 angle = 0;
+color = 0;
 mouth_index = 0;
 
 image_speed = 0;

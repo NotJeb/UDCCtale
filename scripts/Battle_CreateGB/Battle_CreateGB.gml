@@ -1,4 +1,4 @@
-function Battle_CreateGB(_start_x, _start_y, _start_angle, _end_x, _end_y, _end_angle, _move_time, _pause_time, _shoot_time, _xscale = 1, _yscale = 2, _gb_type = battle_enemy._enemy_name) {
+function Battle_CreateGB(_start_x, _start_y, _start_angle, _end_x, _end_y, _end_angle, _move_time, _pause_time, _shoot_time, _xscale = 1, _yscale = 2, _color = 0, _gb_type = battle_enemy._enemy_name) {
 	if (_move_time < 13) return show_debug_message($"GB at {_start_x}, {_start_y} with _move_time {_move_time} not created, please use a _move_time of at least 13.");
 	if (_shoot_time < 4) return show_debug_message($"GB at {_start_x}, {_start_y} with _shoot_time {_shoot_time} not created, please use a _move_time of at least 4.");
 	
@@ -11,6 +11,7 @@ function Battle_CreateGB(_start_x, _start_y, _start_angle, _end_x, _end_y, _end_
 	_inst.image_xscale = _xscale;
 	_inst.image_yscale = _yscale;
 	_inst.shoot_time = _shoot_time;
+	_inst.color = _color;
 	
 	// Move GB to end position
 	Anim_Create(_inst, "x", ANIM_TWEEN.SINE, ANIM_EASE.OUT, _start_x, _end_x - _start_x, _move_time - 10);
