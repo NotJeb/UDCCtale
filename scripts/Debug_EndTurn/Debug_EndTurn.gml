@@ -11,10 +11,14 @@ function Debug_EndTurn(){
 			x = BATTLE_BOARD.X;
 			y = BATTLE_BOARD.Y;
 		}
-		with camera {
-			Anim_Destroy(id);
-			event_user(0);
-		}
+	}
+	with camera {
+		Anim_Destroy(id);
+		event_user(0);
+	}
+	with fader {
+		alpha = 0;
+		alarm[0] = -1;
 	}
 	Battle_EndTurn();
 	Battle_SetState(BATTLE_STATE.MENU);

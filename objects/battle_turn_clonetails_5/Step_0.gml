@@ -5,8 +5,8 @@ if (Battle_GetTurnTime() == 1) {
 	time = 0;
 }
 if (time == 0) {
-	attack_type = irandom(3);
-	Battle_SetTurnTime(attack_time[attack_type] + 1);
+	attack_type = 4//irandom(3);
+	battle._turn_time += attack_time[attack_type] + 1;
 	
 	Battle_Flash();
 }
@@ -129,6 +129,65 @@ if (attack_type == 3) {
 		
 			var _bone1 = Battle_CreateBone(bb.x, bb.y + 75, 75, 270, 0, 60);
 			Anim_Create(_bone1, "y", 0, 0, bb.y + 75, -150, 60);
+		}
+	}
+}
+if (attack_type == 4) {
+	if (time == 0) {
+		attack_variation = choose(0, 1);
+	}
+	if (attack_variation == 0) {
+		if (time == 19) {
+			Battle_BoardTransform(65, 65, 195, 195, bb.x, bb.y, 0);
+	
+			Battle_SetSoul(battle_soul_blue);
+	
+			bs.x = bb.x + 130;
+			bs.y = bb.y + 57;
+		}
+		if (time == 30) {
+			for (var i = 0; i < 20; i++) {
+				var _bone0 = Battle_CreateBone(bb.x - 205 - i * 24, bb.y + 65, (i < 10 ? 65 : 15), 0, 0, 90);
+				_bone0.speed = (195 + 195 + 20 * 24) / 90;
+				_bone0.direction = 0;
+			}
+		}
+		if (time == 102) {
+			for (var i = 0; i < 20; i++) {
+				var _bone0 = Battle_CreateBone(bb.x - 205 - i * 24, bb.y + 65, (i < 10 ? 65 : 15), 0, 0, 90);
+				_bone0.speed = (195 + 195 + 20 * 24) / 90;
+				_bone0.direction = 0;
+			}
+		}
+		if (time == 134) {
+			Battle_CreateGB(-50, bb.y + 50, 180, bb.x - 230, bb.y + 50, 0, 40, 10, 30, 2, 2, 0, ENEMY_NAME_SKELLY);
+		}
+	}
+	else {
+		if (time == 19) {
+			Battle_BoardTransform(65, 65, 195, 195, bb.x, bb.y, 0);
+	
+			Battle_SetSoul(battle_soul_blue);
+	
+			bs.x = bb.x - 130;
+			bs.y = bb.y + 57;
+		}
+		if (time == 30) {
+			for (var i = 0; i < 20; i++) {
+				var _bone0 = Battle_CreateBone(bb.x + 205 + i * 24, bb.y + 65, (i < 10 ? 65 : 15), 0, 0, 90);
+				_bone0.speed = -(195 + 195 + 20 * 24) / 90;
+				_bone0.direction = 0;
+			}
+		}
+		if (time == 102) {
+			for (var i = 0; i < 20; i++) {
+				var _bone0 = Battle_CreateBone(bb.x + 205 + i * 24, bb.y + 65, (i < 10 ? 65 : 15), 0, 0, 90);
+				_bone0.speed = -(195 + 195 + 20 * 24) / 90;
+				_bone0.direction = 0;
+			}
+		}
+		if (time == 134) {
+			Battle_CreateGB(690, bb.y + 50, 0, bb.x + 230, bb.y + 50, 180, 40, 10, 30, 2, 2, 0, ENEMY_NAME_SKELLY);
 		}
 	}
 }
