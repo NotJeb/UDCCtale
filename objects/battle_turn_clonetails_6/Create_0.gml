@@ -2,5 +2,5 @@
 event_inherited();
 
 attack_type = -1;
-attack_time = [100, 100, 180, 200, 214, 160];
+attack_time = [90, 90, 170, 190, 204, 150];
 attack_variation = 0;
