@@ -171,6 +171,7 @@
     {"id":{"name":"battle_effect_dleckon_flame","path":"objects/battle_effect_dleckon_flame/battle_effect_dleckon_flame.yy",},},
     {"id":{"name":"battle_effects","path":"objects/battle_effects/battle_effects.yy",},},
     {"id":{"name":"battle_enemy_candle_and_moss","path":"objects/battle_enemy_candle_and_moss/battle_enemy_candle_and_moss.yy",},},
+    {"id":{"name":"battle_enemy_candle_dummy","path":"objects/battle_enemy_candle_dummy/battle_enemy_candle_dummy.yy",},},
     {"id":{"name":"battle_enemy_cheesy","path":"objects/battle_enemy_cheesy/battle_enemy_cheesy.yy",},},
     {"id":{"name":"battle_enemy_clonetails","path":"objects/battle_enemy_clonetails/battle_enemy_clonetails.yy",},},
     {"id":{"name":"battle_enemy_dfw","path":"objects/battle_enemy_dfw/battle_enemy_dfw.yy",},},

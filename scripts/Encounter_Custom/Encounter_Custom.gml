@@ -1,7 +1,7 @@
 function Encounter_Custom() {
 	Encounter_Set(ENEMY_INDEX.SKELLY,-1,battle_enemy_skelly,-1,"* Afterglory 1.5x Speed No Hit&when",-1);
 	Encounter_Set(ENEMY_INDEX.TRIZER,-1,battle_enemy_trizer,-1,"* Edgetale again :/",-1);
-	Encounter_Set(ENEMY_INDEX.CANDLE_AND_MOSS,-1,battle_enemy_candle_and_moss,-1,"* You encountered peak!",-1);
+	Encounter_Set(ENEMY_INDEX.CANDLE_AND_MOSS,-1,battle_enemy_candle_and_moss,battle_enemy_candle_dummy,"* You encountered peak!",-1);
 	Encounter_Set(ENEMY_INDEX.NOOB_TIME_TRIO,-1,battle_enemy_noob_time_trio,-1,"* You feel your skill issue coursing through your viens",-1);
 	Encounter_Set(ENEMY_INDEX.DFW,-1,battle_enemy_dfw,-1,"* Probably not mistytale",-1);
 	Encounter_Set(ENEMY_INDEX.KACPII,-1,battle_enemy_kacpii,-1,"* Precision W",-1);

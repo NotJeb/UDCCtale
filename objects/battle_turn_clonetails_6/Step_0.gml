@@ -6,9 +6,12 @@ if (Battle_GetTurnTime() == 1) {
 }
 if (time == 0) {
 	attack_type = irandom(5);
-	battle._turn_time += attack_time[attack_type] + 1;
+	if (attack_count < 7)
+		battle._turn_time += attack_time[attack_type] + 1;
 	
 	Battle_Flash(10);
+	
+	attack_count++;
 }
 if (attack_type == 0 || attack_type == 1) {
 	if (time == 9) {

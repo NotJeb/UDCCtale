@@ -74,6 +74,7 @@
     {"name":"battle_dialog_enemy","order":27,"path":"objects/battle_dialog_enemy/battle_dialog_enemy.yy",},
     {"name":"battle_effects","order":30,"path":"objects/battle_effects/battle_effects.yy",},
     {"name":"battle_enemy_candle_and_moss","order":4,"path":"objects/battle_enemy_candle_and_moss/battle_enemy_candle_and_moss.yy",},
+    {"name":"battle_enemy_candle_dummy","order":17,"path":"objects/battle_enemy_candle_dummy/battle_enemy_candle_dummy.yy",},
     {"name":"battle_enemy_cheesy","order":10,"path":"objects/battle_enemy_cheesy/battle_enemy_cheesy.yy",},
     {"name":"battle_enemy_clonetails","order":16,"path":"objects/battle_enemy_clonetails/battle_enemy_clonetails.yy",},
     {"name":"battle_enemy_dfw","order":6,"path":"objects/battle_enemy_dfw/battle_enemy_dfw.yy",},
