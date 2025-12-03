@@ -36,10 +36,9 @@ if (world.settings.debug) {
 			
 			Battle_SetTurnNumber(Battle_GetTurnNumber() - 1);
 			
-			Battle_SetState(BATTLE_STATE.TURN_PREPARATION);
 			Battle_SetMenu(-1, false);
+			Battle_SetState(BATTLE_STATE.TURN_PREPARATION);
 			
-			Battle_SetSoul(battle_soul_red);
 			Player_Heal(99999);
 		}
 

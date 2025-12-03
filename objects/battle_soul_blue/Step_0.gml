@@ -94,11 +94,7 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && moveable)
                     cx = (-sprite_height) / 2 - 1;
                 else if (dir == DIR.RIGHT)
                     cx = sprite_height / 2 + 1;
-                var inst = instance_position((x + cx), (y + cy), battle_platform);
-                if (instance_exists(inst)) {
-                    if (inst.sticky)
-                        x += (inst.x - inst.xprevious);
-                }
+				platform = instance_position((x + cx), (y + cy), battle_platform);
             }
 			
             if (Input_IsHeld(input))

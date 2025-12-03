@@ -63,5 +63,5 @@ function Macro_Enemy(){
 #macro ENEMY_DESCRIPTION_MAKER "Maker19 words that are longer than previous words don't exist"
 #macro ENEMY_DESCRIPTION_ENZO "Omega Enzo is also peak"
 #macro ENEMY_DESCRIPTION_DLECKON "Dleckontrust dleckon's your trust until you're genocides"
-#macro ENEMY_DESCRIPTION_CLONETAILS "I still dunno what this fight is"
+#macro ENEMY_DESCRIPTION_CLONETAILS "Mix of precision and RNG. Uses input based color attacks. Black attacks do more damage.\n Designed by DFW and Clonetails."
 }

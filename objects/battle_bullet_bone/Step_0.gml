@@ -15,5 +15,8 @@ switch custom {
 				mode = 0;
 		}
 		break;
+	case 2:
+		x = x_center + sin(battle_turn.siner / sin_time) * sin_length;
+		break;
 }
 angle += rotation;

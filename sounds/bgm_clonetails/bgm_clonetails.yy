@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":214.25052,
+  "duration":0.0,
   "exportDir":"",
   "name":"bgm_clonetails",
   "parent":{

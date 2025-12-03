@@ -1,4 +1,4 @@
-function Debug_EndTurn(){
+function Debug_EndTurn() {
 	if (instance_exists(battle_turn)) {
 		instance_destroy(battle_warning);
 		with battle_board {
