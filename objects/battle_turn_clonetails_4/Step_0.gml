@@ -14,6 +14,7 @@ if (time == 70) {
 	var _length = sqrt(power(250, 2) + power(370, 2));
 	
 	var _bone0 = Battle_CreateBone(bb.x, bb.y - 60, 0, 0, 0, 780);
+	_bone0.image_index = 1;
 	Anim_Create(_bone0, "length", ANIM_TWEEN.SINE, ANIM_EASE.OUT, 0, _length, 60);
 	Anim_Create(_bone0, "origin", ANIM_TWEEN.SINE, ANIM_EASE.OUT, 0, _length / 2, 60);
 	Anim_Create(_bone0, "length", ANIM_TWEEN.SINE, ANIM_EASE.IN, _length, -_length, 60, 720);

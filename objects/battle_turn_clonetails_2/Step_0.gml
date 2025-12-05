@@ -12,6 +12,7 @@ if (Battle_Repeat(40, 640, 60)) {
 	Battle_CreateWarning(_x - 6, bb.y - 64, _x + 6, bb.y + 64, 40);
 	
 	var _bone0 = Battle_CreateBone(_x, bb.y + 75, 5, 0, 0, 112);
+	_bone0.image_index = 1;
 	Anim_Create(_bone0, "length", 0, 0, 5, 135, 6, 40);
 	Anim_Create(_bone0, "length", ANIM_TWEEN.SINE, ANIM_EASE.IN, 140, -135, 60, 52);
 	

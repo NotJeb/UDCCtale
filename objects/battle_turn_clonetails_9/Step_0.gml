@@ -4,127 +4,178 @@ event_inherited();
 if (time == 0) {
 	Battle_BoardTransform(65, 65, 65, 65);
 }
-if (Battle_Repeat(10, 370, 48)) {
-	Battle_Slam(choose(DIR.DOWN, DIR.LEFT, DIR.RIGHT, DIR.UP));
+if (Battle_Repeat(10, 610, 95)) {
+	var _dir = choose(DIR.UP, DIR.DOWN, DIR.LEFT, DIR.RIGHT);
+	var _side_length = 30;
+	var _bottom_length = 25;
+	var _top_length = 65;
+	var _warn_time = 30;
+	var _extend_time = 30;
 	
-	Battle_CreateBoneWall(DIR.DOWN, 55, 28, 20);
-	Battle_CreateBoneWall(DIR.LEFT, 55, 28, 20);
-	Battle_CreateBoneWall(DIR.RIGHT, 55, 28, 20);
-	Battle_CreateBoneWall(DIR.UP, 55, 28, 20);
-}
-if (time == 390) {
-	Battle_SetSoul(battle_soul_red);
-	audio_play_sound(snd_ding, 0, 0);
-}
-if (Battle_Repeat(405, 525, 30)) {
-	var _bone0 = Battle_CreateBone(bb.x - 75, bb.y - 70, 75, 90, 0, 40);
-	Anim_Create(_bone0, "y", 0, 0, bb.y - 70, 140, 40);
+	Battle_Slam(_dir);
 	
-	var _bone1 = Battle_CreateBone(bb.x + 75, bb.y + 70, 75, 270, 0, 40);
-	Anim_Create(_bone1, "y", 0, 0, bb.y + 70, -140, 40);
-}
-if (time == 555) {
-	var _bone0 = Battle_CreateBone(bb.x + 75, bb.y - 70, 75, 270, 0, 40);
-	Anim_Create(_bone0, "y", 0, 0, bb.y - 70, 140, 40);
-	
-	var _bone1 = Battle_CreateBone(bb.x - 75, bb.y + 70, 75, 90, 0, 40);
-	Anim_Create(_bone1, "y", 0, 0, bb.y + 70, -140, 40);
-}
-if (time == 580) {
-	Battle_Slam(DIR.LEFT);
-}
-if (time == 600) {
-	bs.impact = 1;
-	bs.dir = DIR.RIGHT;
-	
-	Battle_BoardTransform(50, 50, 335, 335, bb.x, bb.y, 20, {tween : 0, ease : 0});
-}
-if (Battle_Repeat(600, 1340)) {
-	bs.x += ((bb.x - 150 + (time - 600) * (1 / 10)) - bs.x) / 20;
-	bs.move = 0;
-}
-if (Battle_Repeat(630, 960, 3)) {
-	var _length = sin((time - 630) * (pi / 24)) * 25;
-	
-	var _bone0 = Battle_CreateBone(bb.x + 340, bb.y - 60, 47 + _length, 180, 0, 60);
-	Anim_Create(_bone0, "x", 0, 0, bb.x + 340, -660, 60);
-	
-	var _bone1 = Battle_CreateBone(bb.x + 340, bb.y + 60, 47 - _length, 0, 0, 60);
-	Anim_Create(_bone1, "x", 0, 0, bb.x + 340, -660, 60);
-}
-if (Battle_Repeat(990, 1230, 40)) {
-	for (var i = 0; i < 4; i++) {
-		var _bone0 = Battle_CreateBone(bb.x + 340 + i * 12, bb.y + 60, 87, 0, 0, 80);
-		Anim_Create(_bone0, "x", 0, 0, bb.x + 340 + i * 12, -718, 80);
-		_bone0.custom = 1;
-		_bone0.mode = 1;
+	switch (_dir) {
+		case DIR.DOWN:
+			if (_warn_time > 0) {
+				Battle_CreateWarning(bb._frame_left_x + bb._frame_left_width + 1 + _side_length, bb._frame_down_y - _bottom_length + 1, bb._frame_right_x - 1 - _side_length, bb._frame_down_y - 1, _warn_time, snd_bonestab);
+				Battle_CreateWarning(bb._frame_left_x + bb._frame_left_width + 1, bb._frame_up_y + bb._frame_up_height + 1, bb._frame_right_x - 1, bb._frame_up_y + bb._frame_up_height + _top_length - 1, _warn_time, snd_bonestab);
+				Battle_CreateWarning(bb._frame_left_x + bb._frame_left_width + 1, bb._frame_up_y + bb._frame_up_height + 1 + _top_length, bb._frame_left_x + bb._frame_left_width + _side_length - 1, bb._frame_down_y - 1, _warn_time, snd_bonestab);
+				Battle_CreateWarning(bb._frame_right_x - _side_length + 1, bb._frame_up_y + bb._frame_up_height + 1 + _top_length, bb._frame_right_x - 1, bb._frame_down_y - 1, _warn_time, snd_bonestab);
+			}
+			
+			// Bottom
+			for (var i = 6; i < bb.left + bb.right + 6 - _side_length * 2; i += 12) {
+				var _bone0 = Battle_CreateBone(bb._frame_left_x + bb._frame_left_width + i + _side_length - 1, bb._frame_down_y + 10, 10, 0, 0, _warn_time + _extend_time + 10);
+				Anim_Create(_bone0, "length", 0, 0, 10, _bottom_length, 10, _warn_time);
+				Anim_Create(_bone0, "length", 0, 0, _bottom_length + 10, -_bottom_length, 10, _warn_time + _extend_time);
+				_bone0.image_index = 1;
+			}
+			
+			// Top
+			for (var i = 0; i < bb.left + bb.right + 12; i += 12) {
+				var _bone0 = Battle_CreateBone(bb._frame_right_x - i, bb._frame_up_y + bb._frame_up_height - 10, 10, 180, 0, _warn_time + _extend_time + 10);
+				Anim_Create(_bone0, "length", 0, 0, 10, _top_length, 10, _warn_time);
+				Anim_Create(_bone0, "length", 0, 0, _top_length + 10, -_top_length, 10, _warn_time + _extend_time);
+			}
+			
+			// Sides
+			for (var i = 6; i < bb.down + bb.up + 6 - _top_length; i += 12) {
+				var _bone0 = Battle_CreateBone(bb._frame_left_x + bb._frame_left_width - 10, bb._frame_up_y + bb._frame_up_height + i + _top_length, 10, 90, 0, _warn_time + _extend_time + 10);
+				Anim_Create(_bone0, "length", 0, 0, 10, _side_length, 10, _warn_time);
+				Anim_Create(_bone0, "length", 0, 0, _side_length + 10, -_side_length, 10, _warn_time + _extend_time);
+				
+				var _bone1 = Battle_CreateBone(bb._frame_right_x + 10, bb._frame_up_y + bb._frame_up_height + i + _top_length, 10, 270, 0, _warn_time + _extend_time + 10);
+				Anim_Create(_bone1, "length", 0, 0, 10, _side_length, 10, _warn_time);
+				Anim_Create(_bone1, "length", 0, 0, _side_length + 10, -_side_length, 10, _warn_time + _extend_time);
+			}
+			break;
+		case DIR.UP:
+			if (_warn_time > 0) {
+				Battle_CreateWarning(bb._frame_left_x + bb._frame_left_width + 1 + _side_length, bb._frame_up_y + bb._frame_up_height + 1, bb._frame_right_x - 1 - _side_length, bb._frame_up_y + bb._frame_up_height + _bottom_length - 1, _warn_time, snd_bonestab);
+				Battle_CreateWarning(bb._frame_left_x + bb._frame_left_width + 1, bb._frame_down_y - _top_length + 1, bb._frame_right_x - 1, bb._frame_down_y - 1, _warn_time, snd_bonestab);
+				Battle_CreateWarning(bb._frame_left_x + bb._frame_left_width + 1, bb._frame_up_y + bb._frame_up_height + 1, bb._frame_left_x + bb._frame_left_width + _side_length - 1, bb._frame_down_y - 1 - _top_length, _warn_time, snd_bonestab);
+				Battle_CreateWarning(bb._frame_right_x - _side_length + 1, bb._frame_up_y + bb._frame_up_height + 1, bb._frame_right_x - 1, bb._frame_down_y - 1 - _top_length, _warn_time, snd_bonestab);
+			}
+			
+			// Bottom
+			for (var i = 6; i < bb.left + bb.right + 6 - _side_length * 2; i += 12) {
+				var _bone0 = Battle_CreateBone(bb._frame_right_x - i - _side_length + 1, bb._frame_up_y + bb._frame_up_height - 10, 10, 180, 0, _warn_time + _extend_time + 10);
+				Anim_Create(_bone0, "length", 0, 0, 10, _bottom_length, 10, _warn_time);
+				Anim_Create(_bone0, "length", 0, 0, _bottom_length + 10, -_bottom_length, 10, _warn_time + _extend_time);
+				_bone0.image_index = 1;
+			}
+			
+			// Top
+			for (var i = 0; i < bb.left + bb.right + 12; i += 12) {
+				var _bone0 = Battle_CreateBone(bb._frame_left_x + bb._frame_left_width + i, bb._frame_down_y + 10, 10, 0, 0, _warn_time + _extend_time + 10);
+				Anim_Create(_bone0, "length", 0, 0, 10, _top_length, 10, _warn_time);
+				Anim_Create(_bone0, "length", 0, 0, _top_length + 10, -_top_length, 10, _warn_time + _extend_time);
+			}
+			
+			// Sides
+			for (var i = 6; i < bb.down + bb.up + 6 - _top_length; i += 12) {
+				var _bone0 = Battle_CreateBone(bb._frame_left_x + bb._frame_left_width - 10, bb._frame_down_y - i - _top_length, 10, 90, 0, _warn_time + _extend_time + 10);
+				Anim_Create(_bone0, "length", 0, 0, 10, _side_length, 10, _warn_time);
+				Anim_Create(_bone0, "length", 0, 0, _side_length + 10, -_side_length, 10, _warn_time + _extend_time);
+				
+				var _bone1 = Battle_CreateBone(bb._frame_right_x + 10, bb._frame_down_y - i - _top_length, 10, 270, 0, _warn_time + _extend_time + 10);
+				Anim_Create(_bone1, "length", 0, 0, 10, _side_length, 10, _warn_time);
+				Anim_Create(_bone1, "length", 0, 0, _side_length + 10, -_side_length, 10, _warn_time + _extend_time);
+			}
+			break;
+		case DIR.LEFT:
+			if (_warn_time > 0) {
+				Battle_CreateWarning(bb._frame_left_x + bb._frame_left_width + 1, bb._frame_up_y + bb._frame_up_height + 1 + _side_length, bb._frame_left_x + bb._frame_left_width + _bottom_length - 1, bb._frame_down_y - 1 - _side_length, _warn_time, snd_bonestab);
+				Battle_CreateWarning(bb._frame_right_x - _top_length + 1, bb._frame_up_y + bb._frame_up_height + 1, bb._frame_right_x - 1, bb._frame_down_y - 1, _warn_time, snd_bonestab);
+				Battle_CreateWarning(bb._frame_left_x + bb._frame_left_width + 1, bb._frame_up_y + bb._frame_up_height + 1, bb._frame_right_x - 1 - _top_length, bb._frame_up_y + bb._frame_up_height - 1 + _side_length, _warn_time, snd_bonestab);
+				Battle_CreateWarning(bb._frame_left_x + bb._frame_left_width + 1, bb._frame_down_y + 1 - _side_length, bb._frame_right_x - 1 - _top_length, bb._frame_down_y - 1, _warn_time, snd_bonestab);
+			}
+			
+			// Bottom
+			for (var i = 6; i < bb.down + bb.up + 6 - _side_length * 2; i += 12) {
+				var _bone0 = Battle_CreateBone(bb._frame_left_x + bb._frame_left_width - 10, bb._frame_up_y + bb._frame_up_height + i + _side_length - 1, 10, 90, 0, _warn_time + _extend_time + 10);
+				Anim_Create(_bone0, "length", 0, 0, 10, _bottom_length, 10, _warn_time);
+				Anim_Create(_bone0, "length", 0, 0, _bottom_length + 10, -_bottom_length, 10, _warn_time + _extend_time);
+				_bone0.image_index = 1;
+			}
+			
+			// Top
+			for (var i = 0; i < bb.down + bb.up + 12; i += 12) {
+				var _bone0 = Battle_CreateBone(bb._frame_right_x + 10, bb._frame_down_y - i, 10, 270, 0, _warn_time + _extend_time + 10);
+				Anim_Create(_bone0, "length", 0, 0, 10, _top_length, 10, _warn_time);
+				Anim_Create(_bone0, "length", 0, 0, _top_length + 10, -_top_length, 10, _warn_time + _extend_time);
+			}
+			
+			// Sides
+			for (var i = 6; i < bb.left + bb.right + 6 - _top_length; i += 12) {
+				var _bone0 = Battle_CreateBone(bb._frame_right_x - i - _top_length, bb._frame_down_y + 10, 10, 0, 0, _warn_time + _extend_time + 10);
+				Anim_Create(_bone0, "length", 0, 0, 10, _side_length, 10, _warn_time);
+				Anim_Create(_bone0, "length", 0, 0, _side_length + 10, -_side_length, 10, _warn_time + _extend_time);
+				
+				var _bone1 = Battle_CreateBone(bb._frame_right_x - i - _top_length, bb._frame_up_y + bb._frame_up_height - 10, 10, 180, 0, _warn_time + _extend_time + 10);
+				Anim_Create(_bone1, "length", 0, 0, 10, _side_length, 10, _warn_time);
+				Anim_Create(_bone1, "length", 0, 0, _side_length + 10, -_side_length, 10, _warn_time + _extend_time);
+			}
+			break;
+		case DIR.RIGHT:
+			if (_warn_time > 0) {
+				Battle_CreateWarning(bb._frame_right_x - _bottom_length + 1, bb._frame_up_y + bb._frame_up_height + 1 + _side_length, bb._frame_right_x - 1, bb._frame_down_y - 1 - _side_length, _warn_time, snd_bonestab);
+				Battle_CreateWarning(bb._frame_left_x + bb._frame_left_width + 1, bb._frame_up_y + bb._frame_up_height + 1, bb._frame_left_x + bb._frame_left_width + _top_length - 1, bb._frame_down_y - 1, _warn_time, snd_bonestab);
+				Battle_CreateWarning(bb._frame_left_x + bb._frame_left_width + 1 + _top_length, bb._frame_up_y + bb._frame_up_height + 1, bb._frame_right_x - 1, bb._frame_up_y + bb._frame_up_height - 1 + _side_length, _warn_time, snd_bonestab);
+				Battle_CreateWarning(bb._frame_left_x + bb._frame_left_width + 1 + _top_length, bb._frame_down_y + 1 - _side_length, bb._frame_right_x - 1, bb._frame_down_y - 1, _warn_time, snd_bonestab);
+			}
+			
+			// Bottom
+			for (var i = 6; i < bb.down + bb.up + 6 - _side_length * 2; i += 12) {
+				var _bone0 = Battle_CreateBone(bb._frame_right_x + 10, bb._frame_down_y - i - _side_length + 1, 10, 270, 0, _warn_time + _extend_time + 10);
+				Anim_Create(_bone0, "length", 0, 0, 10, _bottom_length, 10, _warn_time);
+				Anim_Create(_bone0, "length", 0, 0, _bottom_length + 10, -_bottom_length, 10, _warn_time + _extend_time);
+				_bone0.image_index = 1;
+			}
+			
+			// Top
+			for (var i = 0; i < bb.down + bb.up + 12; i += 12) {
+				var _bone0 = Battle_CreateBone(bb._frame_left_x + bb._frame_left_width - 10, bb._frame_up_y + bb._frame_up_height + i, 10, 90, 0, _warn_time + _extend_time + 10);
+				Anim_Create(_bone0, "length", 0, 0, 10, _top_length, 10, _warn_time);
+				Anim_Create(_bone0, "length", 0, 0, _top_length + 10, -_top_length, 10, _warn_time + _extend_time);
+			}
+			
+			// Sides
+			for (var i = 6; i < bb.left + bb.right + 6 - _top_length; i += 12) {
+				var _bone0 = Battle_CreateBone(bb._frame_left_x + bb._frame_left_width + i + _top_length - 1, bb._frame_down_y + 10, 10, 0, 0, _warn_time + _extend_time + 10);
+				Anim_Create(_bone0, "length", 0, 0, 10, _side_length, 10, _warn_time);
+				Anim_Create(_bone0, "length", 0, 0, _side_length + 10, -_side_length, 10, _warn_time + _extend_time);
+				
+				var _bone1 = Battle_CreateBone(bb._frame_left_x + bb._frame_left_width + i + _top_length - 1, bb._frame_up_y + bb._frame_up_height - 10, 10, 180, 0, _warn_time + _extend_time + 10);
+				Anim_Create(_bone1, "length", 0, 0, 10, _side_length, 10, _warn_time);
+				Anim_Create(_bone1, "length", 0, 0, _side_length + 10, -_side_length, 10, _warn_time + _extend_time);
+			}
+			break;
 	}
 }
-if (Battle_Repeat(1010, 1250, 40)) {
-	for (var i = 0; i < 4; i++) {
-		var _bone0 = Battle_CreateBone(bb.x + 340 + i * 12, bb.y - 60, 87, 180, 0, 80);
-		Anim_Create(_bone0, "x", 0, 0, bb.x + 340 + i * 12, -718, 80);
-		_bone0.custom = 1;
-		_bone0.mode = 1;
-	}
-}
-if (Battle_Repeat(1270, 1294, 3)) {
-	var _length = 5 + (time - 1270) * 2;
+if (Battle_Repeat(44, 644, 95)) {
+	var _bone0 = Battle_CreateBone(bb.x - 75, bb.y - 65, 130, 180, 2, 30);
+	Anim_Linear(_bone0, 150, 30, DIR.RIGHT);
 	
-	var _bone0 = Battle_CreateBone(bb.x + 340, bb.y - 60, _length, 180, 0, 80);
-	Anim_Create(_bone0, "x", 0, 0, bb.x + 340, -660, 80);
+	var _bone1 = Battle_CreateBone(bb.x + 65, bb.y - 75, 130, 270, 2, 30);
+	Anim_Linear(_bone1, 150, 30, DIR.DOWN);
 	
-	var _bone1 = Battle_CreateBone(bb.x + 340, bb.y + 60, _length, 0, 0, 80);
-	Anim_Create(_bone1, "x", 0, 0, bb.x + 340, -660, 80);
-}
-if (time == 1340) {
-	bs.move = abs((bb.x + 65 - bs.x) / 20);
+	var _bone2 = Battle_CreateBone(bb.x + 75, bb.y + 65, 130, 0, 2, 30);
+	Anim_Linear(_bone2, 150, 30, DIR.LEFT);
 	
-	Battle_BoardTransform(50, 50, 335, 65, bb.x, bb.y, 20, {tween : 0, ease : 0});
+	var _bone3 = Battle_CreateBone(bb.x - 65, bb.y + 75, 130, 90, 2, 30);
+	Anim_Linear(_bone3, 150, 30, DIR.UP);
 }
-if (time == 1360) {
-	Battle_CreateBoneWall(DIR.RIGHT, 60, 20, 50);
-}
-if (time == 1430) {
-	Battle_Flash();
-}
-if (time == 1449) {
-	Battle_BoardTransform(65, 65, 65, 65, bb.x, bb.y, 0);
+if (Battle_Repeat(87, 687, 95)) {
+	var _bone0 = Battle_CreateBone(bb.x - 75, bb.y - 65, 130, 180, 1, 30);
+	Anim_Linear(_bone0, 150, 30, DIR.RIGHT);
 	
-	Battle_SetSoul(battle_soul_red);
+	var _bone1 = Battle_CreateBone(bb.x + 65, bb.y - 75, 130, 270, 1, 30);
+	Anim_Linear(_bone1, 150, 30, DIR.DOWN);
 	
-	bs.x = bb.x;
-	bs.y = bb.y;
-}
-if (Battle_Repeat(1450, 1900, 4)) {
-	var _siner = (time - 1450) * (pi / 32);
-	var _x_start = bb.x + cos(_siner) * 450;
-	var _y_start = bb.y + sin(_siner) * 450;
-	var _x_end = bb.x + cos(_siner) * 100;
-	var _y_end = bb.y + sin(_siner) * 100;
-	var _angle = point_direction(_x_end, _y_end, bb.x, bb.y);
-	Battle_CreateGB(_x_start, _y_start, -_angle, _x_end, _y_end, _angle, 40, 10, 20, 1, 2, 0, ENEMY_NAME_SKELLY);
-}
-if (Battle_Repeat(1900, 2350, 4)) {
-	for (var i = 0; i < 2; i++) { 
-		var _siner = (time - 1450) * (-pi / 64) + (i == 0 ? pi / 2 : 0);
-		var _x_start = bb.x + cos(_siner) * 450;
-		var _y_start = bb.y + sin(_siner) * 450;
-		var _x_end = bb.x + cos(_siner) * 100;
-		var _y_end = bb.y + sin(_siner) * 100;
-		var _angle = point_direction(_x_end, _y_end, bb.x, bb.y);
-		Battle_CreateGB(_x_start, _y_start, -_angle, _x_end, _y_end, _angle, 40, 10, 20, 1, 2, 0, ENEMY_NAME_SKELLY);
-	}
-}
-if (time == 2414) {
-	Battle_SetSoul(battle_soul_blue);
-	alarm[0] = 1;
+	var _bone2 = Battle_CreateBone(bb.x + 75, bb.y + 65, 130, 0, 1, 30);
+	Anim_Linear(_bone2, 150, 30, DIR.LEFT);
 	
-	if (!world.settings.debug && world.settings.game_speed >= 60) {
-		Badge_Award(BADGE.COMPLETION);
-		Badge_Award(BADGE.NO_HEAL);
-	
-		if (Player_GetHp() == Player_GetHpMax())
-			Badge_Award(BADGE.NO_HIT);
-	}
+	var _bone3 = Battle_CreateBone(bb.x - 65, bb.y + 75, 130, 90, 1, 30);
+	Anim_Linear(_bone3, 150, 30, DIR.UP);
 }
