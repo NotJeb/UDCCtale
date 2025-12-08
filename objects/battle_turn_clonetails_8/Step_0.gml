@@ -7,9 +7,16 @@ if (time == 0) {
 if (time == 10) {
 	Battle_Slam(DIR.DOWN);
 	
+	var _side = choose(DIR.LEFT, DIR.RIGHT);
 	Battle_CreateBoneWall(DIR.DOWN, 50, 30, 20);
 	Battle_CreateBoneWall(DIR.UP, 50, 30, 20);
-	Battle_CreateBoneWall(choose(DIR.LEFT, DIR.RIGHT), 75, 30, 20);
+	Battle_CreateBoneWall(_side, 75, 30, 20);
+	
+	var _event0 = function(_side) {
+		var _bone0 = Battle_CreateBone(bb.x + (_side == DIR.LEFT ? 75 : -75), bb.y + 65, 130, 0, 1, 30);
+		Anim_Linear(_bone0, 150, 30, _side);
+	}
+	Delay_Event(_event0, 30, [_side]);
 }
 if (Battle_Repeat(70, 850, 40)) {
 	var _bone0 = Battle_CreateBone(bb.x, bb.y + 70, 75, 90, 0, 60);
@@ -23,4 +30,16 @@ if (time == 320) {
 }
 if (time == 360) {
 	Battle_Slam(DIR.UP);
+}
+if (time == 860) {
+	var _side = choose(DIR.LEFT, DIR.RIGHT);
+	Battle_CreateBoneWall(DIR.DOWN, 50, 30, 20);
+	Battle_CreateBoneWall(DIR.UP, 50, 30, 20);
+	Battle_CreateBoneWall(_side, 75, 30, 20);
+	
+	var _event0 = function(_side) {
+		var _bone0 = Battle_CreateBone(bb.x + (_side == DIR.LEFT ? 75 : -75), bb.y + 65, 130, 0, 1, 30);
+		Anim_Linear(_bone0, 150, 30, _side);
+	}
+	Delay_Event(_event0, 30, [_side]);
 }
