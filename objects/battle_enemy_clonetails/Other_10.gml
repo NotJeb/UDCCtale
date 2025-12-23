@@ -11,3 +11,5 @@ battle_ui.kr_text = "KB";
 
 Battle_SetEnemyActionNumber(_enemy_slot, 1);
 Battle_SetEnemyActionName(_enemy_slot, 0, "* Heal");
+
+instance_create_depth(0, 0, 0, battle_effect_clonetails_glow);

@@ -12,7 +12,7 @@ if(pushSoulEnabled){
 	battle_soul.mask_index = spr_battle_soul;
 	
 	if (_try_times > 0)
-		array_push(battle_board.push_array, [_try_times, battle_soul.x, battle_soul.y, pushSoulDirection]);
+		array_push(battle_board.push_array, [_try_times, battle_soul.x, battle_soul.y]);
 		
 	battle_soul.x = _soul_x;
 	battle_soul.y = _soul_y;

@@ -142,7 +142,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.1.210",
+    "IDEVersion":"2024.14.2.213",
   },
   "name":"undertale_engine",
   "resources":[
@@ -170,8 +170,8 @@
     {"id":{"name":"battle_death_particle_collision","path":"objects/battle_death_particle_collision/battle_death_particle_collision.yy",},},
     {"id":{"name":"battle_death_particle","path":"objects/battle_death_particle/battle_death_particle.yy",},},
     {"id":{"name":"battle_dialog_enemy","path":"objects/battle_dialog_enemy/battle_dialog_enemy.yy",},},
+    {"id":{"name":"battle_effect_clonetails_glow","path":"objects/battle_effect_clonetails_glow/battle_effect_clonetails_glow.yy",},},
     {"id":{"name":"battle_effect_dleckon_flame","path":"objects/battle_effect_dleckon_flame/battle_effect_dleckon_flame.yy",},},
-    {"id":{"name":"battle_effects","path":"objects/battle_effects/battle_effects.yy",},},
     {"id":{"name":"battle_enemy_candle_and_moss","path":"objects/battle_enemy_candle_and_moss/battle_enemy_candle_and_moss.yy",},},
     {"id":{"name":"battle_enemy_candle_dummy","path":"objects/battle_enemy_candle_dummy/battle_enemy_candle_dummy.yy",},},
     {"id":{"name":"battle_enemy_cheesy","path":"objects/battle_enemy_cheesy/battle_enemy_cheesy.yy",},},
@@ -205,6 +205,8 @@
     {"id":{"name":"battle_turn_clonetails_0","path":"objects/battle_turn_clonetails_0/battle_turn_clonetails_0.yy",},},
     {"id":{"name":"battle_turn_clonetails_1","path":"objects/battle_turn_clonetails_1/battle_turn_clonetails_1.yy",},},
     {"id":{"name":"battle_turn_clonetails_10","path":"objects/battle_turn_clonetails_10/battle_turn_clonetails_10.yy",},},
+    {"id":{"name":"battle_turn_clonetails_11","path":"objects/battle_turn_clonetails_11/battle_turn_clonetails_11.yy",},},
+    {"id":{"name":"battle_turn_clonetails_12","path":"objects/battle_turn_clonetails_12/battle_turn_clonetails_12.yy",},},
     {"id":{"name":"battle_turn_clonetails_2","path":"objects/battle_turn_clonetails_2/battle_turn_clonetails_2.yy",},},
     {"id":{"name":"battle_turn_clonetails_3","path":"objects/battle_turn_clonetails_3/battle_turn_clonetails_3.yy",},},
     {"id":{"name":"battle_turn_clonetails_4","path":"objects/battle_turn_clonetails_4/battle_turn_clonetails_4.yy",},},

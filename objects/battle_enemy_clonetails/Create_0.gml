@@ -2,4 +2,4 @@
 event_inherited();
 
 _enemy_name = ENEMY_NAME_CLONETAILS;
-turn_count = 11;
+turn_count = 13;
