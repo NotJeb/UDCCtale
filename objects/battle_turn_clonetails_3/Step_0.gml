@@ -2,28 +2,41 @@
 event_inherited();
 
 if (time == 0) {
-	Battle_BoardTransform(185, 65, 185, 185);
+	Battle_BoardTransform(65, 65, 185, 185);
 }
-if (Battle_Repeat(10, 810, 20)) {
-	var _x = random_range(bb.x - 135, bb.x + 135);
-	var _y = random_range(bb.y - 80, bb.y + 15);
-	var _angle = point_direction(_x, _y, bs.x, bs.y);
-	Battle_CreateGB(random(640), -50, _angle - 180, _x, _y, _angle, 40, 15, 20, 1, 2, 0, ENEMY_NAME_SKELLY);
+if (Battle_Repeat(0, 900, 12)) {
+	var _bone0 = Battle_CreateBone(bb.x - 200, bb.y + 75, 40, 0, 0, 400);
+	_bone0.direction = DIR.RIGHT;
+	_bone0.speed = 1;
 }
-if (time == 70) {
-	var _length = sqrt(power(250, 2) + power(370, 2));
+if (Battle_Repeat(0, 900, 60)) {
+	var _platform0 = Battle_CreatePlatform(bb.x - 202, bb.y + 25, 44, 370, 0, 1);
+	Anim_Create(_platform0, "x", 0, 0, bb.x - 202, 365, 180);
+	Anim_Create(_platform0, "x", 0, 0, bb.x + 163, -365, 180, 180);
+}
+if (Battle_Repeat(40, 900, 70)) {
+	var _bone0 = Battle_CreateBone(bb.x - 200, bb.y + 75, 80, 0, 0, 200);
+	_bone0.direction = DIR.RIGHT;
+	_bone0.speed = 2;
+	_bone0.image_index = 1;
 	
-	var _bone0 = Battle_CreateBone(bb.x, bb.y - 60, 0, 0, 0, 780);
-	Anim_Create(_bone0, "length", ANIM_TWEEN.SINE, ANIM_EASE.OUT, 0, _length, 60);
-	Anim_Create(_bone0, "origin", ANIM_TWEEN.SINE, ANIM_EASE.OUT, 0, _length / 2, 60);
-	Anim_Create(_bone0, "length", ANIM_TWEEN.SINE, ANIM_EASE.IN, _length, -_length, 60, 720);
-	Anim_Create(_bone0, "origin", ANIM_TWEEN.SINE, ANIM_EASE.IN, _length / 2, -_length / 2, 60, 720);
-	_bone0.rotation = 0.75;
+	var _bone1 = Battle_CreateBone(bb.x - 200, bb.y - 75, 30, 180, 0, 200);
+	_bone1.direction = DIR.RIGHT;
+	_bone1.speed = 2;
+	_bone1.image_index = 1;
 	
-	var _bone1 = Battle_CreateBone(bb.x, bb.y - 60, 0, 0, 1, 780);
-	Anim_Create(_bone1, "length", ANIM_TWEEN.SINE, ANIM_EASE.OUT, 0, _length, 60);
-	Anim_Create(_bone1, "origin", ANIM_TWEEN.SINE, ANIM_EASE.OUT, 0, _length / 2, 60);
-	Anim_Create(_bone1, "length", ANIM_TWEEN.SINE, ANIM_EASE.IN, _length, -_length, 60, 720);
-	Anim_Create(_bone1, "origin", ANIM_TWEEN.SINE, ANIM_EASE.IN, _length / 2, -_length / 2, 60, 720);
-	_bone1.rotation = -0.75;
+	var _bone2 = Battle_CreateBone(bb.x + 200, bb.y + 75, 80, 0, 0, 200);
+	_bone2.direction = DIR.LEFT;
+	_bone2.speed = 2;
+	_bone2.image_index = 1;
+	
+	var _bone3 = Battle_CreateBone(bb.x + 200, bb.y - 75, 30, 180, 0, 200);
+	_bone3.direction = DIR.LEFT;
+	_bone3.speed = 2;
+	_bone3.image_index = 1;
+}
+if (Battle_Repeat(140, 900, 70)) {
+	var _bone0 = Battle_CreateBone(bb.x - 200, bb.y + 65, 130, 0, 2, 40);
+	_bone0.direction = DIR.RIGHT;
+	_bone0.speed = 10;
 }

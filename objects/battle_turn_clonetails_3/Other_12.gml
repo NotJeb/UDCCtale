@@ -3,4 +3,7 @@
 // Inherit the parent event
 event_inherited();
 
-Battle_SetTurnTime(890);
+Battle_SetTurnTime(900);
+
+Battle_SetSoul(battle_soul_blue);
+bs.y = bb.y + 57;

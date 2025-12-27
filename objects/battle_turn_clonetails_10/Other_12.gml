@@ -3,4 +3,4 @@
 // Inherit the parent event
 event_inherited();
 
-Battle_SetTurnTime(940);
+Battle_SetTurnTime(2);
