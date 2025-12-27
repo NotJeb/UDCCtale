@@ -122,9 +122,11 @@ if (time == 2414) {
 	
 	if (!world.settings.debug && world.settings.game_speed >= 60) {
 		Badge_Award(BADGE.COMPLETION);
-		Badge_Award(BADGE.NO_HEAL);
+		
+		if (!battle.player_heal)
+			Badge_Award(BADGE.NO_HEAL);
 	
-		if (Player_GetHp() == Player_GetHpMax())
+		if (!battle.player_hit)
 			Badge_Award(BADGE.NO_HIT);
 	}
 }

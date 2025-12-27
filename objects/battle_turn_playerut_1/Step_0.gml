@@ -24,11 +24,11 @@ if (time == 370) {
 }
 if (Battle_Repeat(360, 660, 10)) {
 	if (choose(false, true)) {
-		var _x = bb.x + random_range(-50, 50);
+		var _x = bb.x + random_range(-115, 115);
 		Battle_CreateGB(_x, -50, 270 - 180, _x, bb.y - 100, 270, 30, 10, 20, 1, 1);
 	}
 	else {
-		var _y = bb.y + random_range(-50, 50);
+		var _y = bb.y + random_range(-115, 115);
 		Battle_CreateGB(-50, _y, 0 - 180, bb.x - 165, _y, 0, 30, 10, 20, 1, 1);
 	}
 }

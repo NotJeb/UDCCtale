@@ -12,6 +12,8 @@ function Player_Hurt(_damage, _karma = battle.kr_enabled ? 1 : 0)
                 _final_kr = _karma + _kr;
 			battle.kr = _final_kr;
         }
+		
+		battle.player_hit = true;
     }
     else
         Player_Heal(-_damage);
