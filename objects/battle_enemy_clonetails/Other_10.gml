@@ -13,3 +13,8 @@ Battle_SetEnemyActionNumber(_enemy_slot, 1);
 Battle_SetEnemyActionName(_enemy_slot, 0, "* Heal");
 
 instance_create_depth(0, 0, 0, battle_effect_clonetails_glow);
+
+Battle_BoardTransform(65, 65, 65, 65);
+
+battle_soul.x = battle_board.x;
+battle_soul.y = battle_board.y;

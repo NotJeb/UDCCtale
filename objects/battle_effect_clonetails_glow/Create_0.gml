@@ -1,6 +1,7 @@
 depth = DEPTH_BATTLE.BG;
 
 siner = 0;
+effect_intensity = 0;
 
 var _color0 = [0, 255, 255];
 var _color1 = [255, 165, 0];

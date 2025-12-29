@@ -1,7 +1,7 @@
 // Play current BGM
 if (audio_exists(bgm)) {
 	if (!audio_is_playing(bgm))
-		audio_play_sound(bgm, 0, 0);
+		bgm = audio_play_sound(bgm, 0, 0);
 }
 
 // Change all sound volume
