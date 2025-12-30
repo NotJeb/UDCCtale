@@ -15,6 +15,7 @@ function Battle_EndTurn() {
 		
 		instance_destroy(battle_soul_dasher);
 		instance_destroy(battle_warning);
+		instance_destroy(battle_board_cutout);
 		
 		if(instance_exists(battle_turn)){
 			with(battle_turn){

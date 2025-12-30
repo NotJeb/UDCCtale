@@ -8,12 +8,14 @@ function Macro_Depth() {
 	};
 
 	enum DEPTH_BATTLE{
-		BG=-100,
-		ENEMY=-200,
-		UI=-300,
-		FADER=-400,
-		BULLET=-500,
-		BOARD=-600,
+		BULLET=-100,
+		CUTOUT=-150,
+		BOARD=-200,
+		CUTOUT_OVERLAY=-250,
+		BG=-300,
+		ENEMY=-400,
+		UI=-500,
+		FADER=-600,
 		UI_HIGH=-700,
 		BULLET_OUTSIDE_LOW=-800,
 		SOUL=-900,

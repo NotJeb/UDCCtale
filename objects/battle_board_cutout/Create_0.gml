@@ -1,4 +1,6 @@
-depth=DEPTH_BATTLE.BOARD + 1;
+depth=DEPTH_BATTLE.CUTOUT;
+
+inst_overlay = instance_create_depth(0, 0, 0, battle_board_cutout_overlay);
 
 up=BATTLE_BOARD.UP;
 down=BATTLE_BOARD.DOWN;

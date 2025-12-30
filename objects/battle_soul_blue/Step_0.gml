@@ -123,8 +123,20 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && moveable)
         else if (dir == DIR.RIGHT)
             xx = sprite_width / 2 * sign(move);
 			
-        if (position_meeting((x + xx), (y + yy), block))
-			move = 0;
+        if (position_meeting((x + xx), (y + yy), block)) {
+            if (impact) {
+				if (impact == 2 && Player_GetHp() > 1)
+					Player_Hurt(1, 0);
+                impact = 0;
+                audio_play_sound(snd_dong, 0, false);
+				Camera_Shake(8, 8, 1, 1, 1, 1);
+            }
+			
+            if (Input_IsHeld(input) && sign(move) == 1)
+                move = -_speed_jump;
+			else
+				move = 0;
+		}
         else if (!(move > 0 && position_meeting((x + xx), (y + yy), battle_platform))) {
             xx = 0;
             yy = 0;
