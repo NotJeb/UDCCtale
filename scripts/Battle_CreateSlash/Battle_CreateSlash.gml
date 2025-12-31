@@ -5,9 +5,9 @@ function Battle_CreateSlash(_x, _y, _angle, _delay = 20, _size = 10){
 	
 	_inst.alarm[0] = _delay; // Activate slash
 	
-	_inst.alarm[1] = _delay + 12; // Shrink slash
+	_inst.alarm[1] = _delay + 14; // Shrink slash
 	
-	_inst.alarm[2] = _delay + 23; // Delete instance
+	_inst.alarm[2] = _delay + 25; // Delete instance
 	
 	return _inst;
 }
