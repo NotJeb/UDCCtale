@@ -5,7 +5,7 @@ _frame_skipped=0;
 global.selected_battle = power(2, 24);
 
 settings = {
-	developer_mode : true, // Hi turn this on if you wanna mod the game :3
+	developer_mode : false, // Hi turn this on if you wanna mod the game :3
 	debug : false,
 	no_hit : false,
 	no_heal : false,

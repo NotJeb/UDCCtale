@@ -19,11 +19,15 @@ var _event_cutscene_0 = function() {
 Delay_Event(_event_cutscene_0, 420);
 
 var _event_cutscene_1 = function() {
-	Anim_Create(battle_board, "alpha", 0, 0, 0, 1, 30);
-	Anim_Create(battle_board, "alpha_frame", 0, 0, 0, 1, 30);
-	Anim_Create(battle_soul, "image_alpha", 0, 0, 0, 1, 30);
-	Anim_Create(battle_button, "image_alpha", 0, 0, 0, 1, 30);
-	Anim_Create(battle_ui, "image_alpha", 0, 0, 0, 1, 30);
+	Anim_Create(battle_button_fight, "image_alpha", 0, 0, 0, 1, 30);
+	Anim_Create(battle_button_act, "image_alpha", 0, 0, 0, 1, 30, 60);
+	Anim_Create(battle_button_item, "image_alpha", 0, 0, 0, 1, 30, 120);
+	Anim_Create(battle_button_mercy, "image_alpha", 0, 0, 0, 1, 30, 180);
+	
+	Anim_Create(battle_ui, "image_alpha", 0, 0, 0, 1, 30, 360);
+	Anim_Create(battle_board, "alpha", 0, 0, 0, 1, 30, 360);
+	Anim_Create(battle_board, "alpha_frame", 0, 0, 0, 1, 30, 360);
+	Anim_Create(battle_soul, "image_alpha", 0, 0, 0, 1, 30, 360);
 }
 Delay_Event(_event_cutscene_1, 1740);
 

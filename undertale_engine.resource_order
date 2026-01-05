@@ -108,6 +108,7 @@
     {"name":"battle_soul_dasher","order":6,"path":"objects/battle_soul_dasher/battle_soul_dasher.yy",},
     {"name":"battle_soul_red","order":3,"path":"objects/battle_soul_red/battle_soul_red.yy",},
     {"name":"battle_soul","order":1,"path":"objects/battle_soul/battle_soul.yy",},
+    {"name":"battle_turn_candle_and_moss_1","order":1,"path":"objects/battle_turn_candle_and_moss_1/battle_turn_candle_and_moss_1.yy",},
     {"name":"battle_turn_clonetails_1","order":2,"path":"objects/battle_turn_clonetails_1/battle_turn_clonetails_1.yy",},
     {"name":"battle_turn_clonetails_10","order":7,"path":"objects/battle_turn_clonetails_10/battle_turn_clonetails_10.yy",},
     {"name":"battle_turn_clonetails_11","order":5,"path":"objects/battle_turn_clonetails_11/battle_turn_clonetails_11.yy",},

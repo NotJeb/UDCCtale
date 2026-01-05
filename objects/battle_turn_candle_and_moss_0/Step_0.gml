@@ -25,7 +25,6 @@ if (time == 10) {
 	}
 }
 if (time == 55) {
-	battle_enemy.follow_board = false;
 	Anim_Create(bb, "angle", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, 0, 135, 45);
 }
 if (time == 85) {
@@ -296,12 +295,12 @@ if (time == 1165) {
 	Anim_Create(_edge0, "y", ANIM_TWEEN.SINE, ANIM_EASE.IN, bb.y - 65, 84, 40);
 }
 if (time == 1170) {
-	var _edge0 = Battle_CreateEdge(bb.x + 170, bb.y + 65, 90, 0, 40);
-	Anim_Create(_edge0, "y", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, bb.y + 65, -115, 40);
-}
-if (time == 1175) {
 	var _edge0 = Battle_CreateEdge(bb.x + 125, bb.y + 65, 90, 2, 35);
 	Anim_Create(_edge0, "y", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, bb.y + 65, -115, 35);
+}
+if (time == 1175) {
+	var _edge0 = Battle_CreateEdge(bb.x + 170, bb.y + 65, 90, 0, 40);
+	Anim_Create(_edge0, "y", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, bb.y + 65, -115, 40);
 	
 	var _edge1 = Battle_CreateEdge(bb.x + 195, bb.y + 50, 90, 1, 30);
 	Anim_Create(_edge1, "x", ANIM_TWEEN.SINE, ANIM_EASE.OUT, bb.x + 195, -95, 25);
