@@ -3,7 +3,7 @@ event_inherited();
 
 _enemy_name = ENEMY_NAME_CLONETAILS;
 turn_count = 13;
-dialog = [
+menu_dialog = [
 "* CloneTails plays FNaF World:&  Refreshed just cuz he had time&  between turns.",
 "* CloneTails argues that&  Underfell isn't edgy and is a&  well written story.",
 "* CloneTails aborted his&  snowgrave run.",
@@ -15,3 +15,6 @@ dialog = [
 "* CloneTails is considering every&  way he can think of to glaze&  Undertale Yellow.",
 ];
 current_dialog = "* :3";
+turn_dialog = [
+"* CloneTails plays FNaF World:&  Refreshed just cuz he had time&  between turns.",
+];

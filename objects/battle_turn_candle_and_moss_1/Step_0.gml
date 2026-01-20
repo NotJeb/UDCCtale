@@ -5,6 +5,8 @@ if (Battle_GetTurnTime() == 1) {
 	time = 0;
 }
 if (time == 0) {
+	bb.angle = 0;
+		
 	attack_type = irandom(1);
 	if (attack_count < 7)
 		battle._turn_time += attack_time[attack_type] + 1;

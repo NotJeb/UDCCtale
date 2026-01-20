@@ -19,6 +19,7 @@ sfx_array = [
 [snd_menu_cancel, 1],
 [snd_menu_confirm, 1],
 [snd_menu_switch, 1],
+[snd_meow, 1],
 [snd_noise, 1],
 [snd_phone_box, 1],
 [snd_phone_call, 1],

@@ -3,7 +3,7 @@ for (var i = -4; i < 5; i++) {
 	
 	if (_display_index + i >= 1) {
 		var _display_offset = selection_display % 1;
-		var _x_center = x + (i - _display_offset) * 120;
+		var _x_center = x + (i - _display_offset) * 125;
 		var _y_center = y - power(abs(i - _display_offset), 2.5);
 	
 		if (_display_index + i == global.selected_battle) draw_set_color(c_yellow);
