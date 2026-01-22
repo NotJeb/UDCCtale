@@ -22,4 +22,5 @@ function Debug_EndTurn() {
 	}
 	Battle_EndTurn();
 	Battle_SetState(BATTLE_STATE.MENU);
+	Debug_TurnAlign();
 }

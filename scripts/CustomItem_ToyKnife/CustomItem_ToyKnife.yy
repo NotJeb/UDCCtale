@@ -6,7 +6,7 @@
   "name":"CustomItem_ToyKnife",
   "parent":{
     "name":"CustomItems",
-    "path":"folders/Scripts/Item/CustomItems.yy",
+    "path":"folders/Scripts/Battle/Item/CustomItems.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

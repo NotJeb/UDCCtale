@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bullet_gb_beam",
-    "path":"sprites/spr_bullet_gb_beam/spr_bullet_gb_beam.yy",
+    "name":"spr_battle_bullet_gb_beam",
+    "path":"sprites/spr_battle_bullet_gb_beam/spr_battle_bullet_gb_beam.yy",
   },
   "spriteMaskId":null,
   "visible":true,

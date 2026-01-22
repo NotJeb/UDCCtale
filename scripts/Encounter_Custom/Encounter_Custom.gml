@@ -9,9 +9,10 @@ function Encounter_Custom() {
 	Encounter_Set(ENEMY_INDEX.HUGOSIMPSON,-1,battle_enemy_hugosimpson,-1,"* Sudden Changes?!?",-1);
 	Encounter_Set(ENEMY_INDEX.CHEESY,-1,battle_enemy_cheesy,-1,"* uhhhh",-1);
 	Encounter_Set(ENEMY_INDEX.PLAYERUT,-1,battle_enemy_playerut,-1,"* Not spongebob",-1);
-	Encounter_Set(ENEMY_INDEX.SHAUN_AND_MINUS,-1,battle_enemy_shaun_and_minus,battle_enemy_minus_dummy,"* Important",-1);
+	Encounter_Set(ENEMY_INDEX.SHAUN_AND_MINUS,-1,battle_enemy_shaun_and_minus,battle_enemy_minus_dummy,-1,-1);
 	Encounter_Set(ENEMY_INDEX.MAKER,-1,battle_enemy_maker,-1,"* Robot thing",-1);
 	Encounter_Set(ENEMY_INDEX.ENZO,-1,battle_enemy_enzo,-1,"* Omega peak",-1);
 	Encounter_Set(ENEMY_INDEX.DLECKON,-1,battle_enemy_dleckon,-1,"* DLecKaKeCkAlON",-1);
 	Encounter_Set(ENEMY_INDEX.CLONETAILS,-1,battle_enemy_clonetails,-1,-1,-1);
+	Encounter_Set(ENEMY_INDEX.SIL,-1,battle_enemy_sil,-1,"sil fight noises",-1);
 }

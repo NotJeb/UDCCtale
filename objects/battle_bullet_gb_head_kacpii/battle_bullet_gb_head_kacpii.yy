@@ -46,8 +46,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bullet_gb_head_kacpii",
-    "path":"sprites/spr_bullet_gb_head_kacpii/spr_bullet_gb_head_kacpii.yy",
+    "name":"spr_battle_bullet_gb_head_kacpii",
+    "path":"sprites/spr_battle_bullet_gb_head_kacpii/spr_battle_bullet_gb_head_kacpii.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bullet_chips",
-    "path":"sprites/spr_bullet_chips/spr_bullet_chips.yy",
+    "name":"spr_battle_bullet_chips",
+    "path":"sprites/spr_battle_bullet_chips/spr_battle_bullet_chips.yy",
   },
   "spriteMaskId":null,
   "visible":true,

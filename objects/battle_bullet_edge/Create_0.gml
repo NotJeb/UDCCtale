@@ -9,3 +9,5 @@ tangental_offset = 0;
 x_center = 0;
 y_center = 0;
 rotation = 0;
+
+image_speed = 0;

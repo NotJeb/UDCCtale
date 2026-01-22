@@ -1,4 +1,5 @@
 sfx_array = [
+[snd_bark, 1],
 [snd_bonestab, 1],
 [snd_break_0, 1],
 [snd_break_1, 1],
@@ -7,10 +8,13 @@ sfx_array = [
 [snd_dong, 1],
 [snd_encounter_soul_move, 1],
 [snd_exclamation, 1],
+[snd_explosion, 1],
 [snd_flee, 1],
 [snd_gb_charge, 0.5],
 [snd_gb_release, 0.5],
 [snd_hurt, 1],
+[snd_hypergoner_charge, 1],
+[snd_hypergoner_release, 1],
 [snd_item_equip, 1],
 [snd_item_heal, 1],
 [snd_item_swallow, 1],
@@ -21,6 +25,7 @@ sfx_array = [
 [snd_menu_switch, 1],
 [snd_meow, 1],
 [snd_noise, 1],
+[snd_oh_my_god, 1],
 [snd_phone_box, 1],
 [snd_phone_call, 1],
 [snd_phone_status, 1],
@@ -29,13 +34,18 @@ sfx_array = [
 [snd_slice, 1],
 [snd_spike_disable, 1],
 [snd_text_voice_default, 1],
+[snd_text_voice_shaun, 1],
 [snd_text_voice_toriel, 1],
 [snd_text_voice_typer, 1],
 [snd_vaporize, 1],
-[snd_warn, 1]];
+[snd_vine_boom, 1],
+[snd_warn, 1],
+];
 		
 bgm_array = [
 [bgm_clonetails, 2],
-[bgm_dleckon, 1]];
+[bgm_dleckon, 1],
+[bgm_shaun_and_minus_p1, 1],
+];
 
 bgm = -1;

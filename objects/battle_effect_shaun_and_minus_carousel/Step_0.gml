@@ -1,0 +1,1 @@
+image_alpha = effect_intensity * 0.5;

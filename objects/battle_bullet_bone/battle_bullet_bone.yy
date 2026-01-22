@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bullet_bone",
-    "path":"sprites/spr_bullet_bone/spr_bullet_bone.yy",
+    "name":"spr_battle_bullet_bone",
+    "path":"sprites/spr_battle_bullet_bone/spr_battle_bullet_bone.yy",
   },
   "spriteMaskId":null,
   "visible":true,

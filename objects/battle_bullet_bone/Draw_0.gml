@@ -1,5 +1,5 @@
 image_angle = 180 - angle;
-image_yscale = length / sprite_get_height(spr_bullet_bone);
+image_yscale = length / sprite_get_height(spr_battle_bullet_bone);
 
 var temp_pos = [x, y];
 x -= lengthdir_x(origin, image_angle - 90);

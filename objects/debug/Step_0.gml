@@ -21,10 +21,12 @@ if (world.settings.debug) {
 			if (keyboard_check(vk_lcontrol) || keyboard_check(vk_rcontrol)) {
 				if (keyboard_check_pressed(vk_left) && Battle_GetTurnNumber() > 0) {
 					Battle_SetTurnNumber(Battle_GetTurnNumber() - 1);
+					Debug_TurnAlign();
 					audio_play_sound(snd_ding, 0, 0);
 				}
 				if (keyboard_check_pressed(vk_right) && Battle_GetTurnNumber() < battle_enemy.turn_count) {
 					Battle_SetTurnNumber(Battle_GetTurnNumber() + 1);
+					Debug_TurnAlign();
 					audio_play_sound(snd_ding, 0, 0);
 				}
 			}

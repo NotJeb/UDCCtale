@@ -7,12 +7,12 @@ function Macro_Depth() {
 		NOTIFICATION=-1200
 	};
 
-	enum DEPTH_BATTLE{
-		BULLET=-100,
-		CUTOUT=-150,
-		BOARD=-200,
-		CUTOUT_OVERLAY=-250,
-		BG=-300,
+	enum DEPTH_BATTLE {
+		BG=-100,
+		BULLET=-200,
+		CUTOUT=-250,
+		BOARD=-300,
+		CUTOUT_OVERLAY=-350,
 		ENEMY=-400,
 		UI=-500,
 		FADER=-600,

@@ -6,7 +6,7 @@
   "name":"Item_GetTextEquip",
   "parent":{
     "name":"TextHelpers",
-    "path":"folders/Scripts/Item/TextHelpers.yy",
+    "path":"folders/Scripts/Battle/Item/TextHelpers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

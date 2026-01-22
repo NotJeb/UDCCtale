@@ -41,8 +41,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bullet_gb_head_playerut",
-    "path":"sprites/spr_bullet_gb_head_playerut/spr_bullet_gb_head_playerut.yy",
+    "name":"spr_battle_bullet_gb_head_playerut",
+    "path":"sprites/spr_battle_bullet_gb_head_playerut/spr_battle_bullet_gb_head_playerut.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_strike",
-    "path":"sprites/spr_strike/spr_strike.yy",
+    "name":"spr_battle_bullet_strike",
+    "path":"sprites/spr_battle_bullet_strike/spr_battle_bullet_strike.yy",
   },
   "spriteMaskId":null,
   "visible":true,

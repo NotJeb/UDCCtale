@@ -6,7 +6,7 @@
   "name":"Item_Custom",
   "parent":{
     "name":"Item",
-    "path":"folders/Scripts/Item.yy",
+    "path":"folders/Scripts/Battle/Item.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

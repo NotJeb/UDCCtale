@@ -4,6 +4,7 @@ image_xscale = 0;
 Anim_Create(id, "image_alpha", ANIM_TWEEN.SINE, ANIM_EASE.IN, 1, -1, 30);
 Anim_Create(id, "image_xscale", ANIM_TWEEN.SINE, ANIM_EASE.OUT, 20, 30, 30);
 audio_play_sound(snd_slash, 0, 0);
+Camera_Shake(1, 1, 0.5, 0.5);
 
 switch (type) {
 	case 0:
