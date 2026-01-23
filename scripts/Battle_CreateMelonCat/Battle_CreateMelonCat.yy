@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Battle_CreateBasketcat",
+  "%Name":"Battle_CreateMelonCat",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Battle_CreateBasketcat",
+  "name":"Battle_CreateMelonCat",
   "parent":{
     "name":"Bullet",
     "path":"folders/Scripts/Battle/Bullet.yy",

@@ -3,6 +3,7 @@ sfx_array = [
 [snd_bonestab, 1],
 [snd_break_0, 1],
 [snd_break_1, 1],
+[snd_car_crash, 1],
 [snd_damage, 1],
 [snd_ding, 1],
 [snd_dong, 1],

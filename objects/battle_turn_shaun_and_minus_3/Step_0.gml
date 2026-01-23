@@ -5,10 +5,10 @@ if (time == 0) {
 	Battle_BoardTransform(130, 65, 185, 185);
 }
 if (Battle_Repeat(10, 910, 90)) {
-	Battle_CreateBasketcat(bb.x + 235, bb.y - 65, -5, -3, 50, random(360), 94);
+	Battle_CreateMelonCat(bb.x + 235, bb.y - 65, -5, -3, 50, random(360), 94);
 }
 if (Battle_Repeat(55, 955, 90)) {
-	Battle_CreateBasketcat(bb.x - 235, bb.y - 65, 5, -3, 50, random(360), 94);
+	Battle_CreateMelonCat(bb.x - 235, bb.y - 65, 5, -3, 50, random(360), 94);
 }
 if (Battle_Repeat(10, 910, 90)) {
 	Battle_CreateJevilBomb(random_range(100, 540), bb.y - 130, 3);

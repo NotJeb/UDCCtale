@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"battle_bullet_basketcat",
+  "%Name":"battle_bullet_melon_cat",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":73,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -8,7 +8,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"battle_bullet_basketcat",
+  "name":"battle_bullet_melon_cat",
   "overriddenProperties":[],
   "parent":{
     "name":"Bullet",
@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_battle_bullet_basketcat",
-    "path":"sprites/spr_battle_bullet_basketcat/spr_battle_bullet_basketcat.yy",
+    "name":"spr_battle_bullet_melon_cat",
+    "path":"sprites/spr_battle_bullet_melon_cat/spr_battle_bullet_melon_cat.yy",
   },
   "spriteMaskId":null,
   "visible":true,

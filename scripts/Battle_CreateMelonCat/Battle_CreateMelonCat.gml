@@ -1,5 +1,5 @@
-function Battle_CreateBasketcat(_x, _y, _vel_x, _vel_y, _size, _angle = 0, _time = 0) {
-	var _inst = instance_create_depth(_x, _y, 0, battle_bullet_basketcat);
+function Battle_CreateMelonCat(_x, _y, _vel_x, _vel_y, _size, _angle = 0, _time = 0) {
+	var _inst = instance_create_depth(_x, _y, 0, battle_bullet_melon_cat);
 	_inst.vel_x = _vel_x;
 	_inst.vel_y = _vel_y;
 	_inst.image_xscale = (_vel_x < 0) ? _size / -498 : _size / 498;

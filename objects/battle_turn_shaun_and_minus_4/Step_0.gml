@@ -11,7 +11,7 @@ if (time == 10) {
 	Anim_Create(inst_cat, "y", 0, 0, -75, bb.y - 65 + 75, 30);
 	Anim_Create(inst_cat, "size", ANIM_TWEEN.SINE, ANIM_EASE.OUT, 120, 30, 30);
 	Anim_Create(inst_cat, "size", ANIM_TWEEN.SINE, ANIM_EASE.IN, 150, -30, 594, 30);
-	Anim_Create(inst_cat, "size", ANIM_TWEEN.SINE, ANIM_EASE.IN, 120, 30, 20, 674);
+	Anim_Create(inst_cat, "size", ANIM_TWEEN.SINE, ANIM_EASE.IN, 120, 30, 60, 644);
 }
 if (time == 40) {
 	audio_play_sound(snd_hypergoner_charge, 0, 0);
