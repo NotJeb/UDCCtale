@@ -54,3 +54,17 @@ if (time == 1014) {
 	instance_create_depth(320 + 9, 320 + 75, DEPTH_BATTLE.BULLET_OUTSIDE_HIGH, battle_explosion);
 	instance_create_depth(320 + 9 / 2, 320 + 75 / 2, DEPTH_BATTLE.BULLET_OUTSIDE_HIGH, battle_explosion);
 }
+if (time == 950) {
+	with (battle_enemy_minus_dummy) {
+		var _inst = instance_create_depth(x - 70, y - 80, 0, battle_dialog_enemy);
+		_inst.text = "{script `Dialog_Event1` 1}{skippable false}{speed 1}MELON CAT NOOOOOOOOOO&OOOOOOOOOOOOOOoOOOOOO!{sleep 20}{script `Dialog_Event1` 2}{end}";
+		_inst.template = 1;
+	}
+}
+if (time == 1158) {
+	with (battle_enemy_shaun_and_minus) {
+		var _inst = instance_create_depth(x + 100, y - 150, 0, battle_dialog_enemy);
+		_inst.text = "Melon cat...{sleep 30} No...{sleep 20}&it can't be...{pause}{end}";
+		_inst.template = 0;
+	}
+}

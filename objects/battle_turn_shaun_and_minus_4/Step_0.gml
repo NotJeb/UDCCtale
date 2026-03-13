@@ -40,20 +40,23 @@ if (Battle_Repeat(40, 430, 6)) {
 	
 	var _star0 = Battle_CreateStar(_x, _y, _size);
 	_star0.depth = DEPTH_BATTLE.BULLET_OUTSIDE_HIGH;
+	_star0.tag = 1;
 }
-if (Battle_Repeat(40, 660)) {
+if (Battle_Repeat(40, 800)) {
 	with (battle_bullet_star) {
-		var _angle = point_direction(x, y, 300, 290);
-		var _length = clamp(1 / (distance_to_point(300, 290) / 400), 0, 10);
+		if (tag == 1) {
+			var _angle = point_direction(x, y, 300, 290);
+			var _length = clamp(1 / (distance_to_point(300, 290) / 400), 0, 10);
 		
-		x += lengthdir_x(_length, _angle);
-		y += lengthdir_y(_length, _angle);
+			x += lengthdir_x(_length, _angle);
+			y += lengthdir_y(_length, _angle);
 		
-		if (distance_to_point(300, 290) < 50) {
-			image_xscale -= (40 / 23) / distance_to_point(300, 290);
-			image_yscale -= (40 / 23) / distance_to_point(300, 290);
+			if (distance_to_point(300, 290) < 50) {
+				image_xscale -= (40 / 23) / distance_to_point(300, 290);
+				image_yscale -= (40 / 23) / distance_to_point(300, 290);
 			
-			if (image_xscale <= 0) instance_destroy();
+				if (image_xscale <= 0) instance_destroy();
+			}
 		}
 	}
 }

@@ -1,2 +1,2 @@
 draw_sprite_ext(spr_enemy_shaun_arm, 1, x - 21, y - 90, 3, 3 + sin(siner / 30) * 0.05, sin(siner / 30) * 3, c_white, 1);
-draw_sprite_ext(spr_enemy_shaun_p1, 0, x, y, 3, 3 + sin(siner / 30) * 0.05, 0, c_white, 1);
+draw_sprite_ext(spr_enemy_shaun_p1, image_index, x, y, 3, 3 + sin(siner / 30) * 0.05, 0, c_white, 1);

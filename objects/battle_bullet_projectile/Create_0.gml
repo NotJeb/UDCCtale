@@ -12,9 +12,13 @@ can_damage = 1;
 xscale = 1;
 yscale = 1;
 
-siner = 0;
+siner1 = 0;
+siner2 = 0;
 
 move_speed = 0;
 x_center = 0;
 y_center = 0;
 red_tint = 0;
+
+width = 0;
+height = 0;

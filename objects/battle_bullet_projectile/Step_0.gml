@@ -11,6 +11,24 @@ switch (custom) {
 			xscale = (battle_soul.x < x) ? 1 : -1;
 		}
 		break;
+	case 2:
+		siner1 += pi / 240;
+		siner2 += pi / 45;
+		
+		x = x_center + sin(siner1) * width;
+		y = y_center + sin(siner2) * height;
+		
+		if ((siner1 + pi + pi / 2) % (pi * 2) == 0) {
+			Anim_Create(id, "xscale", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, 1, -2, 30);
+			Anim_Create(id, "image_alpha", 0, 0, 1, -0.5, 30);
+			depth = DEPTH_BATTLE.BULLET_OUTSIDE_LOW + 1;
+		}
+		else if ((siner1 + pi / 2) % (pi * 2) == 0) {
+			Anim_Create(id, "xscale", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, -1, 2, 30);
+			Anim_Create(id, "image_alpha", 0, 0, 0.5, 0.5, 30);
+			depth = DEPTH_BATTLE.BULLET_OUTSIDE_LOW;
+		}
+		break;
 }
 
 var _scale = size / max(sprite_get_width(sprite_index), sprite_get_height(sprite_index));

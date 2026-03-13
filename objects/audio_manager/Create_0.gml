@@ -34,6 +34,8 @@ sfx_array = [
 [snd_slash, 1],
 [snd_slice, 1],
 [snd_spike_disable, 1],
+[snd_sword_appear, 1],
+[snd_sword_release, 1],
 [snd_text_voice_default, 1],
 [snd_text_voice_shaun, 1],
 [snd_text_voice_toriel, 1],

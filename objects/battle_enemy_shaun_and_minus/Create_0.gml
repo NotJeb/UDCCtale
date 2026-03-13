@@ -2,7 +2,7 @@
 event_inherited();
 
 _enemy_name = ENEMY_NAME_SHAUN_AND_MINUS;
-turn_count = 6;
+turn_count = 8;
 follow_board = true;
 siner = 0;
 dialog_count = 0;

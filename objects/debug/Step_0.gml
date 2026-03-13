@@ -9,7 +9,7 @@ if (world.settings.debug) {
 	}
 
 	if (room == room_battle) {
-		if (Battle_GetState() == BATTLE_STATE.IN_TURN) {
+		if (Battle_GetState() == BATTLE_STATE.IN_TURN || Battle_GetState() == BATTLE_STATE.DIALOG) {
 
 			// Space to end turn
 			if (keyboard_check_pressed(ord("E")))
@@ -34,9 +34,9 @@ if (world.settings.debug) {
 	
 		// R to restart turn
 		if (keyboard_check_pressed(ord("R")) && Battle_GetState() != BATTLE_STATE.TURN_PREPARATION) {
-			Debug_EndTurn();
-			
 			Battle_SetTurnNumber(Battle_GetTurnNumber() - 1);
+			
+			Debug_EndTurn();
 			
 			Battle_SetMenu(-1, false);
 			Battle_SetState(BATTLE_STATE.TURN_PREPARATION);

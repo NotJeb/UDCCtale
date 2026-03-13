@@ -2,10 +2,10 @@ depth=DEPTH_BATTLE.CUTOUT;
 
 inst_overlay = instance_create_depth(0, 0, 0, battle_board_cutout_overlay);
 
-up=BATTLE_BOARD.UP;
-down=BATTLE_BOARD.DOWN;
-left=BATTLE_BOARD.LEFT;
-right=BATTLE_BOARD.RIGHT;
+up=0;
+down=0;
+left=0;
+right=0;
 
 angle=0;
 enable_frame=true;

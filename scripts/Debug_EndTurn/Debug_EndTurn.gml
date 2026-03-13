@@ -3,6 +3,7 @@ function Debug_EndTurn() {
 		instance_destroy(battle_warning);
 		with battle_board {
 			Anim_Destroy(id);
+			alpha = 1;
 			angle = 0;
 			left = BATTLE_BOARD.LEFT;
 			right = BATTLE_BOARD.RIGHT;

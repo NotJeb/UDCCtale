@@ -7,7 +7,7 @@ function GetObjectBase(obj) {
 	do{
 		last=obj;
 		obj=object_get_parent(obj);
-	}until(obj==-100);
+	}until(obj==-100 || obj==-1);
 	
 	return last;
 }

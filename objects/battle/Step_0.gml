@@ -261,7 +261,13 @@ if(_state==BATTLE_STATE.IN_TURN){
 	battle_board.thickness_frame_collision=1000;
 	
 	if(_turn_time>0){
-		_turn_time-=1;
+		var _dialog_exists = false;
+		with (battle_dialog_enemy) {
+			if (string_count("{skippable false}", text) == 0)
+				_dialog_exists = true;
+		}
+		if (!_dialog_exists)
+			_turn_time-=1;
 	}else if(_turn_time==0){
 		Battle_EndTurn();
 	}
@@ -287,16 +293,16 @@ if(_state==BATTLE_STATE.RESULT){
 if(_state!=BATTLE_STATE.RESULT && Battle_GetEnemyNumber()==0){
 	Battle_SetState(BATTLE_STATE.RESULT);
 	Battle_SetNextState(BATTLE_STATE.RESULT);
-	var text="{define `EXP` "+string(Battle_GetRewardExp())+"}{define `GOLD` "+string(Battle_GetRewardGold())+"}";
-	text+=Lang_GetString("battle.result.won");
+	var _text="{define `EXP` "+string(Battle_GetRewardExp())+"}{define `GOLD` "+string(Battle_GetRewardGold())+"}";
+	_text+=Lang_GetString("battle.result.won");
 	Player_SetExp(Player_GetExp()+Battle_GetRewardExp());
 	Player_SetGold(Player_GetGold()+Battle_GetRewardGold());
 	if(Player_UpdateLv()){
-		text+="&"+Lang_GetString("battle.result.lv_up");
+		_text+="&"+Lang_GetString("battle.result.lv_up");
 		audio_play_sound(snd_level_up,0,false);
 	}
-	text+="{pause}{end}";
-	Battle_SetDialog(text);
+	_text+="{pause}{end}";
+	Battle_SetDialog(_text);
 }
 
 if (_state == BATTLE_STATE.CUTSCENE) {

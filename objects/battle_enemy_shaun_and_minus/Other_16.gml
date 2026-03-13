@@ -14,7 +14,7 @@ switch (Battle_GetMenuChoiceButton()) {
 				// Check Action
 				switch (Battle_GetMenuChoiceAction()) {
 					case 0: // Check
-						Dialog_Add("* Shaun noises");
+						Dialog_Add("* Shaun - 41 ATK DEF 6767{pause}{clear}* The youtuber who became a&  mighty hero and saved the&  multiverse");
 						break;
 				
 					case 1: // Heal
@@ -30,7 +30,7 @@ switch (Battle_GetMenuChoiceButton()) {
 				// Check Action
 				switch (Battle_GetMenuChoiceAction()) {
 					case 0: // Check
-						Dialog_Add("* Minus noises");
+						Dialog_Add("* Minus - ATK 67 DEF 4141{pause}{clear}* The jester who sacrificed his&  height for great power and&  destruction");
 						break;
 				
 					case 1: // Heal

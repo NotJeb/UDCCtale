@@ -5,7 +5,7 @@ follow_board=false;
 _inv=0;
 alpha=0;
 
-movement_fights = [ENEMY_NAME_KACPII]
+movement_fights = [ENEMY_NAME_KACPII, ENEMY_NAME_SHAUN_AND_MINUS];
 
 // Check if the player is moving
 if (instance_exists(battle_enemy) && array_contains(movement_fights, battle_enemy._enemy_name)) // Check if the fight uses movement based attacks
