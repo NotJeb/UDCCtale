@@ -47,59 +47,33 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && moveable)
         xx = sprite_height / 2 + 0.1;
 	}
 	
-    if ((position_meeting((x + xx), (y + yy), block) || position_meeting((x + xx), (y + yy), battle_platform)) && move >= 0) {
-        var fx = 0;
-        var fy = 0;
-        if (dir == DIR.DOWN)
-            fy = sprite_height / 2;
-        else if (dir == DIR.UP)
-            fy = (-sprite_height) / 2;
-        else if (dir == DIR.LEFT)
-            fx = (-sprite_height) / 2;
-        else if (dir == DIR.RIGHT)
-            fx = sprite_height / 2;
+    if ((position_meeting((x + xx), (y + yy), block) || position_meeting((x + xx), (y + yy), battle_platform))) {
+        move = 0;
 			
-        while (position_meeting((x + fx), (y + fy), block) || position_meeting((x + fx), (y + fy), battle_platform)) {
-			if (position_meeting((x - fx), (y - fy), block) && position_meeting((x + fx), (y + fy), battle_platform))
-				break;
+        if (impact) {
+			if (impact == 2 && Player_GetHp() > 1)
+				Player_Hurt(1, 0);
+            impact = 0;
+            audio_play_sound(snd_dong, 0, false);
+			Camera_Shake(8, 8, 1, 1, 1, 1);
+        }
+			
+        if (position_meeting((x + xx), (y + yy), battle_platform)) {
+            var cx = 0;
+            var cy = 0;
             if (dir == DIR.DOWN)
-                y -= 0.1;
+                cy = sprite_height / 2 + 1;
             else if (dir == DIR.UP)
-                y += 0.1;
+                cy = (-sprite_height) / 2 - 1;
             else if (dir == DIR.LEFT)
-                x += 0.1;
+                cx = (-sprite_height) / 2 - 1;
             else if (dir == DIR.RIGHT)
-                x -= 0.1;
+                cx = sprite_height / 2 + 1;
+			platform = instance_position((x + cx), (y + cy), battle_platform);
         }
-		
-        if (position_meeting((x + xx), (y + yy), block) || position_meeting((x + xx), (y + yy), battle_platform)) {
-            move = 0;
 			
-            if (impact) {
-				if (impact == 2 && Player_GetHp() > 1)
-					Player_Hurt(1, 0);
-                impact = 0;
-                audio_play_sound(snd_dong, 0, false);
-				Camera_Shake(8, 8, 1, 1, 1, 1);
-            }
-			
-            if (position_meeting((x + xx), (y + yy), battle_platform)) {
-                var cx = 0;
-                var cy = 0;
-                if (dir == DIR.DOWN)
-                    cy = sprite_height / 2 + 1;
-                else if (dir == DIR.UP)
-                    cy = (-sprite_height) / 2 - 1;
-                else if (dir == DIR.LEFT)
-                    cx = (-sprite_height) / 2 - 1;
-                else if (dir == DIR.RIGHT)
-                    cx = sprite_height / 2 + 1;
-				platform = instance_position((x + cx), (y + cy), battle_platform);
-            }
-			
-            if (Input_IsHeld(input))
-                move = -_speed_jump;
-        }
+        if (Input_IsHeld(input))
+            move = -_speed_jump;
     }
     else if (move < 0) {
         move += _gravity_jump;

@@ -106,6 +106,16 @@ if (time == 920) {
 if (Battle_Repeat(940, 1520, 40)) {
 	Battle_CreateJevilBomb(random_range(20, 620), random_range(20, 460), 1);
 }
+if (time == 1400) {
+	with (battle_bullet_projectile) {
+		instance_create_depth(x, y, DEPTH_BATTLE.BULLET_OUTSIDE_HIGH, battle_explosion);
+	}
+}
+if (time == 1410) {
+	with (battle_bullet_projectile) {
+		instance_destroy();
+	}
+}
 if (time == 1520) {
 	Battle_Flash();
 	instance_destroy(battle_bullet);
