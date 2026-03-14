@@ -1,4 +1,4 @@
-if (global.settings.debug && global.settings.developer_mode) {
+if (global.settings.debug && global.settings.developer_mode && global.settings.hitboxes) {
 	draw_sprite_ext(spr_pixel,0,_frame_up_x,_frame_up_y,_frame_up_width,_frame_up_height,_angle,c_fuchsia,1);
 	draw_sprite_ext(spr_pixel,0,_frame_left_x,_frame_left_y,_frame_left_width,_frame_left_height,_angle,c_fuchsia,1);
 	draw_sprite_ext(spr_pixel,0,_frame_down_x,_frame_down_y,_frame_down_width,_frame_down_height,_angle,c_fuchsia,1);
