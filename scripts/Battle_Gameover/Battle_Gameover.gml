@@ -1,4 +1,6 @@
 function Battle_Gameover(){
+	BGM_Stop();
+	
 	if (global.settings.debug) {
 		Player_Heal(Player_GetHpMax());
 	}

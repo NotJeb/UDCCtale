@@ -38,7 +38,7 @@ if (Battle_Repeat(40, 430, 6)) {
 		_y = random(480);
 	}
 	
-	var _star0 = Battle_CreateStar(_x, _y, _size);
+	var _star0 = Battle_CreateProjectile(_x, _y, 40, spr_battle_bullet_star);
 	_star0.depth = DEPTH_BATTLE.BULLET_OUTSIDE_HIGH;
 	_star0.tag = 1;
 }
@@ -79,7 +79,7 @@ if (time == 660) {
 if (time == 670) {
 	for (var i = 0; i < 12; i++) {
 		var _dir = (360 / 12) * i;
-		var _star0 = Battle_CreateStar(320, 240, 40, _dir);
+		var _star0 = Battle_CreateProjectile(320, 240, 40, spr_battle_bullet_star, _dir);
 		_star0.depth = DEPTH_BATTLE.BULLET_OUTSIDE_LOW;
 		_star0.speed = 5;
 		_star0.direction = _dir;
@@ -88,7 +88,7 @@ if (time == 670) {
 if (time == 690) {
 	for (var i = 0; i < 16; i++) {
 		var _dir = (360 / 16) * i;
-		var _star0 = Battle_CreateStar(320, 240, 40, _dir);
+		var _star0 = Battle_CreateProjectile(320, 240, 40, spr_battle_bullet_star, _dir);
 		_star0.depth = DEPTH_BATTLE.BULLET_OUTSIDE_LOW;
 		_star0.speed = 5;
 		_star0.direction = _dir;
@@ -97,7 +97,7 @@ if (time == 690) {
 if (time == 710) {
 	for (var i = 0; i < 12; i++) {
 		var _dir = (360 / 12) * (i + 0.5);
-		var _star0 = Battle_CreateStar(320, 240, 40, _dir);
+		var _star0 = Battle_CreateProjectile(320, 240, 40, spr_battle_bullet_star, _dir);
 		_star0.depth = DEPTH_BATTLE.BULLET_OUTSIDE_LOW;
 		_star0.speed = 5;
 		_star0.direction = _dir;

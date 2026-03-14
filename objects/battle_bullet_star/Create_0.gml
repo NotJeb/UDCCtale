@@ -1,7 +1,0 @@
-// Inherit the parent event
-event_inherited();
-
-depth = DEPTH_BATTLE.BULLET_OUTSIDE_LOW;
-image_speed = 0;
-rotation = 0;
-custom = 0;

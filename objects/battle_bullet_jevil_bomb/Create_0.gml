@@ -1,3 +1,5 @@
+event_inherited();
+
 depth = DEPTH_BATTLE.BULLET_OUTSIDE_LOW;
 type = 0;
 mode = 0;

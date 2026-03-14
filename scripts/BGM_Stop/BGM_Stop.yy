@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Battle_CreateStar",
+  "%Name":"BGM_Stop",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Battle_CreateStar",
+  "name":"BGM_Stop",
   "parent":{
-    "name":"Bullet",
-    "path":"folders/Scripts/Battle/Bullet.yy",
+    "name":"BGM",
+    "path":"folders/Scripts/BGM.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
