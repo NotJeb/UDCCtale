@@ -503,6 +503,7 @@
     {"id":{"name":"FileUtils","path":"scripts/FileUtils/FileUtils.yy",},},
     {"id":{"name":"Game_GetFrameSkip","path":"scripts/Game_GetFrameSkip/Game_GetFrameSkip.yy",},},
     {"id":{"name":"Game_Load","path":"scripts/Game_Load/Game_Load.yy",},},
+    {"id":{"name":"Game_ResetSave","path":"scripts/Game_ResetSave/Game_ResetSave.yy",},},
     {"id":{"name":"Game_Save","path":"scripts/Game_Save/Game_Save.yy",},},
     {"id":{"name":"Game_SetFrameSkip","path":"scripts/Game_SetFrameSkip/Game_SetFrameSkip.yy",},},
     {"id":{"name":"GetColorFromString","path":"scripts/GetColorFromString/GetColorFromString.yy",},},

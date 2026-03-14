@@ -404,6 +404,7 @@
     {"name":"FileUtils","order":18,"path":"scripts/FileUtils/FileUtils.yy",},
     {"name":"Game_GetFrameSkip","order":3,"path":"scripts/Game_GetFrameSkip/Game_GetFrameSkip.yy",},
     {"name":"Game_Load","order":22,"path":"scripts/Game_Load/Game_Load.yy",},
+    {"name":"Game_ResetSave","order":26,"path":"scripts/Game_ResetSave/Game_ResetSave.yy",},
     {"name":"Game_Save","order":21,"path":"scripts/Game_Save/Game_Save.yy",},
     {"name":"Game_SetFrameSkip","order":1,"path":"scripts/Game_SetFrameSkip/Game_SetFrameSkip.yy",},
     {"name":"GetColorFromString","order":16,"path":"scripts/GetColorFromString/GetColorFromString.yy",},

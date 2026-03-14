@@ -83,7 +83,7 @@ switch (_menu) {
 				
 			case 5:
 				if (Input_IsPressed(INPUT.CONFIRM))
-					
+					Game_ResetSave();
 				break;
 		}
 		break;
