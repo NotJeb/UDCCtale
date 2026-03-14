@@ -1,9 +1,11 @@
 // Inherit the parent event
 event_inherited();
 
-if (time == 0) {
-	Battle_BoardTransform(65, 65, 185, 185);
+if (time == -1) {
+	Battle_SetSoul(battle_soul_blue);
+	bs.y = bb.y + 57;
 }
+
 if (Battle_Repeat(0, 900, 12)) {
 	var _bone0 = Battle_CreateBone(bb.x - 200, bb.y + 75, 40, 0, 0, 400);
 	_bone0.direction = DIR.RIGHT;

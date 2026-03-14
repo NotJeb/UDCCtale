@@ -6,7 +6,7 @@ function Battle_SoulHurt(_damage = 1, _inv = Player_GetInvTotal(), _kr = battle.
 		Camera_Shake(2, 2, 4, 4);
 		Player_Hurt(_damage, _kr);
 
-		if (world.settings.no_hit) {
+		if (global.settings.no_hit) {
 			Battle_Gameover();
 		}
 	}

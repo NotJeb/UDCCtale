@@ -1,9 +1,6 @@
 // Inherit the parent event
 event_inherited();
 
-if (time == 0) {
-	Battle_BoardTransform(65, 65, 65, 65);
-}
 if (Battle_Repeat(10, 370, 48)) {
 	Battle_Slam(choose(DIR.DOWN, DIR.LEFT, DIR.RIGHT, DIR.UP));
 	
@@ -103,7 +100,7 @@ if (Battle_Repeat(1450, 1900, 4)) {
 	var _x_end = bb.x + cos(_siner) * 100;
 	var _y_end = bb.y + sin(_siner) * 100;
 	var _angle = point_direction(_x_end, _y_end, bb.x, bb.y);
-	Battle_CreateGB(_x_start, _y_start, -_angle, _x_end, _y_end, _angle, 40, 10, 20, 1, 2, 0, ENEMY_NAME_SKELLY);
+	Battle_CreateGB(_x_start, _y_start, -_angle, _x_end, _y_end, _angle, 40, 10, 20, 1, 2, 0);
 }
 if (Battle_Repeat(1900, 2350, 4)) {
 	for (var i = 0; i < 2; i++) { 
@@ -113,14 +110,14 @@ if (Battle_Repeat(1900, 2350, 4)) {
 		var _x_end = bb.x + cos(_siner) * 100;
 		var _y_end = bb.y + sin(_siner) * 100;
 		var _angle = point_direction(_x_end, _y_end, bb.x, bb.y);
-		Battle_CreateGB(_x_start, _y_start, -_angle, _x_end, _y_end, _angle, 40, 10, 20, 1, 2, 0, ENEMY_NAME_SKELLY);
+		Battle_CreateGB(_x_start, _y_start, -_angle, _x_end, _y_end, _angle, 40, 10, 20, 1, 2, 0);
 	}
 }
 if (time == 2414) {
 	Battle_SetSoul(battle_soul_blue);
 	alarm[0] = 1;
 	
-	if (!world.settings.debug && world.settings.game_speed >= 60) {
+	if (!global.settings.debug && global.settings.game_speed >= 60) {
 		Badge_Award(BADGE.COMPLETION);
 		
 		if (!battle.player_heal)

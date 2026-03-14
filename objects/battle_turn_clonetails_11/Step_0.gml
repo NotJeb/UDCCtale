@@ -4,11 +4,12 @@ event_inherited();
 if (time == 0) {
 	Battle_BoardTransform(185, 65, 185, 185);
 }
+
 if (Battle_Repeat(10, 810, 32)) {
 	var _x = random_range(bb.x - 135, bb.x + 135);
 	var _y = random_range(bb.y - 80, bb.y + 15);
 	var _angle = point_direction(_x, _y, bs.x, bs.y);
-	Battle_CreateGB(random(640), -50, _angle - 180, _x, _y, _angle, 40, 15, 30, 2, 2, 0, ENEMY_NAME_SKELLY);
+	Battle_CreateGB(random(640), -50, _angle - 180, _x, _y, _angle, 40, 15, 30, 2, 2, 0);
 }
 if (time == 70) {
 	var _length = sqrt(power(250, 2) + power(370, 2));

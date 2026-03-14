@@ -22,12 +22,12 @@ if (abs(global.selected_battle - selection_display) / 10 > 0.0001)
 	selection_display += (global.selected_battle - selection_display) / 10;
 
 if (Input_IsPressed(INPUT.CONFIRM)) {
-	var _battle_index = global.selected_battle % array_length(world.enemy.title);
-	if (_battle_index < 0) _battle_index = array_length(world.enemy.title) + _battle_index;
+	var _battle_index = global.selected_battle % array_length(global.enemy.title);
+	if (_battle_index < 0) _battle_index = array_length(global.enemy.title) + _battle_index;
 	
 	Game_Save();
 	
-	Encounter_Start(world.enemy.encounter[_battle_index]);
+	Encounter_Start(global.enemy.encounter[_battle_index]);
 }
 
 if (Input_IsPressed(INPUT.MENU))

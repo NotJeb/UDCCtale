@@ -14,5 +14,5 @@ for (var i = 0; i < array_length(input_time); i++) {
 		input_time[i] = 0;
 }
 
-if (!world.settings.debug)
+if (!global.settings.debug)
 	game_set_speed(60, gamespeed_fps);

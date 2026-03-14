@@ -4,7 +4,7 @@ function Create_Notification(_text = "NOTIFICATION TEXT NOT SET", _sprite = spr_
 	_inst.sprite_index = _sprite;
 	_inst.image_index = _image_index;
 	
-	array_insert(world.notifications, 0, _inst);
+	array_insert(global.notifications, 0, _inst);
 	
 	return _inst;
 }

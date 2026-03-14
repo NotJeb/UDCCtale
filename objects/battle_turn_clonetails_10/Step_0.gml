@@ -42,16 +42,16 @@ if (attack_type == 0 || attack_type == 1) {
 		}
 		
 		if (attack_type == 0) {
-			Battle_CreateGB(0, 0, 0, bb.x - 100, bb.y + 100, 45, 0, 41, 30, 1, 2, 0, ENEMY_NAME_SKELLY);
-			Battle_CreateGB(0, 0, 0, bb.x + 100, bb.y + 100, 135, 0, 41, 30, 1, 2, 0, ENEMY_NAME_SKELLY);
-			Battle_CreateGB(0, 0, 0, bb.x + 100, bb.y - 100, 225, 0, 41, 30, 1, 2, 0, ENEMY_NAME_SKELLY);
-			Battle_CreateGB(0, 0, 0, bb.x - 100, bb.y - 100, 315, 0, 41, 30, 1, 2, 0, ENEMY_NAME_SKELLY);
+			Battle_CreateGB(0, 0, 0, bb.x - 100, bb.y + 100, 45, 0, 41, 30, 1, 2, 0);
+			Battle_CreateGB(0, 0, 0, bb.x + 100, bb.y + 100, 135, 0, 41, 30, 1, 2, 0);
+			Battle_CreateGB(0, 0, 0, bb.x + 100, bb.y - 100, 225, 0, 41, 30, 1, 2, 0);
+			Battle_CreateGB(0, 0, 0, bb.x - 100, bb.y - 100, 315, 0, 41, 30, 1, 2, 0);
 		}
 		else {
-	        Battle_CreateGB(0, 0, 0, bb.x - 100, bb.y, 0, 0, 41, 30, 1, 2, 0, ENEMY_NAME_SKELLY);
-	        Battle_CreateGB(0, 0, 0, bb.x, bb.y + 100, 90, 0, 41, 30, 1, 2, 0, ENEMY_NAME_SKELLY);
-	        Battle_CreateGB(0, 0, 0, bb.x + 100, bb.y, 180, 0, 41, 30, 1, 2, 0, ENEMY_NAME_SKELLY);
-	        Battle_CreateGB(0, 0, 0, bb.x, bb.y - 100, 270, 0, 41, 30, 1, 2, 0, ENEMY_NAME_SKELLY);
+	        Battle_CreateGB(0, 0, 0, bb.x - 100, bb.y, 0, 0, 41, 30, 1, 2, 0);
+	        Battle_CreateGB(0, 0, 0, bb.x, bb.y + 100, 90, 0, 41, 30, 1, 2, 0);
+	        Battle_CreateGB(0, 0, 0, bb.x + 100, bb.y, 180, 0, 41, 30, 1, 2, 0);
+	        Battle_CreateGB(0, 0, 0, bb.x, bb.y - 100, 270, 0, 41, 30, 1, 2, 0);
 		}
 	}
 	if (time == 10) {
@@ -99,8 +99,8 @@ if (attack_type == 3) {
 		bs.x = bb.x;
 		bs.y = bb.y;
 		
-		Battle_CreateGB(0, 0, 0, bb.x - 100, bb.y, 0, 0, 156, 30, 2, 2, 0, ENEMY_NAME_SKELLY);
-		Battle_CreateGB(0, 0, 0, bb.x, bb.y - 100, 270, 0, 156, 30, 2, 2, 0, ENEMY_NAME_SKELLY);
+		Battle_CreateGB(0, 0, 0, bb.x - 100, bb.y, 0, 0, 156, 30, 2, 2, 0);
+		Battle_CreateGB(0, 0, 0, bb.x, bb.y - 100, 270, 0, 156, 30, 2, 2, 0);
 	}
 	if (attack_variation == 0) {
 		if (Battle_Repeat(25, 85, 30)) {
@@ -164,7 +164,7 @@ if (attack_type == 4) {
 			}
 		}
 		if (time == 134) {
-			Battle_CreateGB(-50, bb.y + 50, 180, bb.x - 230, bb.y + 50, 0, 40, 10, 30, 2, 2, 0, ENEMY_NAME_SKELLY);
+			Battle_CreateGB(-50, bb.y + 50, 180, bb.x - 230, bb.y + 50, 0, 40, 10, 30, 2, 2, 0);
 		}
 	}
 	else {
@@ -192,7 +192,7 @@ if (attack_type == 4) {
 			}
 		}
 		if (time == 134) {
-			Battle_CreateGB(690, bb.y + 50, 0, bb.x + 230, bb.y + 50, 180, 40, 10, 30, 2, 2, 0, ENEMY_NAME_SKELLY);
+			Battle_CreateGB(690, bb.y + 50, 0, bb.x + 230, bb.y + 50, 180, 40, 10, 30, 2, 2, 0);
 		}
 	}
 }

@@ -1,7 +1,7 @@
 text = "";
 
 x = 640;
-y = 10 + array_get_index(world.notifications, id) * 60;
+y = 10 + array_get_index(global.notifications, id) * 60;
 depth = DEPTH_UI.NOTIFICATION;
 image_speed = 0;
 

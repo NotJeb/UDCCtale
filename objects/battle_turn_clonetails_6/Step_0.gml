@@ -1,9 +1,6 @@
 // Inherit the parent event
 event_inherited();
 
-if (time == 0) {
-	Battle_BoardTransform(65, 65, 65, 65);
-}
 if (Battle_Repeat(10, 910, 95)) {
 	var _dir = choose(DIR.UP, DIR.DOWN, DIR.LEFT, DIR.RIGHT);
 	var _side_length = 30;

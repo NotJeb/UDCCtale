@@ -1,5 +1,5 @@
 function Debug_TextY(_text_place, _developer = false, _object = undefined, _variable = undefined) {
-	if ((_developer && !world.settings.developer_mode) || (_object != undefined && _variable != undefined && !variable_instance_exists(_object, _variable))) {
+	if ((_developer && !global.settings.developer_mode) || (_object != undefined && _variable != undefined && !variable_instance_exists(_object, _variable))) {
 		debug.text_y[_text_place] = 0;
 		return false;
 	}

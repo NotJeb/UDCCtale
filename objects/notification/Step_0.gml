@@ -1,1 +1,1 @@
-y += (10 + array_get_index(world.notifications, id) * 60 - y) / 10;
+y += (10 + array_get_index(global.notifications, id) * 60 - y) / 10;

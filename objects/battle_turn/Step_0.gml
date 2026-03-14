@@ -1,1 +1,1 @@
-time++;
+if (!instance_exists(battle_dialog_enemy)) time++;

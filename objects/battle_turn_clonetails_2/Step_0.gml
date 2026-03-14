@@ -1,9 +1,6 @@
 // Inherit the parent event
 event_inherited();
 
-if (time == 0) {
-	Battle_BoardTransform(65, 65, 65, 65);
-}
 if (time == 10) {
 	Battle_SetSoul(battle_soul_blue);
 }
@@ -31,5 +28,5 @@ if (Battle_Repeat(40, 640, 60)) {
 }
 if (Battle_Repeat(100, 580, 120)) {
 	var _side = choose(-1, 1);
-	Battle_CreateGB(bb.x + 370 * _side, bb.y + 50, 270 + 90 * _side, bb.x + 100 * _side, bb.y + 50, 90 + 90 * _side, 30, 10, 30, 1, 2, 0, ENEMY_NAME_SKELLY);
+	Battle_CreateGB(bb.x + 370 * _side, bb.y + 50, 270 + 90 * _side, bb.x + 100 * _side, bb.y + 50, 90 + 90 * _side, 30, 10, 30, 1, 2, 0);
 }

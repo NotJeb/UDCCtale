@@ -1,9 +1,6 @@
 // Inherit the parent event
 event_inherited();
 
-if (time == 0) {
-	Battle_BoardTransform(65, 65, 65, 65);
-}
 if (time == 10) {
 	Battle_Slam(DIR.DOWN);
 	
@@ -25,7 +22,7 @@ if (Battle_Repeat(75, 850, 80)) {
 	Anim_Linear(_bone0, 150, 30, DIR.DOWN);
 }
 if (time == 320) {
-	Battle_CreateGB(bb.x, bb.y - 370, 270 + 180, bb.x, bb.y - 100, 270, 30, 10, 20, 1, 2, 0, ENEMY_NAME_SKELLY);
+	Battle_CreateGB(bb.x, bb.y - 370, 270 + 180, bb.x, bb.y - 100, 270, 30, 10, 20, 1, 2, 0);
 }
 if (time == 360) {
 	Battle_Slam(DIR.UP);

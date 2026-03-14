@@ -4,20 +4,20 @@ function Game_Load() {
 		ini_open("save.ini");
 		
 		Player_SetName(ini_read_string("SETTINGS", "player_name", ""));
-		world.settings.debug = ini_read_real("SETTINGS", "debug", world.settings.debug);
-		world.settings.no_hit = ini_read_real("SETTINGS", "no_hit", world.settings.no_hit);
-		world.settings.no_heal = ini_read_real("SETTINGS", "no_heal", world.settings.no_heal);
-		world.settings.fast_reset = ini_read_real("SETTINGS", "fast_reset", world.settings.fast_reset);
-		world.settings.effects = ini_read_real("SETTINGS", "effects", world.settings.effects);
-		world.settings.bgm_volume = ini_read_real("SETTINGS", "bgm_volume", world.settings.bgm_volume);
-		world.settings.sfx_volume = ini_read_real("SETTINGS", "sfx_volume", world.settings.sfx_volume);
-		world.settings.hitboxes = ini_read_real("SETTINGS", "hitboxes", world.settings.hitboxes);
-		world.settings.game_speed = ini_read_real("SETTINGS", "game_speed", world.settings.game_speed);
+		global.settings.debug = ini_read_real("SETTINGS", "debug", global.settings.debug);
+		global.settings.no_hit = ini_read_real("SETTINGS", "no_hit", global.settings.no_hit);
+		global.settings.no_heal = ini_read_real("SETTINGS", "no_heal", global.settings.no_heal);
+		global.settings.fast_reset = ini_read_real("SETTINGS", "fast_reset", global.settings.fast_reset);
+		global.settings.effects = ini_read_real("SETTINGS", "effects", global.settings.effects);
+		global.settings.bgm_volume = ini_read_real("SETTINGS", "bgm_volume", global.settings.bgm_volume);
+		global.settings.sfx_volume = ini_read_real("SETTINGS", "sfx_volume", global.settings.sfx_volume);
+		global.settings.hitboxes = ini_read_real("SETTINGS", "hitboxes", global.settings.hitboxes);
+		global.settings.game_speed = ini_read_real("SETTINGS", "game_speed", global.settings.game_speed);
 		
-		for (var i = 0; i < array_length(world.enemy.name); i++) {
-			world.badges[i].completion = ini_read_real("BADGES_COMPLETION", world.enemy.name[i], world.badges[i].completion);
-			world.badges[i].no_heal = ini_read_real("BADGES_NOHEAL", world.enemy.name[i], world.badges[i].no_heal);
-			world.badges[i].no_hit = ini_read_real("BADGES_NOHIT", world.enemy.name[i], world.badges[i].no_hit);
+		for (var i = 0; i < array_length(global.enemy.name); i++) {
+			global.badges[i].completion = ini_read_real("BADGES_COMPLETION", global.enemy.name[i], global.badges[i].completion);
+			global.badges[i].no_heal = ini_read_real("BADGES_NOHEAL", global.enemy.name[i], global.badges[i].no_heal);
+			global.badges[i].no_hit = ini_read_real("BADGES_NOHIT", global.enemy.name[i], global.badges[i].no_hit);
 		}
 		
 		global.selected_battle = ini_read_real("MISC", "selected_battle", 9999999);

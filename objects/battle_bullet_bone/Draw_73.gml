@@ -1,4 +1,4 @@
-if (world.settings.hitboxes && world.settings.debug) {
+if (global.settings.hitboxes && global.settings.debug) {
 	var temp_pos = [x, y];
 	x -= lengthdir_x(origin, image_angle - 90);
 	y -= lengthdir_y(origin, image_angle - 90);

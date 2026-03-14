@@ -1,8 +1,8 @@
 function Battle_Gameover(){
-	if (world.settings.debug) {
+	if (global.settings.debug) {
 		Player_Heal(Player_GetHpMax());
 	}
-	else if (world.settings.fast_reset) {
+	else if (global.settings.fast_reset) {
 		Player_CustomInitialData();
 		room_restart();
 	}

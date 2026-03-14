@@ -2,6 +2,8 @@
 event_inherited();
 
 if (Battle_GetState() == BATTLE_STATE.CUTSCENE && Input_IsPressed(INPUT.MENU)) {
+	instance_destroy(battle_dialog_enemy);
+	
 	battle_board.alpha = 1;
 	battle_board.alpha_frame = 1;
 	battle_soul.image_alpha = 1;

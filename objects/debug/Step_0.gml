@@ -1,4 +1,4 @@
-if (world.settings.debug) {
+if (global.settings.debug) {
 	
 	// Shift + arrows to change speed
 	if (keyboard_check(vk_shift)) {
@@ -50,23 +50,23 @@ if (world.settings.debug) {
 			audio_play_sound(snd_item_heal, 0, 0);
 		}
 		
-		var _index = array_get_index(world.enemy.name, battle_enemy._enemy_name)
+		var _index = array_get_index(global.enemy.name, battle_enemy._enemy_name)
 		if (keyboard_check_pressed(ord("1"))) {
-			if (world.badges[_index].completion)
+			if (global.badges[_index].completion)
 				Badge_Revoke(BADGE.COMPLETION);
 			else
 				Badge_Award(BADGE.COMPLETION);
 		}
 		
 		if (keyboard_check_pressed(ord("2"))) {
-			if (world.badges[_index].no_heal)
+			if (global.badges[_index].no_heal)
 				Badge_Revoke(BADGE.NO_HEAL);
 			else
 				Badge_Award(BADGE.NO_HEAL);
 		}
 		
 		if (keyboard_check_pressed(ord("3"))) {
-			if (world.badges[_index].no_hit)
+			if (global.badges[_index].no_hit)
 				Badge_Revoke(BADGE.NO_HIT);
 			else
 				Badge_Award(BADGE.NO_HIT);

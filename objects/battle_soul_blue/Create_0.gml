@@ -1,5 +1,5 @@
-event_inherited()
-moveable = 1;
+event_inherited();
+
 dir = 270;
 move = 0;
 impact = 0;

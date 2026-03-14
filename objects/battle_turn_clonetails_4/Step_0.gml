@@ -1,9 +1,12 @@
 // Inherit the parent event
 event_inherited();
 
-if (time == 0) {
-	Battle_BoardTransform(65, 65, 185, 185);
+if (time == -1) {
+	Battle_SetSoul(battle_soul_blue);
+	bs.x = bb.x - 65;
+	bs.y = bb.y + 57;
 }
+
 if (Battle_Repeat(10, 22, 6)) {
 	var _bone0 = Battle_CreateBone(bb.x + 200, bb.y + 65, 60, 0, 0, 200);
 	_bone0.direction = DIR.LEFT;
@@ -45,7 +48,7 @@ if (time == 100) {
 	_bone2.speed = 2.5;
 }
 if (time == 190) {
-	Battle_CreateGB(bb.x + 370, bb.y + 25, 270 + 90, bb.x + 220, bb.y + 25, 90 + 90, 30, 10, 60, 2, 2, 0, ENEMY_NAME_SKELLY);
+	Battle_CreateGB(bb.x + 370, bb.y + 25, 270 + 90, bb.x + 220, bb.y + 25, 90 + 90, 30, 10, 60, 2, 2, 0);
 }
 if (time == 220) {
 	var _bone0 = Battle_CreateBone(bb.x + 200, bb.y - 30, 60, 0, 0, 200, 30);
@@ -126,15 +129,15 @@ if (time == 430) {
 }
 if (time == 490) {
 	Battle_BoardTransform(65, 65, 65, 65, bb.x, bb.y, 20);
-	Battle_CreateGB(bb.x + 50, bb.y - 370, 270 + 180, bb.x + 50, bb.y - 100, 270, 30, 10, 30, 2, 2, 0, ENEMY_NAME_SKELLY);
+	Battle_CreateGB(bb.x + 50, bb.y - 370, 270 + 180, bb.x + 50, bb.y - 100, 270, 30, 10, 30, 2, 2, 0);
 }
 if (time == 510) {
-	Battle_CreateGB(bb.x + 370, bb.y + 50, 180 + 180, bb.x + 100, bb.y + 50, 180, 30, 10, 30, 2, 2, 0, ENEMY_NAME_SKELLY);
+	Battle_CreateGB(bb.x + 370, bb.y + 50, 180 + 180, bb.x + 100, bb.y + 50, 180, 30, 10, 30, 2, 2, 0);
 }
 if (time == 525) {
-	Battle_CreateGB(bb.x - 50, bb.y - 370, 270 + 180, bb.x - 50, bb.y - 100, 270, 30, 10, 30, 1, 2, 0, ENEMY_NAME_SKELLY);
-	Battle_CreateGB(bb.x + 50, bb.y - 370, 270 + 180, bb.x + 50, bb.y - 100, 270, 30, 10, 30, 1, 2, 0, ENEMY_NAME_SKELLY);
+	Battle_CreateGB(bb.x - 50, bb.y - 370, 270 + 180, bb.x - 50, bb.y - 100, 270, 30, 10, 30, 1, 2, 0);
+	Battle_CreateGB(bb.x + 50, bb.y - 370, 270 + 180, bb.x + 50, bb.y - 100, 270, 30, 10, 30, 1, 2, 0);
 }
 if (time == 530) {
-	Battle_CreateGB(bb.x, bb.y - 370, 270 + 180, bb.x, bb.y - 100, 270, 30, 10, 30, 2, 2, 0, ENEMY_NAME_SKELLY);
+	Battle_CreateGB(bb.x, bb.y - 370, 270 + 180, bb.x, bb.y - 100, 270, 30, 10, 30, 2, 2, 0);
 }

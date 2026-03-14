@@ -1,4 +1,4 @@
-if (world.settings.hitboxes && world.settings.debug && can_damage) {
+if (global.settings.hitboxes && global.settings.debug && can_damage) {
 	if (sprite_index == spr_battle_bullet_melon_cat) {
 		draw_set_color(c_red);
 		draw_ellipse(x - 209 * image_xscale, y - 169 * image_yscale, x + 196 * image_xscale, y + 196 * image_yscale, 0);
