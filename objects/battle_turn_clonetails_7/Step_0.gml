@@ -1,13 +1,12 @@
 // Inherit the parent event
 event_inherited();
 
-if (Battle_GetTurnTime() == 1) {
+if (time == attack_time[attack_type]) {
 	time = 0;
-}
-if (time == 0) {
+	
 	attack_type = irandom(5);
-	if (attack_count < 7)
-		battle._turn_time += attack_time[attack_type] + 1;
+	
+	if (attack_count >= 7) Battle_EndTurn();
 	
 	Battle_Flash();
 	

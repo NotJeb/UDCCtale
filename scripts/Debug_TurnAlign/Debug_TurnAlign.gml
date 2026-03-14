@@ -1,5 +1,6 @@
 function Debug_TurnAlign() {
-	Battle_SetState(BATTLE_STATE.MENU);
+	if (Battle_GetMenuChoiceAction() == -1)
+		Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_START);
 	switch (battle_enemy._enemy_name) {
 		case ENEMY_NAME_SHAUN_AND_MINUS:
 			battle_enemy_shaun_and_minus.x = 320 - 80;

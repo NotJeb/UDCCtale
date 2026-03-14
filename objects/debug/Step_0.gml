@@ -12,8 +12,10 @@ if (global.settings.debug) {
 		if (Battle_GetState() == BATTLE_STATE.IN_TURN || Battle_GetState() == BATTLE_STATE.DIALOG) {
 
 			// Space to end turn
-			if (keyboard_check_pressed(ord("E")))
+			if (keyboard_check_pressed(ord("E"))) {
 				Debug_EndTurn();
+				Debug_TurnAlign();
+			}
 		}
 		else {
 			
@@ -33,10 +35,11 @@ if (global.settings.debug) {
 		}
 	
 		// R to restart turn
-		if (keyboard_check_pressed(ord("R")) && Battle_GetState() != BATTLE_STATE.TURN_PREPARATION) {
-			Battle_SetTurnNumber(Battle_GetTurnNumber() - 1);
-			
+		if (keyboard_check_pressed(ord("R")) && Battle_GetState() != BATTLE_STATE.TURN_PREPARATION && Battle_GetState() != BATTLE_STATE.CUTSCENE) {
 			Debug_EndTurn();
+			
+			Battle_SetTurnNumber(clamp(Battle_GetTurnNumber() - 1, 0, battle_enemy.turn_count));
+			Debug_TurnAlign();
 			
 			Battle_SetMenu(-1, false);
 			Battle_SetState(BATTLE_STATE.TURN_PREPARATION);

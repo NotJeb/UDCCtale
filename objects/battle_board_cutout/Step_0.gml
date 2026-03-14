@@ -109,11 +109,3 @@ _frame_right_x=_point_x;
 _frame_right_y=_point_y;
 _frame_right_width=battle_board.thickness_frame;
 _frame_right_height=up+down+battle_board.thickness_frame*2;
-
-inst_overlay.x = x;
-inst_overlay.y = y;
-inst_overlay._bg_x = _bg_x;
-inst_overlay._bg_y = _bg_y;
-inst_overlay._bg_width = _bg_width;
-inst_overlay._bg_height = _bg_height;
-inst_overlay._angle = _angle;
