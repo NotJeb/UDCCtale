@@ -64,7 +64,7 @@ if (time == 950) {
 if (time == 1158) {
 	with (battle_enemy_shaun_and_minus) {
 		var _inst = instance_create_depth(x + 100, y - 150, 0, battle_dialog_enemy);
-		_inst.text = "Melon cat...{sleep 30} No...{sleep 20}&it can't be...{pause}{end}";
+		_inst.text = "{voice 2}Melon cat...{sleep 30} No...{sleep 20}&it can't be...{pause}{end}";
 		_inst.template = 0;
 	}
 }

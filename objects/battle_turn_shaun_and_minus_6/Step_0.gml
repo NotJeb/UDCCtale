@@ -162,7 +162,7 @@ if (time == 756) {
 	dialog_count++;
 	with (battle_enemy_minus_dummy) {
 		var _inst = instance_create_depth(x - 70, y - 80, 0, battle_dialog_enemy);
-		_inst.text = "{skippable false}{script `Dialog_Event1` 1}chill out bro.{sleep 30}{end}";
+		_inst.text = "{skippable false}{script `Dialog_Event1` 1}chill out bro.{sleep 30}{script `Dialog_Event1` 0}{end}";
 		_inst.template = 1;
 	}
 }
@@ -171,7 +171,7 @@ if (dialog_count == 1 && !instance_exists(battle_dialog_enemy)) {
 	
 	with (battle_enemy_shaun_and_minus) {
 		var _inst = instance_create_depth(x + 100, y - 150, 0, battle_dialog_enemy);
-		_inst.text = "{script `Dialog_Event2` 0}my bad gng.{pause}{script `Dialog_Event1` 0}{end}";
+		_inst.text = "{script `Dialog_Event2` 0}{voice 2}my bad gng.{pause}{end}";
 		_inst.template = 0;
 	}
 }

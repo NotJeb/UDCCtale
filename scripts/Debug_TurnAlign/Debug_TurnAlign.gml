@@ -31,6 +31,12 @@ function Debug_TurnAlign() {
 				battle_enemy_minus_dummy.sprite_index = spr_enemy_minus_dance;
 				battle_enemy_shaun_and_minus.image_index = 0;
 			}
+			if (Battle_GetTurnNumber() > 7) {
+				battle_enemy_minus_dummy.sprite_index = spr_enemy_minus_dance_sad;
+			}
+			else {
+				battle_enemy_minus_dummy.sprite_index = spr_enemy_minus_dance;
+			}
 			break;
 	}
 }

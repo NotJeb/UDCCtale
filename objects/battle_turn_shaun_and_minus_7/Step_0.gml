@@ -121,6 +121,7 @@ if (time == 1520) {
 	instance_destroy(battle_bullet);
 	
 	Battle_BoardTransform(65, 65, 65, 65, 320, 320, 0);
+	battle_enemy_minus_dummy.sprite_index = spr_enemy_minus_dance_sad;
 }
 if (Battle_Repeat(1560, 1800, 60)) {
 	Battle_CreateJevilBomb(choose(random_range(20, 230), random_range(410, 620)), random_range(20, 460), irandom(3));
@@ -130,7 +131,7 @@ if (time == 2037) {
 	
 	with (battle_enemy_shaun_and_minus) {
 		var _inst = instance_create_depth(x + 100, y - 150, 0, battle_dialog_enemy);
-		_inst.text = "are you good bro{pause}{end}";
+		_inst.text = "{voice 2}are you good bro{pause}{end}";
 		_inst.template = 0;
 	}
 }
@@ -139,7 +140,7 @@ if (dialog_count == 1 && !instance_exists(battle_dialog_enemy)) {
 	
 	with (battle_enemy_minus_dummy) {
 		var _inst = instance_create_depth(x - 70, y - 80, 0, battle_dialog_enemy);
-		_inst.text = "nah gang im tired asf you&gotta do the rest of the&work for a bit{pause}{end}";
+		_inst.text = "{script `Dialog_Event1` 1}nah gang im tired asf you&gotta do the rest of the&work for a bit{pause}{script `Dialog_Event1` 2}{end}";
 		_inst.template = 1;
 	}
 }
@@ -148,7 +149,7 @@ if (dialog_count == 2 && !instance_exists(battle_dialog_enemy)) {
 	
 	with (battle_enemy_shaun_and_minus) {
 		var _inst = instance_create_depth(x + 100, y - 150, 0, battle_dialog_enemy);
-		_inst.text = "alright bruh{pause}{end}";
+		_inst.text = "{voice 2}alright bruh{pause}{end}";
 		_inst.template = 0;
 	}
 }
