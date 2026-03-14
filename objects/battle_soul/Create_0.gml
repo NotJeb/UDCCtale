@@ -4,8 +4,7 @@ image_speed = 0;
 follow_board = false;
 _inv = 0;
 alpha = 0;
-can_move = true;
-moveable = (!instance_exists(battle_dialog_enemy) && can_move);
+moveable = true;
 
 movement_fights = [ENEMY_NAME_KACPII, ENEMY_NAME_SHAUN_AND_MINUS];
 

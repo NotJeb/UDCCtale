@@ -43,7 +43,7 @@ if (Battle_Repeat(40, 430, 6)) {
 	_star0.tag = 1;
 }
 if (Battle_Repeat(40, 800)) {
-	with (battle_bullet_star) {
+	with (battle_bullet_projectile) {
 		if (tag == 1) {
 			var _angle = point_direction(x, y, 300, 290);
 			var _length = clamp(1 / (distance_to_point(300, 290) / 400), 0, 10);
@@ -65,12 +65,9 @@ if (time == 660) {
 	
 	var _event0 = function(_dir) {
 		var gb_beam = instance_create_depth(320, 240, DEPTH_BATTLE.BULLET_OUTSIDE_LOW, battle_bullet_slash_1);
-		gb_beam.image_angle = _dir + 90;
+		gb_beam.image_angle = _dir;
 		gb_beam.size = 70;
-		gb_beam.alarm[0] = 12;
-		gb_beam.alarm[1] = 12 + floor(60 / 2);
-		gb_beam.alarm[2] = 72;
-		gb_beam.alarm[3] = 84;
+		gb_beam.shoot_time = 20;
 	
 		audio_play_sound(snd_hypergoner_release, 0, 0);
 	}

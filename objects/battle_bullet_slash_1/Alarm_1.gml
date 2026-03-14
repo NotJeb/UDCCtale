@@ -1,1 +1,0 @@
-if (mode != 3) mode = 2;

@@ -25,5 +25,3 @@ if (x < 0 - sprite_width / 2 || x > 640 + sprite_width / 2 || y < 0 - sprite_hei
 	x = battle_board.x;
 	y = battle_board.y;
 }
-
-moveable = (!instance_exists(battle_dialog_enemy) && can_move);
