@@ -8,8 +8,10 @@ function Battle_CreateGB(_start_x, _start_y, _start_angle, _end_x, _end_y, _end_
 	
 	// Create initial GB instance
 	var _inst = instance_create_depth(0, 0, DEPTH_BATTLE.BULLET_OUTSIDE_HIGH, _obj);
-	_inst.image_xscale = _xscale;
-	_inst.image_yscale = _yscale;
+	_inst.xscale = _xscale;
+	_inst.yscale = _yscale;
+	_inst.image_xscale = 0;
+	_inst.image_yscale = 0;
 	_inst.shoot_time = _shoot_time;
 	_inst.color = _color;
 	

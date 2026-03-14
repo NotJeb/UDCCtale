@@ -42,16 +42,16 @@ if (attack_type == 0 || attack_type == 1) {
 		}
 		
 		if (attack_type == 0) {
-			Battle_CreateGB(0, 0, 0, bb.x - 100, bb.y + 100, 45, 0, 41, 30, 1, 2, 0);
-			Battle_CreateGB(0, 0, 0, bb.x + 100, bb.y + 100, 135, 0, 41, 30, 1, 2, 0);
-			Battle_CreateGB(0, 0, 0, bb.x + 100, bb.y - 100, 225, 0, 41, 30, 1, 2, 0);
-			Battle_CreateGB(0, 0, 0, bb.x - 100, bb.y - 100, 315, 0, 41, 30, 1, 2, 0);
+			Battle_CreateGB(0, 0, 0, bb.x - 100, bb.y + 100, 45, 0, 41, 30, 2, 1, 0);
+			Battle_CreateGB(0, 0, 0, bb.x + 100, bb.y + 100, 135, 0, 41, 30, 2, 1, 0);
+			Battle_CreateGB(0, 0, 0, bb.x + 100, bb.y - 100, 225, 0, 41, 30, 2, 1, 0);
+			Battle_CreateGB(0, 0, 0, bb.x - 100, bb.y - 100, 315, 0, 41, 30, 2, 1, 0);
 		}
 		else {
-	        Battle_CreateGB(0, 0, 0, bb.x - 100, bb.y, 0, 0, 41, 30, 1, 2, 0);
-	        Battle_CreateGB(0, 0, 0, bb.x, bb.y + 100, 90, 0, 41, 30, 1, 2, 0);
-	        Battle_CreateGB(0, 0, 0, bb.x + 100, bb.y, 180, 0, 41, 30, 1, 2, 0);
-	        Battle_CreateGB(0, 0, 0, bb.x, bb.y - 100, 270, 0, 41, 30, 1, 2, 0);
+	        Battle_CreateGB(0, 0, 0, bb.x - 100, bb.y, 0, 0, 41, 30, 2, 1, 0);
+	        Battle_CreateGB(0, 0, 0, bb.x, bb.y + 100, 90, 0, 41, 30, 2, 1, 0);
+	        Battle_CreateGB(0, 0, 0, bb.x + 100, bb.y, 180, 0, 41, 30, 2, 1, 0);
+	        Battle_CreateGB(0, 0, 0, bb.x, bb.y - 100, 270, 0, 41, 30, 2, 1, 0);
 		}
 	}
 	if (time == 10) {

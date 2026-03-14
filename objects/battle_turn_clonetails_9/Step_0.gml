@@ -22,7 +22,7 @@ if (Battle_Repeat(75, 850, 80)) {
 	Anim_Linear(_bone0, 150, 30, DIR.DOWN);
 }
 if (time == 320) {
-	Battle_CreateGB(bb.x, bb.y - 370, 270 + 180, bb.x, bb.y - 100, 270, 30, 10, 20, 1, 2, 0);
+	Battle_CreateGB(bb.x, bb.y - 370, 270 + 180, bb.x, bb.y - 100, 270, 30, 10, 10, 2, 1, 0);
 }
 if (time == 360) {
 	Battle_Slam(DIR.UP);

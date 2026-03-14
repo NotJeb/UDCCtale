@@ -22,14 +22,14 @@ if (Battle_Repeat(30, 850, 25)) {
 }
 if (Battle_Repeat(100, 850, 60)) {
 	var _x = random_range(bb.x - 175, bb.x + 175);
-	Battle_CreateGB(_x, -50, 270 - 180, _x, bb.y - 100, 270, 40, 10, 30, 1, 2, 0);
+	Battle_CreateGB(_x, -50, 270 - 180, _x, bb.y - 100, 270, 40, 10, 30, 2, 1, 0);
 }
 if (Battle_Repeat(190, 670, 120)) {
 	var _y = choose(bb.y + 45, bb.y + 45 - (130 / 3), bb.y + 45 - (130 / 3) * 2);
 	if (choose(DIR.LEFT, DIR.RIGHT) == DIR.LEFT)
-		Battle_CreateGB(-50, _y, 0 - 180, bb.x - 220, _y, 0, 40, 10, 30, 1, 2, 0);
+		Battle_CreateGB(-50, _y, 0 - 180, bb.x - 220, _y, 0, 40, 10, 30, 2, 1, 0);
 	else
-		Battle_CreateGB(690, _y, 180 - 180, bb.x + 220, _y, 180, 40, 10, 30, 1, 2, 0);
+		Battle_CreateGB(690, _y, 180 - 180, bb.x + 220, _y, 180, 40, 10, 30, 2, 1, 0);
 }
 if (time == 850) {
 	with (battle_bullet_bone) {

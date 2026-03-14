@@ -135,8 +135,8 @@ if (time == 510) {
 	Battle_CreateGB(bb.x + 370, bb.y + 50, 180 + 180, bb.x + 100, bb.y + 50, 180, 30, 10, 30, 2, 2, 0);
 }
 if (time == 525) {
-	Battle_CreateGB(bb.x - 50, bb.y - 370, 270 + 180, bb.x - 50, bb.y - 100, 270, 30, 10, 30, 1, 2, 0);
-	Battle_CreateGB(bb.x + 50, bb.y - 370, 270 + 180, bb.x + 50, bb.y - 100, 270, 30, 10, 30, 1, 2, 0);
+	Battle_CreateGB(bb.x - 50, bb.y - 370, 270 + 180, bb.x - 50, bb.y - 100, 270, 30, 10, 30, 2, 1, 0);
+	Battle_CreateGB(bb.x + 50, bb.y - 370, 270 + 180, bb.x + 50, bb.y - 100, 270, 30, 10, 30, 2, 1, 0);
 }
 if (time == 530) {
 	Battle_CreateGB(bb.x, bb.y - 370, 270 + 180, bb.x, bb.y - 100, 270, 30, 10, 30, 2, 2, 0);
