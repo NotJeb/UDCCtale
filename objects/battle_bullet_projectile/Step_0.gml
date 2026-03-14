@@ -12,22 +12,15 @@ switch (custom) {
 		}
 		break;
 	case 2:
-		siner1 += pi / 240;
-		siner2 += pi / 45;
+		siner1 += 1.1 / 2;
+		siner2 += 1 / 2;
 		
-		x = x_center + sin(siner1) * width;
-		y = y_center + sin(siner2) * height;
+		var _circ = sin(siner1 / 20) - sin((siner1 - 1) / 20);
 		
-		if ((siner1 + pi + pi / 2) % (pi * 2) == 0) {
-			Anim_Create(id, "xscale", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, 1, -2, 30);
-			Anim_Create(id, "image_alpha", 0, 0, 1, -0.5, 30);
-			depth = DEPTH_BATTLE.BULLET_OUTSIDE_LOW + 1;
-		}
-		else if ((siner1 + pi / 2) % (pi * 2) == 0) {
-			Anim_Create(id, "xscale", ANIM_TWEEN.SINE, ANIM_EASE.IN_OUT, -1, 2, 30);
-			Anim_Create(id, "image_alpha", 0, 0, 0.5, 0.5, 30);
-			depth = DEPTH_BATTLE.BULLET_OUTSIDE_LOW;
-		}
+		x = battle_board.x - (sin(siner1 / 20) * 150);
+		y += (tag == 0 ? 1 : -1) * (sin(siner2 / 10) * 1.5);
+		xscale = clamp(_circ * 25, -1, 1);
+		image_blend = _circ > 0 ? c_gray : c_white;
 		break;
 }
 

@@ -26,22 +26,21 @@ if (Battle_Repeat(30, 150, 11)) {
 	}
 }
 if (time == 165) {
-	for (var i = 0; i < 5; i++) {
-		var _sword0 = Battle_CreateProjectile(320, 240, 174, spr_battle_bullet_sword, 0, 0, -1, 2);
-		_sword0.x_center = 320;
-		_sword0.y_center = 240;
-		_sword0.width = 100;
-		_sword0.height = 50;
-		_sword0.siner1 = (i / 5) * (pi * 2);
-		_sword0.siner2 = i % 2 == 0 ? 0 : pi;
+	for (var j = 0; j < 3; j += 1) {
+	    for (var i = 0; i < 3; i += 1) {
+			var _sword0 = Battle_CreateProjectile(bb.x + 150, (bb.y - 160) + (i * 80), 174, spr_battle_bullet_sword, 0, 0, -1, 2);
+			_sword0.x_center = 320;
+			_sword0.y_center = 240;
+			_sword0.siner1 = j * 42;
+			_sword0.siner2 = 0;
+			_sword0.tag = 0;
 		
-		if (i == 2 || i == 3) {
-			_sword0.xscale = -1;
-			_sword0.image_alpha = 0.5;
-		}
-		else {
-			_sword0.xscale = 1;
-			_sword0.image_alpha = 1;
+			var _sword1 = Battle_CreateProjectile(bb.x + 150, (bb.y - 160) + (i * 80), 174, spr_battle_bullet_sword, 0, 0, -1, 2);
+			_sword1.x_center = 320;
+			_sword1.y_center = 240;
+			_sword1.siner1 = j * 42 + 21;
+			_sword1.siner2 = 0;
+			_sword1.tag = 1;
 		}
 	}
 }
