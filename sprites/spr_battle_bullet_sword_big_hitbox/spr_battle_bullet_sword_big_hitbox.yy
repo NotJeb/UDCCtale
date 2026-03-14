@@ -1,9 +1,9 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_battle_bullet_sword",
+  "%Name":"spr_battle_bullet_sword_big_hitbox",
   "bboxMode":0,
   "bbox_bottom":119,
-  "bbox_left":160,
+  "bbox_left":125,
   "bbox_right":319,
   "bbox_top":40,
   "collisionKind":0,
@@ -22,7 +22,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"0df70480-6ae0-433d-9673-6f0614a63c11","blendMode":0,"displayName":"default","isLocked":false,"name":"0df70480-6ae0-433d-9673-6f0614a63c11","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_battle_bullet_sword",
+  "name":"spr_battle_bullet_sword_big_hitbox",
   "nineSlice":{
     "$GMNineSliceData":"",
     "bottom":0,
@@ -53,7 +53,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_battle_bullet_sword",
+    "%Name":"spr_battle_bullet_sword_big_hitbox",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -77,7 +77,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_battle_bullet_sword",
+    "name":"spr_battle_bullet_sword_big_hitbox",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -89,10 +89,10 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"16e3c7e4-8193-4780-b013-55163bd6fc77","path":"sprites/spr_battle_bullet_sword/spr_battle_bullet_sword.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"16e3c7e4-8193-4780-b013-55163bd6fc77","path":"sprites/spr_battle_bullet_sword_big_hitbox/spr_battle_bullet_sword_big_hitbox.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"4abe58a0-c392-4a25-8d95-1b1980bde71d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cff5b242-5be3-4fa4-9bcb-92c75ef07b38","path":"sprites/spr_battle_bullet_sword/spr_battle_bullet_sword.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cff5b242-5be3-4fa4-9bcb-92c75ef07b38","path":"sprites/spr_battle_bullet_sword_big_hitbox/spr_battle_bullet_sword_big_hitbox.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"8c9fc9bf-970b-48db-af1c-f25eb0f352f0","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

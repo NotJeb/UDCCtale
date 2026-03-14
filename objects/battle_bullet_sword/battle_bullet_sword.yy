@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_battle_bullet_sword",
-    "path":"sprites/spr_battle_bullet_sword/spr_battle_bullet_sword.yy",
+    "name":"spr_battle_bullet_sword_big_hitbox",
+    "path":"sprites/spr_battle_bullet_sword_big_hitbox/spr_battle_bullet_sword_big_hitbox.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -22,3 +22,6 @@ red_tint = 0;
 
 width = 0;
 height = 0;
+
+damage = 1;
+kr = 1;

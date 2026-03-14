@@ -17,10 +17,12 @@ switch (custom) {
 		
 		var _circ = sin(siner1 / 20) - sin((siner1 - 1) / 20);
 		
-		x = battle_board.x - (sin(siner1 / 20) * 150);
-		y += (tag == 0 ? 1 : -1) * (sin(siner2 / 10) * 1.5);
-		xscale = clamp(_circ * 25, -1, 1);
-		image_blend = _circ > 0 ? c_gray : c_white;
+		x = battle_board.x - (sin(siner1 / 20) * 240);
+		y += (tag == 0 ? 1 : -1) * (sin(siner2 / 10) * 3);
+		xscale = clamp(-_circ * 25, -1, 1);
+		image_blend = _circ > 0 ? make_color_rgb(138 / 2, 0, 196 / 2) : make_color_rgb(138, 0, 196);
+		
+		can_damage = image_alpha == 1 && _circ <= 0;
 		break;
 }
 
