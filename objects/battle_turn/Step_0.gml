@@ -1,3 +1,3 @@
-if (!instance_exists(battle_dialog_enemy)) time++;
+if (!paused) time++;
 
 bs.moveable = (time != -1);

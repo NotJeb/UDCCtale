@@ -9,3 +9,6 @@ function Dialog_Event1(_sprite_num) {
 function Dialog_Event2(_image_index) {
 	battle_enemy_shaun_and_minus.image_index = _image_index;
 }
+function Dialog_Event3() {
+	battle_turn.paused = false;
+}
