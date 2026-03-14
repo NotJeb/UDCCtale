@@ -70,7 +70,6 @@
     {"name":"font_mars_needs_cunnilingus","order":3,"path":"fonts/font_mars_needs_cunnilingus/font_mars_needs_cunnilingus.yy",},
     {"name":"font_ut_hp","order":4,"path":"fonts/font_ut_hp/font_ut_hp.yy",},
     {"name":"audio_manager","order":27,"path":"objects/audio_manager/audio_manager.yy",},
-    {"name":"battle_board_cutout_overlay","order":33,"path":"objects/battle_board_cutout_overlay/battle_board_cutout_overlay.yy",},
     {"name":"battle_board_cutout","order":32,"path":"objects/battle_board_cutout/battle_board_cutout.yy",},
     {"name":"battle_board","order":3,"path":"objects/battle_board/battle_board.yy",},
     {"name":"battle_bullet_annoying_dog_beam","order":15,"path":"objects/battle_bullet_annoying_dog_beam/battle_bullet_annoying_dog_beam.yy",},

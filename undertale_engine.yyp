@@ -156,7 +156,6 @@
     {"id":{"name":"font_mars_needs_cunnilingus","path":"fonts/font_mars_needs_cunnilingus/font_mars_needs_cunnilingus.yy",},},
     {"id":{"name":"font_ut_hp","path":"fonts/font_ut_hp/font_ut_hp.yy",},},
     {"id":{"name":"audio_manager","path":"objects/audio_manager/audio_manager.yy",},},
-    {"id":{"name":"battle_board_cutout_overlay","path":"objects/battle_board_cutout_overlay/battle_board_cutout_overlay.yy",},},
     {"id":{"name":"battle_board_cutout","path":"objects/battle_board_cutout/battle_board_cutout.yy",},},
     {"id":{"name":"battle_board","path":"objects/battle_board/battle_board.yy",},},
     {"id":{"name":"battle_bullet_annoying_dog_beam","path":"objects/battle_bullet_annoying_dog_beam/battle_bullet_annoying_dog_beam.yy",},},

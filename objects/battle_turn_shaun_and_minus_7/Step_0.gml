@@ -6,7 +6,6 @@ if (time == 0) {
 }
 if (time == 19) {
 	Battle_BoardTransform(320, 160, 320, 320, bb.x, bb.y, 0);
-	bb.alpha = 0;
 	bs.x = bb.x;
 	bs.y = bb.y;
 }
