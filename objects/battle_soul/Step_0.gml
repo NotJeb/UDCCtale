@@ -20,8 +20,8 @@ if(_inv>0){
 	}
 }
 
-if (x < 0 - sprite_width / 2 || x > 640 + sprite_width / 2 || y < 0 - sprite_height / 2 || y > 480 + sprite_height / 2) {
-	show_debug_message($"ERROR: battle_soul has left screen area at ({x}, {y})");
-	x = battle_board.x;
-	y = battle_board.y;
-}
+//if (x < 0 - sprite_width / 2 || x > 640 + sprite_width / 2 || y < 0 - sprite_height / 2 || y > 480 + sprite_height / 2) {
+//	show_debug_message($"ERROR: battle_soul has left screen area at ({x}, {y})");
+//	x = battle_board.x;
+//	y = battle_board.y;
+//}

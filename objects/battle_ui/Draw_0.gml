@@ -19,9 +19,11 @@ if (battle.kr_enabled) {
 
 // HP Counter
 draw_set_font(font_mars_needs_cunnilingus);
-var _offset_x = !battle.kr_enabled ? 14 : 20 + string_width("UWU");
-var _gamemaker_workaround = $"0{Player_GetHp()}";
-var _counter = $"{(Player_GetHp() < 10) ? _gamemaker_workaround : Player_GetHp()} / {(Player_GetHpMax() < 10) ? _gamemaker_workaround: Player_GetHpMax()}";
-draw_text(x + 245 + _offset_x + (Player_GetHpMax() * 1.2), y, _counter);
 
+var _gamemaker_workaround = $"0{Player_GetHp()}";
+var _counter = $"{(Player_GetHp() < 10) ? _gamemaker_workaround : Player_GetHp()}/{(Player_GetHpMax() < 10) ? _gamemaker_workaround: Player_GetHpMax()}";
+
+var _offset_x = !battle.kr_enabled ? 14 : 20 + string_width("UWU");
+draw_text(x + 245 + _offset_x + (Player_GetHpMax() * 1.2), y, _counter);
+	
 draw_set_alpha(1);

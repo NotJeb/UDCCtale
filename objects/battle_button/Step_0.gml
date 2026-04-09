@@ -12,5 +12,5 @@ if(STATUS==BATTLE_STATE.MENU && MENU!=BATTLE_MENU.FIGHT_AIM && MENU!=BATTLE_MENU
 		image_index=0;
 	}
 }else{
-	image_index=0;
+	image_index = place_meeting(x, y, battle_soul) ? 1 : 0;
 }

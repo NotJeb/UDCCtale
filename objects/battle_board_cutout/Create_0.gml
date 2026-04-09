@@ -52,5 +52,3 @@ _frame_right_x=0;
 _frame_right_y=0;
 _frame_right_width=0;
 _frame_right_height=0;
-
-tag = 0;

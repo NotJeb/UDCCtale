@@ -1,6 +1,7 @@
 sfx_array = [
 [snd_bark, 1],
 [snd_bonestab, 1],
+[snd_boom, 1],
 [snd_break_0, 1],
 [snd_break_1, 1],
 [snd_car_crash, 1],

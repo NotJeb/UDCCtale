@@ -4,3 +4,5 @@
 event_inherited();
 
 Battle_SetTurnTime(3000);
+//time = 1204;
+//time = 1560;

@@ -1,39 +1,22 @@
 // Inherit the parent event
 event_inherited();
 
-if (time == 0) {
-	Battle_BoardTransform(130 + 65, 65, 130, 130);
+if time == 10
+{
+    Battle_CreateBoardCutout(100, 20, 100, 100, battle_board.x + 100, battle_board.y)
 }
-if (Battle_Repeat(0, 1200)) {
-	var _board0;
-	var _x;
-	var _y;
-	repeat(2) {
-		switch (irandom(3)) {
-			case 0:
-				_x = random(640);
-				_board0 = Battle_CreateBoardCutout(20, 20, 20, 20, _x, -50, 90);
-				_board0.direction = point_direction(_x, -50, bs.x, bs.y);
-				break;
-			case 1:
-				_y = random(480);
-				_board0 = Battle_CreateBoardCutout(20, 20, 20, 20, 690, _y, 90);
-				_board0.direction = point_direction(690, _y, bs.x, bs.y);
-				break;
-	
-			case 2:
-				_x = random(640);
-				_board0 = Battle_CreateBoardCutout(20, 20, 20, 20, _x, 540, 90);
-				_board0.direction = point_direction(_x, 530, bs.x, bs.y);
-				break;
-	
-			case 3:
-				_y = random(480);
-				_board0 = Battle_CreateBoardCutout(20, 20, 20, 20, -50, _y, 90);
-				_board0.direction = point_direction(-50, _y, bs.x, bs.y);
-				break;
-		}
-		_board0.speed = 10;
-		_board0.rotation = choose(-5, 5);
-	}
+if time == 100
+{
+    Battle_BoardTransform(65, 65, 283, 100)
+    Battle_Slam(DIR.DOWN)
+    //When timer is 100, It will do something.
+}
+if time == 1000
+{
+    Battle_EndTurn()
+    //When timer is 100, It will do something.
+}
+if time >= 150 && time <= 400 && time%30==0
+{
+    //When timer is between 150 and 450, and the timer variable is 30's multiple, it will do something.
 }
